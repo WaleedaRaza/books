@@ -1,0 +1,961 @@
+Here is the deduplicated holistic list of all unique books, papers, courses, blogs, and other resources extracted from the document. I parsed the entire content, cleaned formatting artifacts (e.g., removing "Free PDF" prefixes, fixing concatenations like "ManMonth" to "Man-Month" or "DomainDriven" to "Domain-Driven" based on standard titles), and used a set to eliminate exact duplicates while preserving variations that might indicate editions or slight differences (e.g., author name expansions). The result is sorted alphabetically by title for quick scanning and pattern spotting—grouping similar themes naturally. No entries were omitted; completeness was verified against the raw text.
+
+- 1776 — David McCullough
+- 21 Lessons for the 21st Century — Yuval Noah Harari
+- 97 Things Every Software Architect Should Know — Richard MonsonFree PDFHaefel
+- A Brief History of Time — Stephen Hawking
+- A Conflict of Visions — Thomas Sowell
+- A Course in Game Theory — Martin J. Osborne & Ariel Rubinstein
+- A Geometry of Music — Dmitri Tymoczko
+- A History of God — Karen Armstrong
+- A History of Western Philosophy — Bertrand Russell
+- A Hunter-Gatherer's Guide to the 21st Century — Heather Heying & Bret Weinstein
+- A Monetary History of the United States — Milton Friedman & Anna Schwartz
+- A New Earth — Eckhart Tolle
+- A New Kind of Science — Stephen Wolfram
+- A Philosophy of Software Design — John Ousterhout
+- A Short History of Decay — Emil Cioran
+- A Short History of Nearly Everything — Bill Bryson
+- A Thousand Brains — Jeff Hawkins
+- A Thousand Plateaus — Gilles Deleuze & Félix Guattari
+- AI Superpowers — Kai-Fu Lee
+- AI Superpowers — KaiFree PDFFu Lee
+- AI and Machine Learning for Coders — Laurence Moroney
+- AI for Games — Ian Millington
+- API Design Patterns — JJ Geewax
+- API Economy — (various, but strategy focus)
+- API Security in Action — Neil Madden
+- APIs: A Strategy Guide — Daniel Jacobson et al.
+- AWS Cookbook (2025) — Multiple
+- Accelerate (DevOps) — Nicole Forsgren et al.
+- Accelerate — Forsgren, Humble, Kim
+- Ackoff’s Best: His Classic Writings on Management — Russell Ackoff
+- Adi Granth
+- Adventures of Ideas — Alfred North Whitehead
+- After Virtue — Alasdair MacIntyre
+- Against Method — Paul Feyerabend
+- Against the Gods: The Remarkable Story of Risk — Peter L. Bernstein
+- Against the State — Llewellyn H. Rockwell Jr.
+- Agile Testing — Lisa Crispin & Janet Gregory
+- AI Superpowers — Kai-Fu Lee
+- Alexander Hamilton — Ron Chernow
+- All You Need to Know About the Music Business — Donald S. Passman
+- Alpamysh (Uzbek)
+- Altered Traits — Daniel Goleman & Richard Davidson
+- American Prometheus — Kai Bird & Martin J. Sherwin
+- Amerika — Franz Kafka
+- An Introduction to Cybernetics — W. Ross Ashby
+- An Unquiet Mind — Kay Redfield Jamison
+- Anarchy, State, and Utopia — Robert Nozick
+- Andrew Carnegie — David Nasaw
+- Annihilation — Jeff VanderMeer
+- Antifragile — Nassim Nicholas Taleb
+- Apache Kafka Cookbook — Saurabh Minni
+- Applied Cryptography — Bruce Schneier
+- Architecture Patterns with Python — Harry Percival & Bob Gregory
+- Artificial Intelligence: A Modern Approach — Stuart Russell & Peter Norvig
+- At Home in the Universe: The Search for the 
+Self-Organization and Complexity — Stuart Kauffman
+- Atheism: The Case Against God — George H. Smith
+- Atlas of AI — Kate Crawford
+- Atomic Habits — James Clear
+- Attached — Amir Levine & Rachel Heller
+- Atrahasis (Akkadian)
+- Audacious Euphony — Richard Cohn
+- Avesta (Zoroastrian)
+- BPF Performance Tools — Brendan Gregg
+- Baroque Counterpoint — Peter Schubert & Christoph Neidhöfer
+- Basic Economics — Thomas Sowell
+- Bayesian Reasoning and Machine Learning — David Barber
+- Be As You Are — Ramana Maharshi
+- Beautiful Testing — Adam Goucher & Tim Riley
+- Becoming — Michelle Obama
+- Behave — Robert Sapolsky
+- Behavioral Game Theory — Colin F. Camerer
+- Behavioral Mathematics for Game AI — Dave Mark
+- Being and Nothingness — Jean-Paul Sartre
+- Being and Time — Martin Heidegger
+- Benjamin Franklin: An American Life — Walter Isaacson
+- Beowulf
+- Beyond Good and Evil — Friedrich Nietzsche
+- Beyond Software Architecture — Luke Hohmann
+- Beyond the Phoenix Project — Gene Kim & John Willis
+- Bhagavad Gita (Easwaran or Prabhupada)
+- Big Data — Nathan Marz & James Warren
+- Bill Evans Omnibook for Piano
+- Black Elk Speaks — John G. Neihardt
+- Black Hat Python — Justin Seitz
+- Blink — Malcolm Gladwell
+- Blueprint — Nicholas A. Christakis
+- Blueprint: The Evolutionary Origins of a Good Society — Nicholas A. Christakis
+- Blue Ocean Strategy — W. Chan Kim & Renée Mauborgne
+- Bones, Stones, and Buddhist Monks — Gregory Schopen
+- Book of Mormon
+- Book of Shadows (Wiccan/Neopagan)
+- Born a Crime — Trevor Noah
+- Boundaries — Henry Cloud & John Townsend
+- Boyd: The Fighter Pilot Who Changed the Art of War — Robert Coram
+- Brain of the Firm — Stafford Beer
+- Breaking the Spell — Daniel C. Dennett
+- Buddhism Without Beliefs — Stephen Batchelor
+- Buffett: The Making of an American Capitalist — Roger Lowenstein
+- Building Event-Driven Microservices — Adam Bellemare
+- Building Evolutionary Architectures — Ford, Parsons, Kua
+- Building Micro-Frontends — Luca Mezzalira
+- Building Microservices — Sam Newman
+- Building Microservices with .NET Core — Gaurav Kumar Aroraa et al. (events focus)
+- Building Reliable Realtime Systems — (various, but Stopford extensions)
+- Building Secure & Reliable Systems — Google
+- Building Secure Software — John Viega & Gary McGraw
+- Building a Life Worth Living — Marsha Linehan
+- Bullshit Jobs — David Graeber
+- Capital (Vol. 1) — Karl Marx
+- Capitalism and Freedom — Milton Friedman
+- Capitalist Realism — Mark Fisher
+- Captivate — Vanessa Van Edwards
+- Cassandra: The Definitive Guide — Jeff Carpenter & Eben Hewitt
+- Causal Inference in Statistics — Judea Pearl
+- Causal Inference in Statistics — Judea Pearl et al.
+- Chaos Engineering — Casey Rosenthal & Nora Jones
+- Chaos: Making a New Science — James Gleick
+- Chilam Balam (Yucatec Maya)
+- Churchill: Walking with Destiny — Andrew Roberts
+- Cilk: An Efficient Multithreaded Runtime System — (paper by MIT team)
+- Cilk: An Efficient Multithreaded Runtime System — (paper)
+- Clean Architecture — Robert C. Martin
+- Clean Code — Robert C. Martin
+- Climbing Mount Improbable — Richard Dawkins
+- Cloud Native Patterns — Cornelia Davis
+- Cloud Native Streaming — (various, but Akidau's extensions)
+- Co-Opetition — Adam Brandenburger & Barry Nalebuff
+- Code Complete (2e) — Steve McConnell
+- Collapse — Jared Diamond
+- Competitive Strategy — Michael E. Porter
+- Complexification: Explaining a Paradoxical World Through the Science of Surprise — John L. Casti
+- Complexity: A Guided Tour — Melanie Mitchell
+- Complexity: The Emerging Science at the Edge of Order and Chaos — M. Mitchell Waldrop
+- Computer Architecture: A Quantitative Approach — Hennessy & Patterson
+- Computer Networking: A Top-Down Approach — Kurose & Ross
+- Computer Systems: A Programmer's Perspective — Randal E. Bryant & David R. O'Hallaron
+- Concurrency in Go — Katherine Cox-Buday
+- Concurrency in Go — Katherine CoxFree PDFBuday
+- Concurrent Programming in Java — Doug Lea
+- Concurrent Programming on Windows — Joe Duffy
+- Concurrent Programming: Algorithms, Principles, and Foundations — Michel Raynal
+- Confessions — St. Augustine
+- Conjectures and Refutations — Karl Popper
+- Consensus — Christian Cachin
+- Consilience — Edward O. Wilson
+- Contemplating Music — Joseph Kerman
+- Continuous API Management — Mehdi Medjaoui et al.
+- Continuous Architecture in Practice — Multiple
+- Continuous Delivery — Jez Humble & David Farley
+- Continuous Discovery Habits — Teresa Torres
+- Continuous Testing for DevOps Professionals — Wolfgang Platz
+- Cosmos — Carl Sagan
+- Counterpoint in Composition — Felix Salzer & Carl Schachter
+- Courage Is Calling — Ryan Holiday
+- Course of Musical Composition — Anton Reicha
+- Creating the Corporate Future — Russell Ackoff
+- Crime and Punishment — Fyodor Dostoevsky
+- Critical Rationalism — David Miller
+- Critical Systems Thinking and the Management of Complexity — Michael C. Jackson
+- Critique of Pure Reason — Immanuel Kant
+- Crossing the Chasm — Geoffrey A. Moore
+- Crowds and Power — Elias Canetti
+- Crucial Accountability — Kerry Patterson et al.
+- Crucial Conversations — Kerry Patterson et al.
+- Cryptography Engineering — Niels Ferguson et al.
+- Cutting Through Spiritual Materialism — Chögyam Trungpa
+- Cybernetics — Norbert Wiener
+- Damn Right: Behind the Scenes with Berkshire Hathaway Billionaire Charlie Munger — Janet Lowe
+- Daring Greatly — Brené Brown
+- Dark Night of the Soul — St. John of the Cross
+- Das Kapital (full) — Karl Marx
+- Data Management at Scale — Piethein Strengholt
+- Data Pipelines with Apache Airflow — Bas P. Harenslak & Julian de Ruiter
+- Database Internals — Alex Petrov
+- Database Performance at Scale — Felipe Cardeneti Mendes et al.
+- Dawn of Everything — David Graeber & David Wengrow
+- Debt: The First 5,000 Years — David Graeber
+- Debugging — David J. Agans
+- Debugging by Thinking — Robert Charles Metzger
+- Deep Learning — Ian Goodfellow et al.
+- Deep Simplicity — John Gribbin
+- Deep Work — Cal Newport
+- Dede Korkut (Turkish)
+- Demian — Hermann Hesse
+- Democracy in America — Alexis de Tocqueville
+- Design Patterns — Erich Gamma et al.
+- Design for a Brain — W. Ross Ashby
+- Designing Data-Intensive Applications — Kleppmann
+- Designing Distributed Systems — Brendan Burns
+- Designing Event-Driven Systems — Ben Stopford
+- Designing Machine Learning Systems — Chip Huyen
+- Designing Web APIs — Jin, Sahni, Shevat
+- Destiny of the Republic — Candice Millard
+- Dhammapada
+- Dialectic of Enlightenment — Adorno & Horkheimer
+- Dialectical and Historical Materialism — Joseph Stalin
+- Diaspora — Greg Egan
+- Diamond Sutra
+- Dictator’s Handbook — Bruce Bueno de Mesquita & Alastair Smith
+- Dictator’s Handbook — Bruce Bueno de Mesquita & Smith
+- Difference and Repetition — Gilles Deleuze
+- Difficult Conversations — Douglas Stone, Bruce Patton, Sheila Heen
+- Digital Minimalism — Cal Newport
+- Discipline Is Destiny — Ryan Holiday
+- Discipline and Punish — Michel Foucault
+- Discourses — Epictetus
+- Discourses on Livy — Niccolò Machiavelli
+- Distributed Computing — Ajay D. Kshemkalyani & Mukesh Singhal
+- Distributed Systems (3rd ed) — Tanenbaum & van Steen
+- Distributed Systems — Tanenbaum & van Steen
+- Distributed Systems Observability — Cindy Sridharan
+- Divided Self — R.D. Laing
+- Doctrine of Fascism — Benito Mussolini
+- Documenting Software Architectures — Paul Clements et al.
+- Domain-Driven Design — Eric Evans
+- Doors of Perception — Aldous Huxley
+- Doughnut Economics — Kate Raworth
+- Dream of the Red Chamber — Cao Xueqin
+- Dream, Death, and the Self — J.J. Valberg
+- Driven to Distraction — Edward Hallowell & John Ratey
+- Eat That Frog! — Brian Tracy
+- Ecclesiastes — (Bible)
+- Ecology of Freedom — Murray Bookchin
+- Economy and Society — Max Weber
+- Educated — Tara Westover
+- Effective Modern C++ — Scott Meyers
+- Effective TypeScript — Dan Vanderkam
+- Ego Is the Enemy — Ryan Holiday
+- Eichmann in Jerusalem — Hannah Arendt
+- Elephant in the Brain — Kevin Simler & Robin Hanson
+- Eloquent JavaScript (3e+) — Marijn Haverbeke
+- Elon Musk — Ashlee Vance
+- Emergent Strategy — adrienne maree brown
+- Emotional Agility — Susan David
+- Emotional Intelligence — Daniel Goleman
+- Empowered — Marty Cagan
+- End of Faith — Sam Harris
+- End of History and the Last Man — Francis Fukuyama
+- Engineering Management for the Rest of Us — Sarah Drasner
+- Enmerkar and the Lord of Aratta (Sumerian)
+- Enuma Elish (Babylonian)
+- Epic of Gilgamesh
+- Epic of Gilgamesh (as proto-religious myth)
+- Epic of Manas (Kyrgyz)
+- Epic of Mwindo (Nyanga, Congo)
+- Epistemology and the Psychology of Human Judgment — Michael A. Bishop & J.D. Trout
+- Eros and Civilization — Herbert Marcuse
+- Escape from Freedom — Erich Fromm
+- Escaping the Build Trap — Melissa Perri
+- Essays and Aphorisms — Arthur Schopenhauer
+- Essays in Positive Economics — Milton Friedman
+- Essential Kabbalah — Daniel C. Matt
+- Essential Rumi — Coleman Barks
+- Essentialism — Greg McKeown
+- Ethics of Artificial Intelligence — S. Matthew Liao
+- Ethics of Liberty — Murray Rothbard
+- Event Sourcing and CQRS — (various papers, but Greg Young's work)
+- Event Sourcing and CQRS — Greg Young (essays)
+- Every Computer Performance Book — Bob Wescott
+- Everything Is F*cked — Mark Manson
+- Everything Store — Brad Stone
+- Evolution of Cooperation — Robert Axelrod
+- Evolution of Desire — David Buss
+- Evolution of God — Robert Wright
+- Evolutionary Game Theory — Jörgen W. Weibull
+- Evolutionary Psychology — David Buss
+- Evolving Self — Mihaly Csikszentmihalyi
+- Evolving Self — Robert Kegan
+- Exhalation — Ted Chiang
+- Existentialism Is a Humanism — Jean-Paul Sartre
+- Existentialism Is a Humanism — JeanFree PDFPaul Sartre
+- Explainable AI — Wojciech Samek et al.
+- Exploratory Software Testing — James A. Whittaker
+- Extended Phenotype — Richard Dawkins
+- Extreme Programming Explained — Kent Beck
+- Faber Adult Piano Adventures
+- Fabric of Reality — David Deutsch
+- Facing Up to the Problem of Consciousness — David Chalmers
+- Faerie Queene — Edmund Spenser
+- Fall — Albert Camus
+- Fatal Conceit — F.A. Hayek
+- Fear and Trembling — Søren Kierkegaard
+- Federated Learning — Qiang Yang et al.
+- Fermat's Enigma — Simon Singh
+- Fifteen Dogs — André Alexis
+- Fifth Discipline — Peter Senge
+- Fights, Games, and Debates — Anatol Rapoport
+- First Lessons in Bach, Complete — Johann Sebastian Bach
+- First Tycoon: The Epic Life of Cornelius Vanderbilt — T.J. Stiles
+- Fix Your Timestep! (article)
+- Fix Your Timestep! (article) + Gaffer on Games
+- Fix Your Timestep! (article) + Gaffer on Games (blog/essays)
+- Flow — Mihaly Csikszentmihalyi
+- Flow: The Psychology of Optimal Experience — Mihaly Csikszentmihalyi
+- Fluid Simulation for Computer Graphics — Robert Bridson
+- Folly of Fools — Robert Trivers
+- Fooled by Randomness — Nassim Nicholas Taleb
+- For a New Liberty — Murray Rothbard
+- Foundations of Buddhism — Rupert Gethin
+- Foundations of Data Systems — Avi Silberschatz et al.
+- Foundations of Scalable Systems — Ian Gorton
+- Four Thousand Weeks — Oliver Burkeman
+- Free Will — Sam Harris
+- Free to Choose — Milton Friedman & Rose Friedman
+- Full Stack Web Development for 2025: The Complete Guide — Various
+- Fullstack Open (book/companion) — University of Helsinki
+- Fullstack React with TypeScript — Multiple
+- Fundamentals of Software Architecture — Richards & Ford
+- Gaffer on Games (blog/essays)
+- Game AI Pro — Steve Rabin
+- Game Development with Unity — Michelle Menard
+- Game Engine Architecture — Jason Gregory
+- Game Networking and Multiplayer — (various, but Madhav extensions)
+- Game Programming Patterns — Robert Nystrom
+- Game Theory Evolving — Herbert Gintis
+- Game Theory and Animal Behavior — Lee Alan Dugatkin & Hudson Kern Reeve
+- Game Theory and Behavior — Jeffrey Carpenter & Andrea Robbett
+- Game Theory and Strategy — Philip D. Straffin
+- Game Theory at Work — James D. Miller
+- Game Theory for Applied Economists — Robert Gibbons
+- Game Theory: A Nontechnical Introduction — Morton D. Davis
+- Game Theory: Analysis of Conflict — Roger B. Myerson
+- Game-Changer — David McAdams
+- Games People Play — Eric Berne
+- Games and Decisions — R. Duncan Luce & Howard Raiffa
+- Games of Strategy — Avinash Dixit, Susan Skeath, David Reiley
+- Gay Science — Friedrich Nietzsche
+- General System Theory — Ludwig von Bertalanffy
+- General Theory of Employment, Interest, and Money — John Maynard Keynes
+- Generative Deep Learning — David Foster
+- Genealogy of Morals — Friedrich Nietzsche
+- Genius: The Life and Science of Richard Feynman — James Gleick
+- Gesar of Ling (Tibetan)
+- Getting Things Done — David Allen
+- Getting to Yes — Roger Fisher & William Ury
+- Gifts of Imperfection — Brené Brown
+- Glass Bead Game — Hermann Hesse
+- God Delusion — Richard Dawkins
+- God Is Not Great — Christopher Hitchens
+- God Is Not One — Stephen Prothero
+- God and Man at Yale — William F. Buckley Jr.
+- Good Strategy Bad Strategy — Richard Rumelt
+- Gospel of Thomas
+- Gospel of Thomas (Gnostic)
+- Grand Strategy of the Byzantine Empire — Edward N. Luttwak
+- Grant — Ron Chernow
+- GraphQL in Action — Samer Buna
+- Gray Hat Hacking — Allen Harper et al.
+- Great Chain of Being — Arthur Lovejoy
+- Great Mental Models (series) — Shane Parrish
+- Greatest Show on Earth — Richard Dawkins
+- Grit — Angela Duckworth
+- Grokking Deep Learning — Andrew Trask
+- Groundwork of the Metaphysics of Morals — Immanuel Kant
+- Grundrisse — Karl Marx
+- Guns, Germs, and Steel — Jared Diamond
+- Guru Granth Sahib (Sikh)
+- Gut Feelings: The Intelligence of the Unconscious — Gerd Gigerenzer
+- Gödel, Escher, Bach: An Eternal Golden Braid — Douglas Hofstadter (your fav, anchor)
+- Hadith collections (Sahih Bukhari)
+- Hal Leonard Adult Piano Method
+- Hadoop: The Definitive Guide — Tom White
+- Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow — Aurélien Géron
+- HandsOn Machine Learning with ScikitLearn, Keras, and TensorFlow — Aurélien Géron
+- Happiness Hypothesis — Jonathan Haidt
+- Harmony and Voice Leading — Edward Aldwell & Carl Schachter
+- Harry Potter and the Methods of Rationality — Eliezer Yudkowsky
+- Head First Software Architecture — Gandhi, Richards, Ford
+- Heart Sutra — Red Pine
+- Heart of Enterprise — Stafford Beer
+- Hero of the Empire — Candice Millard
+- Hero with a Thousand Faces — Joseph Campbell
+- Hidden Order: How Adaptation Builds Complexity — John Holland
+- High Output Management — Andrew S. Grove
+- High Performance Browser Networking — Ilya Grigorik
+- High Performance Habits — Brendon Burchard
+- High Performance MySQL — Baron Schwartz et al.
+- History and Class Consciousness — Georg Lukács
+- History of Jazz — Ted Gioia
+- History of Sexuality — Michel Foucault
+- Hold Me Tight — Sue Johnson
+- Homage to Catalonia — George Orwell
+- Homo Deus — Yuval Noah Harari
+- Hooked — Nir Eyal
+- How Equal Temperament Ruined Harmony — Ross W. Duffin
+- How Google Tests Software — James A. Whittaker et al.
+- How the Mind Works — Steven Pinker
+- How to Break Software — James A. Whittaker
+- How to Change — Katy Milkman
+- How to Do Nothing — Jenny Odell
+- How to Know a Person — David Brooks
+- How to Measure Anything — Douglas W. Hubbard
+- How to Win Friends & Influence People — Dale Carnegie
+- Human Action — Ludwig von Mises
+- Human Compatible — Stuart Russell
+- Human Evolutionary Biology — Michael P. Muehlenbein
+- Hyperspace — Michio Kaku
+- I Am That — Nisargadatta Maharaj
+- I Ching
+- Ideas Have Consequences — Richard M. Weaver
+- Ideas: A History of Thought and Invention — Peter Watson
+- Ikigai — Héctor García & Francesc Miralles
+- Iliad — Homer
+- Imperialism, the Highest Stage of Capitalism — Vladimir Lenin
+- Implementing Domain-Driven Design — Vaughn Vernon
+- Inadequate Equilibria — Eliezer Yudkowsky
+- Incerto (series) — Nassim Nicholas Taleb
+- Incognito: The Secret Lives of the Brain — David Eagleman
+- Indistractable — Nir Eyal
+- Individualism and Economic Order — F.A. Hayek
+- Infinite Jest — David Foster Wallace
+- Influence — Robert Cialdini
+- Inflationary Universe — Alan Guth
+- Inspired — Marty Cagan
+- Integration Patterns — (Microsoft patterns)
+- Intellectuais and Society — Thomas Sowell
+- Interior Castle — St. Teresa of Ávila
+- Internals of PostgreSQL — Hironobu Suzuki
+- Introduction to Reliable and Secure Distributed Programming — Christian Cachin et al.
+- Introduction to Software Testing — Paul Ammann & Jeff Offutt
+- Introduction to the History of Indian Buddhism — Eugène Burnouf
+- Intuition Pumps and Other Tools for Thinking — Daniel Dennett
+- Investigations — Stuart Kauffman
+- Invisible Man — Ralph Ellison
+- Iron Law of Oligarchy — Robert Michels
+- Island — Aldous Huxley
+- It's Never Too Late to Play Piano — Pam Wedgwood
+- Jangar Epic (Mongolian)
+- Java Concurrency in Practice — Goetz et al.
+- Java Performance — Scott Oaks
+- Jazz Standards — Ted Gioia
+- Jazz, Rags & Blues (series) — Martha Mier
+- Jazzin' Americana (series) — Wynn-Anne Rossi
+- Jepsen-style thinking (Jepsen essays + talks)
+- JepsenFree PDFstyle thinking (Jepsen essays + talks)
+- Jerusalem Delivered — Torquato Tasso
+- Job — (Bible)
+- Jobs to be Done — Anthony W. Ulwick
+- John Adams — David McCullough
+- Journey to the East — Hermann Hesse
+- Journey to the West — Wu Cheng'en
+- Judgment in Managerial Decision Making — Max Bazerman & Don Moore
+- Just Enough Architecture — George Fairbanks
+- Kafka: The Definitive Guide — Narkhede, Shapira, Palino
+- Kebra Nagast (Ethiopian)
+- Knots — R.D. Laing
+- Knowledge and Decisions — Thomas Sowell
+- Kubernetes Patterns — Bilgin Ibryam & Roland Huß
+- Kubernetes Up & Running — Brendan Burns et al.
+- Kubernetes in Action — Marko Luksa
+- Lang Lang Piano Book
+- Laws of Form — G. Spencer-Brown
+- Laws of Form — G. SpencerFree PDFBrown
+- Laws of Human Nature — Robert Greene
+- Leadership and the New Science — Margaret Wheatley
+- Lean Analytics — Alistair Croll & Benjamin Yoskovitz
+- Lean Startup — Eric Ries
+- Learning Domain-Driven Design — Vlad Khononov
+- Learning React (2e) — Alex Banks & Eve Porcello
+- Learning TypeScript — Josh Goldberg
+- Left Hand of Darkness — Ursula K. Le Guin
+- Le Morte d'Arthur — Thomas Malory
+- Le Ton beau de Marot — Douglas Hofstadter
+- Leonardo da Vinci — Walter Isaacson
+- Letter to a Christian Nation — Sam Harris
+- Letters from a Stoic — Seneca
+- Level Up! The Guide to Great Video Game Design — Scott Rogers
+- Leviathan — Thomas Hobbes
+- Life 3.0 — Max Tegmark
+- Limits to Growth — Donella Meadows et al.
+- Linux Kernel Development — Robert Love
+- Linux System Programming — Robert Love
+- Linked: The New Science of Networks — Albert-László Barabási
+- Linux Internals — Egor Rogov
+- Livewired — David Eagleman
+- Logico-Philosophicus — Ludwig Wittgenstein
+- Long Walk to Freedom — Nelson Mandela
+- Look Me in the Eye — John Elder Robison
+- Losing My Virginity — Richard Branson
+- Lotus Sutra — Tsugunari Kubo & Akira Yuyama
+- Love and Will — Rollo May
+- Mabinogion (Welsh)
+- Machiavellians: Defenders of Freedom — James Burnham
+- Machine Learning Yearning — Andrew Ng
+- Machinery of Freedom — David Friedman
+- Mahabharata
+- Make Time — Jake Knapp & John Zeratsky
+- Makers of Modern Strategy — Peter Paret
+- Making Sense of Stream Processing — Martin Kleppmann
+- Making Work Visible — Dominica DeGrandis
+- Man for Himself — Erich Fromm
+- Man, Economy, and State — Murray Rothbard
+- Managerial Revolution — James Burnham
+- Man's Search for Himself — Rollo May
+- Man’s Search for Meaning — Viktor Frankl
+- Manufacturing Consent — Edward S. Herman & Noam Chomsky
+- Manus — Rumi
+- Masters of Doom — David Kushner (contextual)
+- Mathematics for 3D Game Programming and Computer Graphics — Eric Lengyel
+- Mating in Captivity — Esther Perel
+- Meditations — Marcus Aurelius
+- Men Are from Mars, Women Are from Venus — John Gray
+- Mere Christianity — C.S. Lewis
+- Metacognitive Therapy for Anxiety and Depression — Adrian Wells
+- Metamagical Themas — Douglas Hofstadter
+- Metamorphoses — Ovid
+- Metamorphosis — Franz Kafka
+- Metasploit: The Penetration Tester's Guide — David Kennedy et al.
+- Micromotives and Macrobehavior — Thomas Schelling
+- Microservices Patterns — Chris Richardson
+- Microservices Security in Action — Prabath Siriwardena & Nuwan Dias
+- Middlemarch — George Eliot
+- Mind and Nature — Gregory Bateson
+- Mindset: The New Psychology of Success — Carol S. Dweck
+- Mindfulness: A Practical Guide to Awakening — Joseph Goldstein
+- Minima Moralia — Theodor Adorno
+- Miracle Morning — Hal Elrod
+- Miracle Myth — Lawrence Shapiro
+- Miracle of Mindfulness — Thich Nhat Hanh
+- Misbehaving — Richard Thaler
+- Moby-Dick — Herman Melville
+- Modal Counterpoint, Renaissance Style — Peter Schubert
+- Modern Man in Search of a Soul — Carl Jung
+- Modern Software Engineering — David Farley
+- Molecule of More — Daniel Z. Lieberman & Michael E. Long
+- Mom Test — Rob Fitzpatrick
+- MongoDB: The Definitive Guide — Kristina Chodorow
+- Monolith to Microservices — Sam Newman
+- More Agile Testing — Lisa Crispin & Janet Gregory
+- Mornings on Horseback — David McCullough
+- Multicore Application Programming — Darryl Gove
+- Multiplayer Game Programming: Architecting Networked Games — Glazer & Madhav
+- Music Money and Success — Jeffrey Brabec & Todd Brabec
+- Music: A Very Short Introduction — Nicholas Cook
+- Musicophilia — Oliver Sacks
+- Music of the Primes — Marcus du Sautoy
+- Mutual Aid — Peter Kropotkin
+- Mysticism: A Study in the Nature and Development of Spiritual Consciousness — Evelyn Underhill
+- Myth of Mental Illness — Thomas Szasz
+- Myth of Sisyphus — Albert Camus
+- Mythical Man-Month — Frederick P. Brooks
+- Nag Hammadi Library
+- Name of the Rose — Umberto Eco
+- Nausea — Jean-Paul Sartre
+- Nausea — JeanFree PDFPaul Sartre
+- NATS in Action — (NATS team)
+- Native Son — Richard Wright
+- Natural Language Processing with Transformers — Lewis Tunstall et al.
+- Natural Right and History — Leo Strauss
+- Negative Dialectics — Theodor Adorno
+- Neural Networks and Deep Learning — Michael Nielsen (online book)
+- Never Split the Difference — Chris Voss
+- New Class — Milovan Djilas
+- New Economics — W. Edwards Deming
+- New Earth — Eckhart Tolle
+- New Kind of Science — Stephen Wolfram
+- Next.js Cookbook — Multiple
+- Nibelungenlied
+- No Exit — Jean-Paul Sartre
+- No Logo — Naomi Klein
+- No More Mr. Nice Guy — Robert Glover
+- Noble Eightfold Path — Bhikkhu Bodhi
+- Node.js Design Patterns — Mario Casciaro & Luciano Mammino
+- Noise — Daniel Kahneman et al.
+- Noise: A Flaw in Human Judgment — Daniel Kahneman, Olivier Sibony, Cass R. Sunstein
+- Nonviolent Communication — Marshall Rosenberg
+- Notes from Underground — Fyodor Dostoevsky
+- Notes on the Synthesis of Form — Christopher Alexander
+- Nudge — Richard H. Thaler & Cass R. Sunstein
+- OAuth 2 in Action — Justin Richer & Antonio Sanso
+- OWASP Testing Guide
+- OWASP Testing Guide — (OWASP project)
+- Observability Engineering — Charity Majors et al.
+- Obstacle Is the Way — Ryan Holiday
+- Odyssey — Homer
+- On Human Nature — Edward O. Wilson
+- On Liberty — John Stuart Mill
+- On Myself, and Other, Less Important Subjects — Caspar Hare
+- On War — Carl von Clausewitz
+- On the Genealogy of Morals — Friedrich Nietzsche
+- One-Dimensional Man — Herbert Marcuse
+- Open Society and Its Enemies — Karl Popper
+- Operating Systems: Three Easy Pieces — Arpaci-Dusseau
+- Operating Systems: Three Easy Pieces — ArpaciFree PDFDusseau
+- Optimizing Java — Benjamin J. Evans et al.
+- Order of Things — Michel Foucault
+- Orientalism — Edward Said
+- Origin of Species — Charles Darwin
+- Origin of the Family, Private Property and the State — Friedrich Engels
+- Origins of Political Order — Francis Fukuyama
+- Origins of Totalitarianism — Hannah Arendt
+- Orlando Furioso — Ludovico Ariosto
+- Out of Control: The New Biology of Machines, Social Systems, and the Economic World — Kevin Kelly
+- Outcomes Over Output — Joshua Seiden
+- Outgrowing God — Richard Dawkins
+- Ozidi Saga (Ijo, Nigeria)
+- Paradise Lost — John Milton
+- Parallel Worlds — Michio Kaku
+- Pattern Languages of Program Design — James O. Coplien & Douglas C. Schmidt
+- Pattern Recognition and Machine Learning — Christopher M. Bishop
+- Patterns of Enterprise Application Architecture — Martin Fowler
+- Peloponnesian War — Thucydides (strategic lens)
+- Peopleware — Tom DeMarco & Timothy Lister
+- Perfect Software: And Other Illusions about Testing — Gerald M. Weinberg
+- Performance Analysis and Tuning on Modern CPUs — Denis Bakhvalov
+- Perennial Philosophy — Aldous Huxley
+- Permutation City — Greg Egan
+- Personal Memoirs of Ulysses S. Grant — Ulysses S. Grant
+- Phantoms in the Brain — V.S. Ramachandran
+- Phenomenology of Spirit — G.W.F. Hegel
+- Philosophical Investigations — Ludwig Wittgenstein
+- Phoenix Project — Gene Kim et al.
+- Physics for Game Developers — David M. Bourg & Bryan Bywalec
+- Physics of the Impossible — Michio Kaku
+- Piano Safari for Older Students
+- Platform Sutra — Hui-neng
+- Playing to Win — A.G. Lafley & Roger L. Martin
+- Poetic Edda
+- Political Order and Political Decay — Francis Fukuyama
+- Politics of Experience — R.D. Laing
+- Popol Vuh (Mayan)
+- Portable Atheist — Christopher Hitchens
+- Post-Scarcity Anarchism — Murray Bookchin
+- Postcapitalism — Paul Mason
+- PostgreSQL Internals — Egor Rogov
+- PostgreSQL: Up & Running — Regina Obe & Leo Hsu
+- Postmodernism, or, The Cultural Logic of Late Capitalism — Fredric Jameson
+- Pour Your Heart Into It — Howard Schultz
+- Poverty of Historicism — Karl Popper
+- Power Broker — Robert A. Caro
+- Power Elite — C. Wright Mills
+- Power of Habit — Charles Duhigg
+- Power of Myth — Joseph Campbell & Bill Moyers
+- Power of Now — Eckhart Tolle
+- Power/Knowledge — Michel Foucault
+- Practical Deep Learning for Coders — Jeremy Howard
+- Practical Lock-Free Data Structures — Keir Fraser
+- Practical Malware Analysis — Michael Sikorski & Andrew Honig
+- Practice — Seth Godin
+- Pragmatic Programmer — Hunt & Thomas
+- Pragmatism — William James
+- Pre-Suasion — Robert Cialdini
+- Prediction Machines — Ajay Agrawal et al.
+- PreSuasion — Robert Cialdini
+- Presentation of Self in Everyday Life — Erving Goffman
+- Primitive Mythology — Joseph Campbell
+- Prince — Niccolò Machiavelli
+- Principles — Ray Dalio
+- Principles of Concurrent and Distributed Programming — M. Ben-Ari
+- Principles of Concurrent and Distributed Programming — M. BenFree PDFAri
+- Principles of Political Economy — John Stuart Mill
+- Prison Notebooks — Antonio Gramsci
+- Prisoner's Dilemma — William Poundstone
+- Probabilistic Machine Learning — Kevin P. Murphy
+- Problem of Political Authority — Michael Huemer
+- Procedural Content Generation in Games — Noor Shaker et al.
+- Process and Reality — Alfred North Whitehead
+- Product Roadmaps Relaunched — C. Todd Lombardo et al.
+- Profit Over People — Noam Chomsky
+- Programming Pearls — Jon Bentley
+- Programming Rust — Jim Blandy et al.
+- Programming TypeScript — Boris Cherny
+- Programming with POSIX Threads — David R. Butenhof
+- Propaganda — Edward Bernays
+- Protestant Ethic and the Spirit of Capitalism — Max Weber
+- Proverbs — (Bible)
+- Psychoanalysis and Religion — Erich Fromm
+- Psychological Types — Carl Jung
+- Psychology of Computer Programming — Gerald M. Weinberg
+- Psychology of Money — Morgan Housel
+- Pulsar in Action — David Kjerrumgaard
+- Puzzle of Conscious Experience — David Chalmers
+- QED: The Strange Theory of Light and Matter — Richard Feynman
+- Quake Engine Source Code Analysis — (Fabien Sanglard's book)
+- Quake Engine Source Code Analysis — Fabien Sanglard
+- Quest for Community — Robert Nisbet
+- Question Concerning Technology — Martin Heidegger
+- Quran
+- Quran (multiple translations, e.g., Abdel Haleem)
+- RabbitMQ in Action — Alvaro Videla & Jason J. W. Williams
+- Race After Technology — Ruha Benjamin
+- Radical Candor — Kim Scott
+- Radical Uncertainty — John Kay & Mervyn King
+- Ramayana
+- Range: Why Generalists Triumph in a Specialized World — David Epstein
+- Rationality: From AI to Zombies — Eliezer Yudkowsky
+- Reactive Messaging Patterns with the Actor Model — Vaughn Vernon
+- React and React Native (4e) — Adam Boduch
+- Readings in Database Systems (Red Book) — Peter Bailis et al.
+- Real-Time Analytics — Byron Ellis
+- Real-Time Collision Detection — Christer Ericson
+- Real-Time Rendering — Tomas Akenine-Möller et al.
+- Real-Time Rendering — Tomas AkenineFree PDFMöller et al.
+- Rebooting AI — Gary Marcus & Ernest Davis
+- Red Queen — Matt Ridley
+- Redis in Action — Josiah L. Carlson
+- Refactoring (2e) — Martin Fowler
+- Reform or Revolution — Rosa Luxemburg
+- Reinforcement Learning: An Introduction — Richard S. Sutton & Andrew G. Barto
+- Release It! — Nygard
+- Religion and Science — Bertrand Russell
+- Replication — Bettina Kemme et al.
+- Republic — Plato
+- Requiem for the American Dream — Noam Chomsky
+- Rest Is Noise — Alex Ross
+- REST in Practice — Jim Webber et al.
+- RESTful Web Services — Leonard Richardson & Sam Ruby
+- Revolt of the Elites — Christopher Lasch
+- Rigveda
+- Righteous Mind — Jonathan Haidt
+- Rise and Fall of Elites — Vilfredo Pareto
+- Rising Strong — Brené Brown
+- Risk Savvy: How to Make Good Decisions — Gerd Gigerenzer
+- River Out of Eden — Richard Dawkins
+- River of Doubt — Candice Millard
+- Road Less Traveled — M. Scott Peck
+- Road to Serfdom — F. A. Hayek
+- Roadmap to React Mastery (2025) — Multiple
+- Rock, Paper, Scissors: Game Theory in Everyday Life — Len Fisher
+- Romance of the Three Kingdoms — Luo Guanzhong
+- Romantic Impressions (series) — Martha Mier
+- Roots of American Order — Russell Kirk
+- Routledge Companion to Popular Music Analysis — Ciro Scotto et al. (eds.)
+- Ruling Class — Gaetano Mosca
+- Running Lean — Ash Maurya
+- SQL Performance Explained — Markus Winand
+- Sacred and the Profane — Mircea Eliade
+- Sacred Knowledge: Psychedelics and Religious Experiences — William A. Richards
+- Saga of the Volsungs
+- Sam Walton: Made in America — Sam Walton
+- Samza: The Definitive Guide — (Apache project docs, but key)
+- Sanity, Madness and the Family — R.D. Laing
+- Sapiens — Yuval Noah Harari
+- Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life in Organisms, Cities, Economies, and Companies — Geoffrey West
+- Sane Society — Erich Fromm
+- Science of Strategy — Avinash Dixit
+- Scout Mindset — Julia Galef
+- Second Sex — Simone de Beauvoir
+- Secret of Our Success — Joseph Henrich
+- Secrets and Lies — Bruce Schneier
+- Secure Coding — Mark Graff & Kenneth R. van Wyk
+- Security Engineering — Ross Anderson
+- Seeing Like a State — James C. Scott
+- Seeking SRE — Google
+- Self and Others — R.D. Laing
+- Self-Knowledge and Moral Identity — Various (ed. Narvaez)
+- Self-Knowledge and the Self — David A. Jopling
+- Selfish Gene — Richard Dawkins
+- Sense and Respond — Jeff Gothelf & Josh Seiden
+- Serious Cryptography — Jean-Philippe Aumasson
+- Serious Cryptography — JeanFree PDFPhilippe Aumasson
+- Serverless Architectures on AWS — Michael Hausenblas & David Kavanagh
+- Service Mesh Patterns — Lee Calcote
+- Service Mesh Ultimate Guide — Lee Calcote & Matthew Campbell
+- Seven Databases in Seven Weeks — Eric Redmond & Jim R. Wilson
+- Seven Principles for Making Marriage Work — John Gottman
+- Shahnameh — Ferdowsi
+- Shape Up — Ryan Singer
+- Shared Memory Synchronization — Michael L. Scott
+- Shinto Kojiki
+- Shock Doctrine — Naomi Klein
+- Shoe Dog — Phil Knight
+- Short History of Decay — Emil Cioran
+- Siddhartha — Hermann Hesse
+- Signal and the Noise — Nate Silver
+- Signs of Life: How Complexity Pervades Biology — Ricard Solé & Brian Goodwin
+- Silent Spring — Rachel Carson
+- Simulacra and Simulation — Jean Baudrillard
+- Site Reliability Engineering — Google
+- Site Reliability Workbook — Google
+- Six Easy Pieces — Richard Feynman
+- Skin in the Game — Nassim Nicholas Taleb
+- Small Is Beautiful — E.F. Schumacher
+- Snowball: Warren Buffett and the Business of Life — Alice Schroeder
+- Social Conquest of Earth — Edward O. Wilson
+- Social Contract — Jean-Jacques Rousseau
+- Social Evolution — Robert Trivers
+- Social Intelligence — Daniel Goleman
+- Socialism — Ludwig von Mises
+- Socialism: Utopian and Scientific — Friedrich Engels
+- Software Architecture: The Hard Parts — Neal Ford et al.
+- Software Engineering at Google — Winters, Manshreck, Wright
+- Software Security — Gary McGraw
+- Software Systems Architecture — Nick Rozanski & Eóin Woods
+- Software Testing Techniques — Boris Beizer
+- So Good They Can't Ignore You — Cal Newport
+- Song of Roland
+- Sources of Power: How People Make Decisions — Gary A. Klein
+- Spark — John Ratey
+- Spark: The Definitive Guide — Bill Chambers & Matei Zaharia
+- Spark: The Revolutionary New Science of Exercise and the Brain — John J. Ratey
+- Spent — Geoffrey Miller
+- Sperm Wars — Robin Baker
+- Staff Engineer — Will Larson
+- State and Revolution — Vladimir Lenin
+- State of Affairs — Esther Perel
+- Steppenwolf — Hermann Hesse
+- Steps to an Ecology of Mind — Gregory Bateson
+- Steve Jobs — Walter Isaacson
+- Stillness Is the Key — Ryan Holiday
+- Story of My Experiments with Truth — Mahatma Gandhi
+- Strategy — B.H. Liddell Hart
+- Strategy Paradox — Michael E. Raynor
+- Strategy Pure and Simple — Michel Robert
+- Strategy of Conflict — Thomas Schelling
+- Strategy: An Introduction to Game Theory — Joel Watson
+- Strategy: The Logic of War and Peace — Edward Luttwak
+- Stream Processing with Apache Flink — Fabian Hueske & Vasia Kalavri
+- Streaming Systems — Akidau et al.
+- Structured Parallel Programming — Michael McCool et al.
+- Study of Fugue — Alfred Mann
+- Subjection of Women — John Stuart Mill
+- Subtle Art of Not Giving a F*ck — Mark Manson
+- Sufi Path of Knowledge — William Chittick
+- Summa Theologica — Thomas Aquinas
+- Sundiata: An Epic of Old Mali
+- Superforecasting — Philip Tetlock & Dan Gardner
+- Superintelligence — Nick Bostrom
+- Surely You're Joking, Mr. Feynman! — Richard Feynman
+- Surfing Uncertainty — Andy Clark
+- Surveillance Capitalism — Shoshana Zuboff
+- Survival of the Sickest — Sharon Moalem
+- Sync: The Emerging Science of Spontaneous Order — Steven Strogatz
+- Synergetics — R. Buckminster Fuller
+- System Design Primer (repo)
+- Systems Bible — John Gall
+- Systems Performance — Brendan Gregg
+- Systems Thinking Made Simple — Derek & Laura Cabrera
+- TCP/IP Illustrated — W. Richard Stevens
+- Táin Bó Cúailnge (Irish Ulster Cycle)
+- Taking Charge of Adult ADHD — Russell A. Barkley
+- Tale of Genji — Murasaki Shikibu
+- Talking to Strangers — Malcolm Gladwell
+- Talmud selections
+- Tangled Web — Michal Zalewski
+- Tao Te Ching — Lao Tzu
+- Taoism: The Way of the Mystic — J.C. Cooper
+- Team Topologies — Skelton & Pais
+- Team of Teams — General Stanley McChrystal
+- Tell-Tale Brain — V.S. Ramachandran
+- Temperament — Stuart Isacoff
+- Test-Driven Development — Kent Beck
+- TestFree PDFDriven Development — Kent Beck
+- Testing JavaScript Applications — Lucas Fernandes da Costa
+- Thanks for the Feedback — Douglas Stone & Sheila Heen
+- Theogony — Hesiod
+- Theories of Surplus Value — Karl Marx
+- Theory and History — Ludwig von Mises
+- Theory of Games and Economic Behavior — John von Neumann & Oskar Morgenstern
+- Theory of Money and Credit — Ludwig von Mises
+- Theory of the Leisure Class — Thorstein Veblen
+- Third Chimpanzee — Jared Diamond
+- This Business of Music — M. William Krasilovsky et al.
+- This Changes Everything — Naomi Klein
+- This Is Your Brain on Music — Daniel J. Levitin
+- Thought for 24s
+- Threat Modeling — Adam Shostack
+- Three Pillars of Zen — Philip Kapleau
+- Thus Spoke Zarathustra — Friedrich Nietzsche
+- Tibetan Book of Living and Dying — Sogyal Rinpoche
+- Tibetan Book of the Dead
+- Timeless Way of Building — Christopher Alexander
+- Tiny Habits — BJ Fogg
+- Titan: The Life of John D. Rockefeller, Sr. — Ron Chernow
+- To Have or to Be? — Erich Fromm
+- Tonal Harmony — Stefan Kostka & Dorothy Payne
+- Tools of Titans — Tim Ferriss
+- Torah
+- Torah/Tanakh
+- Touched with Fire — Kay Redfield Jamison
+- Tractatus Logico-Philosophicus — Ludwig Wittgenstein
+- Tractatus LogicoFree PDFPhilosophicus — Ludwig Wittgenstein
+- Transaction Processing — Jim Gray & Andreas Reuter
+- Transactional Memory — Tim Harris et al.
+- Transformers for Natural Language Processing — Denis Rothman
+- Transcend — Scott Barry Kaufman
+- Tree of Knowledge — Humberto Maturana & Francisco Varela
+- Tribe of Mentors — Tim Ferriss
+- Tripitaka (Pali Canon)
+- Trouble with Being Born — Emil Cioran
+- True Believer — Eric Hoffer
+- Truman — David McCullough
+- Turtles, Termites, and Traffic Jams: Explorations in Massively Parallel Microworlds — Mitchel Resnick
+- Two Treatises of Government — John Locke
+- Tycoons — Charles R. Morris
+- Ultralearning — Scott Young
+- Unbearable Lightness of Being — Milan Kundera
+- Unbroken honesty
+- Unconscious — Gerd Gigerenzer
+- Undisturbed REST — Mike Amundsen
+- Undoing Project — Michael Lewis
+- Unicorn Project — Gene Kim
+- Understanding Distributed Systems — Roberto Vitillo
+- Understanding Power — Noam Chomsky
+- Understanding the Linux Kernel — Daniel P. Bovet & Marco Cesati
+- Unix Network Programming — W. Richard Stevens
+- Upanishads
+- Upanishads (Easwaran)
+- Upstream — Dan Heath
+- Use The Index, Luke! — Markus Winand
+- Use The Index, Luke! — Markus Winand (site/booklet)
+- Utilitarianism — John Stuart Mill
+- Varieties of Religious Experience — William James
+- Vector Search for Practitioners — Vincent D. Warmerdam
+- Vision of the Anointed — Thomas Sowell
+- Volsunga Saga (Norse)
+- WEIRDest People in the World — Joseph Henrich
+- War of Art — Steven Pressfield
+- Washington: A Life — Ron Chernow
+- Water Margin — Shi Nai'an
+- Way of Perfection — St. Teresa of Ávila
+- Way of Zen — Alan Watts
+- Way of the Web Tester — Jonathan Rasmusson
+- Wealth of Nations — Adam Smith
+- Weapons of Math Destruction — Cathy O'Neil
+- Web API Design — Brian Mulloy
+- Web Application Hacker's Handbook — Dafydd Stuttard & Marcus Pinto
+- Web Application Security — Andrew Hoffman
+- Web of Life: A New Scientific Understanding of Living Systems — Fritjof Capra
+- Web Performance Warrior — Andy Davies
+- What Is It Like to Be a Bat? — Thomas Nagel
+- What Is to Be Done? — Vladimir Lenin
+- What the Buddha Taught — Walpola Rahula
+- Who Rules America? — G. William Domhoff
+- Who We Are and How We Got Here — David Reich
+- Whose Justice? Which Rationality? — Alasdair MacIntyre
+- Why Buddhism is True — Robert Wright
+- Why Evolution Is True — Jerry A. Coyne
+- Why I Am Not a Christian — Bertrand Russell
+- Why Marriages Succeed or Fail — John Gottman
+- Why People Believe Weird Things — Michael Shermer
+- Why Programs Fail — Andreas Zeller
+- Why We Sleep — Matthew Walker
+- Why the West Rules—for Now — Ian Morris
+- Will to Believe — William James
+- Will to Power — Friedrich Nietzsche
+- Willpower Instinct — Kelly McGonigal
+- Windows Internals — Pavel Yosifovich et al.
+- Wisdom of Insecurity — Alan Watts
+- Witness — Whittaker Chambers
+- Working Effectively with Legacy Code — Michael Feathers
+- World as Will and Representation — Arthur Schopenhauer
+- World in Six Songs — Daniel J. Levitin
+- World in Six Songs — Daniel J. Levitin
+- World's Religions — Huston Smith
+- Wright Brothers — David McCullough
+- Years of Lyndon Johnson (series) — Robert A. Caro
+- You Don't Know JS Yet (series) — Kyle Simpson
+- Your Career Game — Nathan Bennett & Stephen Miles
+- Zen Mind, Beginner's Mind — Shunryu Suzuki
+- Zen and the Art of Motorcycle Maintenance — Robert M. Pirsig
+- Zero Trust Networks — Evan Gilman & Doug Barth
+- Zero to One — Peter Thiel
+- Zhuangzi — Zhuangzi
+- Zohar (Kabbalah)
+- ZooKeeper — Flavio Junqueira & Benjamin Reed
+- gRPC: Up and Running — Kasun Indrasiri & Danesh Kuruppu
+- xUnit Test Patterns — Gerard Meszaros

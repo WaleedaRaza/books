@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block title %}{{ book.title }} - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel">
+    <div style="display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap;">
+        <div style="text-align: center;">
+            <div style="font-size: 80px;">📖</div>
+            <span class="scroll-status {{ book.status.lower() }}" style="margin-top: 15px;">{{ book.status }}</span>
+        </div>
+        
+        <div style="flex: 1; min-width: 250px;">
+            <h2 style="font-family: 'Press Start 2P'; font-size: 12px; color: var(--white); margin-bottom: 10px; line-height: 1.5;">
+                {{ book.title }}
+            </h2>
+            <p style="font-size: 18px; color: var(--gray); margin-bottom: 25px;">
+                by {{ book.author }}
+            </p>
+            
+            {% if book.pdf_path %}
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px;">
+                <a href="{{ url_for('serve_pdf', filename=book.pdf_path) }}" target="_blank" class="btn-stone">
+                    📄 OPEN PDF
+                </a>
+                <a href="{{ url_for('download_book_pdf', book_id=book.id) }}" class="btn-cyan">
+                    ⬇️ DOWNLOAD
+                </a>
+            </div>
+            {% endif %}
+            
+            <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px;">
+                <button class="btn-cyan" onclick="alert('Coming soon')">
+                    ADD TO MY LIST
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% if pdf_links %}
+<div class="scroll-panel scroll-panel-dark">
+    <div class="panel-header">
+        <span class="icon">🔗</span>
+        <h2>DOWNLOAD SOURCES</h2>
+    </div>
+    
+    {% for pdf_link in pdf_links %}
+    <div style="background: var(--black); padding: 15px; border: 1px solid var(--gray-dark); margin-bottom: 10px;">
+        <div style="font-size: 14px; color: var(--cyan); word-break: break-all; margin-bottom: 8px;">
+            {{ pdf_link.url }}
+        </div>
+        <div style="display: flex; gap: 20px; align-items: center; flex-wrap: wrap;">
+            <span style="font-size: 12px; color: var(--gray);">
+                {{ pdf_link.source|upper }}
+            </span>
+            <span style="font-size: 12px; color: var(--gray);">
+                Score: {{ pdf_link.score|int }}
+            </span>
+            <a href="{{ pdf_link.url }}" target="_blank" class="btn-stone" style="font-size: 9px; padding: 8px 14px;">
+                OPEN
+            </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div style="text-align: center; margin-top: 20px;">
+    <a href="{{ url_for('index') }}" class="btn-cyan">← BACK TO LIBRARY</a>
+</div>
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Downloading - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-dark">
+    <div class="panel-header">
+        <span class="icon">📥</span>
+        <h2>DOWNLOADING</h2>
+    </div>
+    
+    {% if queue.active_downloads %}
+    <div style="margin-bottom: 30px;">
+        {% for download in queue.active_downloads %}
+        <div style="background: var(--black); padding: 15px; border: 1px solid var(--gray-dark); margin-bottom: 10px;">
+            <div style="font-size: 14px; color: var(--white); margin-bottom: 10px; word-break: break-all;">
+                {{ download.url[:70] }}{% if download.url|length > 70 %}...{% endif %}
+            </div>
+            <div class="progress-sarcophagus">
+                <div class="progress-fill" style="width: {{ download.progress }}%;">
+                    {{ download.progress }}%
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    <div style="display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; margin-bottom: 30px;">
+        {% if queue.queued > 0 %}
+        <div style="text-align: center;">
+            <div style="font-size: 32px; color: var(--gray);">📋</div>
+            <div style="font-family: 'Press Start 2P'; font-size: 9px; color: var(--gray);">{{ queue.queued }} QUEUED</div>
+        </div>
+        {% endif %}
+        
+        {% if queue.completed > 0 %}
+        <div style="text-align: center;">
+            <div style="font-size: 32px; color: var(--green);">✅</div>
+            <div style="font-family: 'Press Start 2P'; font-size: 9px; color: var(--green);">{{ queue.completed }} DONE</div>
+        </div>
+        {% endif %}
+        
+        {% if queue.failed > 0 %}
+        <div style="text-align: center;">
+            <div style="font-size: 32px; color: var(--red);">❌</div>
+            <div style="font-family: 'Press Start 2P'; font-size: 9px; color: var(--red);">{{ queue.failed }} FAILED</div>
+        </div>
+        {% endif %}
+    </div>
+    
+    {% if not queue.active_downloads and queue.queued == 0 %}
+    <div class="empty-state">
+        <span class="icon">✅</span>
+        <h3>ALL DONE</h3>
+        <p>Downloads complete. Books added to the library.</p>
+        <a href="{{ url_for('index') }}" class="btn-stone">VIEW LIBRARY</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

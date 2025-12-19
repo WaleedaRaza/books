@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}Get Books - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">📥</span>
+        <h2>GET PDF BOOKS</h2>
+    </div>
+    
+    <p style="color: var(--gray); margin-bottom: 20px;">
+        Check our library first. If we don't have it, we'll find it online and add it to the collection.
+    </p>
+    
+    <div class="process-steps">
+        <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-title">REQUEST</div>
+            <div class="step-desc">Paste your book list</div>
+        </div>
+        <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-title">CHECK</div>
+            <div class="step-desc">We check our 1500+ library</div>
+        </div>
+        <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-title">FIND</div>
+            <div class="step-desc">Search web for missing ones</div>
+        </div>
+        <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-title">DOWNLOAD</div>
+            <div class="step-desc">Get your PDFs instantly</div>
+        </div>
+    </div>
+</div>
+
+<div class="two-col">
+    <div class="scroll-panel">
+        <div class="panel-header">
+            <span class="icon">📝</span>
+            <h2>PASTE YOUR LIST</h2>
+        </div>
+        
+        <p style="color: var(--gray); margin-bottom: 15px;">
+            One book per line. Format: <span style="color: var(--cyan);">Title - Author</span>
+        </p>
+        
+        <form method="POST" action="{{ url_for('discover') }}">
+            <textarea 
+                name="book_list" 
+                class="inscription-area"
+                placeholder="The 48 Laws of Power - Robert Greene
+Meditations - Marcus Aurelius
+Thinking in Systems - Donella Meadows
+The Prince - Niccolo Machiavelli
+Antifragile - Nassim Taleb
+
+Paste your book list here..."
+                required></textarea>
+            
+            <div style="margin-top: 15px;">
+                <button type="submit" class="btn-stone">FIND THESE BOOKS</button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="scroll-panel scroll-panel-dark">
+        <div class="panel-header">
+            <span class="icon">✨</span>
+            <h2>GENERATE A LIST</h2>
+        </div>
+        
+        <p style="color: var(--gray); margin-bottom: 15px;">
+            Don't have a list? Tell us what you want to learn.
+        </p>
+        
+        <form method="POST" action="{{ url_for('generate_list') }}">
+            <textarea 
+                name="prompt" 
+                class="inscription-area"
+                style="min-height: 120px;"
+                placeholder="Examples:
+- 10 best books on stoic philosophy
+- Top investing books for beginners  
+- Classic military strategy books
+- Books every programmer should read"
+                required></textarea>
+            
+            <div style="margin-top: 15px;">
+                <button type="submit" class="btn-cyan">GENERATE BOOKLIST</button>
+            </div>
+        </form>
+        
+        <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--gray-dark);">
+            <p style="color: var(--gray); font-size: 14px;">
+                <strong style="color: var(--green);">TIP:</strong> 
+                The AI will generate a reading list, then you can send it to be found.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="scroll-panel">
+    <div class="panel-header">
+        <span class="icon">🔄</span>
+        <h2>HOW IT WORKS</h2>
+    </div>
+    
+    <div class="feature-grid">
+        <div class="feature-card">
+            <h3>📚 THE LIBRARY</h3>
+            <p>We have 1500+ PDFs already. Most requests are instant downloads from our collection.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>🔍 THE SEARCH</h3>
+            <p>If we don't have a book, we search Archive.org, open repositories, and academic sources.</p>
+        </div>
+        
+        <div class="feature-card">
+            <h3>📤 THE GROWTH</h3>
+            <p>When you download a PDF we found, it gets added to our library. Everyone benefits.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}API - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">⚡</span>
+        <h2>THE ALEXANDRIA API</h2>
+    </div>
+    
+    <p style="color: var(--gray); margin-bottom: 20px; font-size: 18px;">
+        Use our library programmatically, or run the whole thing yourself.
+    </p>
+</div>
+
+<div class="two-col">
+    <div class="scroll-panel">
+        <div class="panel-header">
+            <span class="icon">🌐</span>
+            <h2>USE OUR LIBRARY</h2>
+        </div>
+        
+        <p style="color: var(--gray); margin-bottom: 20px;">
+            Access 1500+ books through our API. Free for personal use.
+        </p>
+        
+        <div class="api-box">
+            <h3>SEARCH BOOKS</h3>
+            <p><code>GET /api/search?q=meditations</code></p>
+            <p>Returns matching books from our library.</p>
+        </div>
+        
+        <div class="api-box">
+            <h3>GET BOOK INFO</h3>
+            <p><code>GET /api/book/{id}</code></p>
+            <p>Returns metadata and download links.</p>
+        </div>
+        
+        <div class="api-box">
+            <h3>LIBRARY STATS</h3>
+            <p><code>GET /api/stats</code></p>
+            <p>Current library statistics.</p>
+        </div>
+    </div>
+    
+    <div class="scroll-panel scroll-panel-dark">
+        <div class="panel-header">
+            <span class="icon">🛠️</span>
+            <h2>RUN IT YOURSELF</h2>
+        </div>
+        
+        <p style="color: var(--gray); margin-bottom: 20px;">
+            The entire system is open. Clone it, run your own library.
+        </p>
+        
+        <div class="api-box">
+            <h3>THE STACK</h3>
+            <p>Python + Flask + SQLite</p>
+            <p>No JavaScript frameworks. Pure Python.</p>
+        </div>
+        
+        <div class="api-box">
+            <h3>DISCOVERY ENGINE</h3>
+            <p>Uses DuckDuckGo search API</p>
+            <p>Scores and ranks PDF sources by reliability.</p>
+        </div>
+        
+        <div class="api-box">
+            <h3>SMART RENAMING</h3>
+            <p>Auto-renames downloaded PDFs</p>
+            <p>Format: <code>Title - Author.pdf</code></p>
+        </div>
+    </div>
+</div>
+
+<div class="scroll-panel">
+    <div class="panel-header">
+        <span class="icon">🔄</span>
+        <h2>THE PERPETUAL LIBRARY MODEL</h2>
+    </div>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin-top: 15px;">
+        <div style="text-align: center; padding: 20px;">
+            <div style="font-size: 48px; margin-bottom: 15px;">👤</div>
+            <h3 style="font-family: 'Press Start 2P'; font-size: 10px; color: var(--pyramid); margin-bottom: 10px;">THE LIBRARIAN</h3>
+            <p style="color: var(--gray);">
+                Waleed maintains the core library of 1500+ books. He works with AI to find and add new books constantly.
+            </p>
+        </div>
+        
+        <div style="text-align: center; padding: 20px;">
+            <div style="font-size: 48px; margin-bottom: 15px;">👥</div>
+            <h3 style="font-family: 'Press Start 2P'; font-size: 10px; color: var(--cyan); margin-bottom: 10px;">THE USERS</h3>
+            <p style="color: var(--gray);">
+                Friends request books. If it's in the library, instant download. If not, the search begins.
+            </p>
+        </div>
+        
+        <div style="text-align: center; padding: 20px;">
+            <div style="font-size: 48px; margin-bottom: 15px;">📈</div>
+            <h3 style="font-family: 'Press Start 2P'; font-size: 10px; color: var(--green); margin-bottom: 10px;">THE GROWTH</h3>
+            <p style="color: var(--gray);">
+                Every new PDF found gets added to the library. Every user makes it better for the next.
+            </p>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px; padding: 20px; background: var(--black); border: 1px solid var(--pyramid-dark);">
+        <p style="font-family: 'Press Start 2P'; font-size: 11px; color: var(--pyramid);">
+            YOU DOWNLOAD → YOU CONTRIBUTE → THE LIBRARY GROWS
+        </p>
+    </div>
+</div>
+{% endblock %}

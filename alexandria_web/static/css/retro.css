@@ -1,0 +1,249 @@
+/* Retro 8-bit specific styles */
+
+/* Book Grid */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-card {
+    border: 2px solid var(--border-gray);
+    padding: 15px;
+    background: var(--bg-darker);
+    transition: all 0.3s;
+    position: relative;
+}
+
+.book-card:hover {
+    border-color: var(--border-green);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+    transform: translateY(-2px);
+}
+
+.book-card::before {
+    content: '┌';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    color: var(--border-green);
+    font-size: 16px;
+}
+
+.book-card::after {
+    content: '┘';
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    color: var(--border-green);
+    font-size: 16px;
+}
+
+.book-cover {
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 1;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 65, 0.3));
+}
+
+.book-title {
+    font-weight: bold;
+    color: var(--text-white);
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.3;
+    min-height: 40px;
+}
+
+.book-author {
+    color: var(--text-gray);
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.book-status {
+    display: inline-block;
+    padding: 4px 8px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border: 1px solid;
+}
+
+.status-ready {
+    color: var(--success-green);
+    border-color: var(--success-green);
+    background: rgba(0, 255, 0, 0.1);
+}
+
+.status-downloading {
+    color: var(--warning-yellow);
+    border-color: var(--warning-yellow);
+    background: rgba(255, 255, 0, 0.1);
+}
+
+.status-searching {
+    color: var(--accent-blue);
+    border-color: var(--accent-blue);
+    background: rgba(0, 128, 255, 0.1);
+}
+
+.status-not_found {
+    color: var(--error-red);
+    border-color: var(--error-red);
+    background: rgba(255, 0, 0, 0.1);
+}
+
+.btn-view,
+.btn-download {
+    display: inline-block;
+    padding: 6px 12px;
+    background: var(--text-green);
+    color: var(--bg-dark);
+    text-decoration: none;
+    border: 1px solid var(--border-green);
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: all 0.2s;
+}
+
+.btn-view:hover,
+.btn-download:hover {
+    background: var(--text-amber);
+    border-color: var(--text-amber);
+    transform: scale(1.05);
+}
+
+/* Search Bar */
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.search-form input[type="text"],
+.search-form input[type="search"] {
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-form select {
+    min-width: 150px;
+}
+
+/* Progress Bars */
+.progress-bar-container {
+    background: var(--bg-darker);
+    border: 1px solid var(--border-gray);
+    padding: 2px;
+    margin: 10px 0;
+}
+
+.progress-bar {
+    background: var(--text-green);
+    height: 20px;
+    transition: width 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bg-dark);
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.progress-bar-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: var(--text-green);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* ASCII Art Elements */
+.ascii-divider {
+    color: var(--border-gray);
+    text-align: center;
+    margin: 20px 0;
+    font-family: monospace;
+}
+
+/* Retro Button Styles */
+.btn-retro {
+    background: var(--bg-darker);
+    border: 2px solid var(--border-green);
+    color: var(--text-green);
+    padding: 10px 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.btn-retro:hover {
+    background: var(--text-green);
+    color: var(--bg-dark);
+    box-shadow: 0 0 15px rgba(0, 255, 65, 0.6);
+}
+
+.btn-retro:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+/* Terminal-style output */
+.terminal-output {
+    background: var(--bg-dark);
+    border: 1px solid var(--border-gray);
+    padding: 15px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: var(--text-green);
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.terminal-output .line {
+    margin-bottom: 5px;
+}
+
+.terminal-output .line::before {
+    content: '> ';
+    color: var(--text-amber);
+}
+
+/* Loading Animation */
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.loading {
+    animation: blink 1s infinite;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--border-gray);
+    border: 2px solid var(--bg-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--border-green);
+}
+

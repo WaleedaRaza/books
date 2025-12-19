@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title %}My List - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel">
+    <div class="panel-header">
+        <span class="icon">📋</span>
+        <h2>MY READING LIST</h2>
+    </div>
+    
+    <p style="color: var(--gray); margin-bottom: 20px;">
+        Books you've saved to read. Track your progress.
+    </p>
+    
+    {% if reading_list %}
+    <div class="scroll-grid">
+        {% for book in reading_list %}
+        <div class="scroll-card">
+            <span class="scroll-icon">📖</span>
+            <div class="scroll-title">{{ book.title[:35] }}{% if book.title|length > 35 %}...{% endif %}</div>
+            <div class="scroll-author">{{ book.author }}</div>
+            <span class="scroll-status {{ book.status.lower() }}">{{ book.status }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <span class="icon">📋</span>
+        <h3>NO BOOKS YET</h3>
+        <p>Add books from the library to your reading list.</p>
+        <a href="{{ url_for('index') }}" class="btn-stone">BROWSE LIBRARY</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

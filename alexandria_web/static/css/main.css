@@ -1,0 +1,224 @@
+/* Alexandria Library - Main Stylesheet */
+/* Retro 8-bit terminal aesthetic */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-dark: #0a0a0a;
+    --bg-darker: #1a1a1a;
+    --bg-panel: #252525;
+    --text-green: #00ff41;
+    --text-amber: #ffb000;
+    --text-white: #ffffff;
+    --text-gray: #808080;
+    --accent-blue: #0080ff;
+    --border-gray: #404040;
+    --border-green: #00ff41;
+    --success-green: #00ff00;
+    --warning-yellow: #ffff00;
+    --error-red: #ff0000;
+}
+
+body {
+    font-family: 'Courier New', 'Consolas', 'Monaco', monospace;
+    background: var(--bg-dark);
+    color: var(--text-green);
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.header {
+    border: 2px solid var(--border-green);
+    padding: 20px;
+    margin-bottom: 20px;
+    background: var(--bg-darker);
+    box-shadow: 0 0 10px rgba(0, 255, 65, 0.3);
+}
+
+.ascii-art {
+    color: var(--text-amber);
+    font-size: 10px;
+    margin: 0;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}
+
+.nav {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    border-top: 1px solid var(--border-gray);
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.nav-link {
+    color: var(--text-green);
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: all 0.2s;
+}
+
+.nav-link:hover {
+    color: var(--text-amber);
+    background: var(--bg-panel);
+    text-decoration: underline;
+}
+
+.stats-bar {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-gray);
+}
+
+.stat-ready {
+    color: var(--success-green);
+}
+
+.stat-downloading {
+    color: var(--warning-yellow);
+}
+
+.stat-searching {
+    color: var(--accent-blue);
+}
+
+.stat-total {
+    color: var(--text-white);
+}
+
+/* Main Content */
+.main {
+    flex: 1;
+    padding: 20px 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid var(--border-gray);
+}
+
+.footer-line {
+    color: var(--border-gray);
+    margin-bottom: 10px;
+    font-family: monospace;
+}
+
+.footer-text {
+    color: var(--text-gray);
+    font-size: 12px;
+}
+
+/* Forms */
+input[type="text"],
+input[type="search"],
+textarea,
+select {
+    background: var(--bg-darker);
+    border: 1px solid var(--border-gray);
+    color: var(--text-green);
+    padding: 8px 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: var(--border-green);
+    box-shadow: 0 0 5px rgba(0, 255, 65, 0.3);
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    resize: vertical;
+}
+
+button,
+.btn {
+    background: var(--text-green);
+    color: var(--bg-dark);
+    border: 1px solid var(--border-green);
+    padding: 8px 16px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover,
+.btn:hover {
+    background: var(--text-amber);
+    color: var(--bg-dark);
+    border-color: var(--text-amber);
+    box-shadow: 0 0 10px rgba(255, 176, 0, 0.5);
+}
+
+button:active,
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Links */
+a {
+    color: var(--text-green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--text-amber);
+    text-decoration: underline;
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.panel {
+    background: var(--bg-darker);
+    border: 1px solid var(--border-gray);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.panel-title {
+    color: var(--text-amber);
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--border-gray);
+    padding-bottom: 10px;
+}
+

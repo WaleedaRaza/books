@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Books Found - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">✅</span>
+        <h2>BOOKS FOUND</h2>
+    </div>
+    
+    <p style="color: var(--gray); margin-bottom: 20px;">
+        Select the PDFs you want to download.
+    </p>
+    
+    <form method="POST" action="{{ url_for('queue_downloads') }}">
+        {% for item in books_with_pdfs %}
+        <div style="background: var(--black); border: 1px solid var(--gray-dark); padding: 20px; margin-bottom: 15px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                <span style="font-size: 28px;">📖</span>
+                <div>
+                    <div style="font-family: 'Press Start 2P'; font-size: 10px; color: var(--white);">
+                        {{ item.book.title }}
+                    </div>
+                    <div style="color: var(--gray); font-size: 14px;">by {{ item.book.author }}</div>
+                </div>
+            </div>
+            
+            {% if item.pdf_links %}
+            <div style="margin-left: 43px;">
+                {% for pdf_link in item.pdf_links %}
+                <label style="display: flex; align-items: flex-start; gap: 10px; padding: 10px; background: var(--black-panel); border: 1px solid var(--gray-dark); margin-bottom: 8px; cursor: pointer;">
+                    <input type="checkbox" 
+                           name="pdf_urls" 
+                           value="{{ pdf_link.url }}"
+                           style="margin-top: 4px;"
+                           {% if loop.index == 1 %}checked{% endif %}>
+                    <div style="flex: 1;">
+                        <div style="font-size: 12px; color: var(--cyan); word-break: break-all;">
+                            {{ pdf_link.url[:60] }}{% if pdf_link.url|length > 60 %}...{% endif %}
+                        </div>
+                        <div style="font-size: 11px; color: var(--gray); margin-top: 4px;">
+                            {{ pdf_link.source|upper }} &bull; Score: {{ pdf_link.score|int }}
+                        </div>
+                    </div>
+                </label>
+                {% endfor %}
+            </div>
+            {% elif item.book.status == 'READY' %}
+            <div style="margin-left: 43px; color: var(--green); font-size: 14px;">
+                ✅ Already in library!
+            </div>
+            {% else %}
+            <div style="margin-left: 43px; color: var(--red); font-size: 14px;">
+                ❌ Not found online
+            </div>
+            {% endif %}
+            
+            <input type="hidden" name="book_ids" value="{{ item.book.id }}">
+        </div>
+        {% endfor %}
+        
+        <div style="text-align: center; margin-top: 25px;">
+            <button type="submit" class="btn-stone">DOWNLOAD SELECTED</button>
+            <a href="{{ url_for('index') }}" class="btn-cyan" style="margin-left: 15px;">GO TO LIBRARY</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

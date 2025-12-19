@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block title %}Library - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel">
+    <div class="panel-header">
+        <span class="icon">📚</span>
+        <h2>THE LIBRARY</h2>
+    </div>
+    
+    <form method="GET" action="{{ url_for('index') }}" class="search-bar">
+        <input type="search" 
+               name="search" 
+               class="search-input"
+               placeholder="Search by title or author..." 
+               value="{{ search_query }}">
+        <select name="filter">
+            <option value="">All Books</option>
+            <option value="READY" {% if filter_status == 'READY' %}selected{% endif %}>Available</option>
+            <option value="SEARCHING" {% if filter_status == 'SEARCHING' %}selected{% endif %}>Searching</option>
+        </select>
+        <button type="submit" class="btn-stone">SEARCH</button>
+    </form>
+    
+    {% if books %}
+    <div class="scroll-grid">
+        {% for book in books %}
+        <a href="{{ url_for('view_book', book_id=book.id) }}" class="scroll-card">
+            <span class="scroll-icon">📖</span>
+            <div class="scroll-title">{{ book.title[:35] }}{% if book.title|length > 35 %}...{% endif %}</div>
+            <div class="scroll-author">{{ book.author }}</div>
+            <span class="scroll-status {{ book.status.lower() }}">{{ book.status }}</span>
+        </a>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <span class="icon">📚</span>
+        <h3>NO BOOKS FOUND</h3>
+        <p>Try a different search, or add books to the library.</p>
+        <a href="{{ url_for('discover') }}" class="btn-stone">GET BOOKS</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

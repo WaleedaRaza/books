@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Alexandria{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/alexandria.css') }}">
+    {% if auto_refresh %}
+    <meta http-equiv="refresh" content="2">
+    {% endif %}
+</head>
+<body>
+    <div class="scroll-container">
+        <header class="pyramid-header">
+<pre class="pyramid-ascii">
+                                            ^
+                                           /.\
+                                          / . \
+                                         /  .  \
+                                        /   .   \
+                                       /    .    \
+                                      /     .     \
+                                     /      .      \
+                                    /       .       \
+                                   /   A L E X A N   \
+                                  /    D R I A       \
+                                 /         .          \
+                                /          .           \
+                               /           .            \
+                              /_____________._____________\
+                             /________________________________\
+</pre>
+            <div class="title-cartouche">
+                <h1>ALEXANDRIA</h1>
+            </div>
+            <p class="subtitle">The PDF Library &bull; 1500+ Books &bull; Always Growing</p>
+            
+            <nav class="papyrus-nav">
+                <a href="{{ url_for('index') }}" class="nav-scroll {% if request.endpoint == 'index' %}active{% endif %}">
+                    LIBRARY
+                </a>
+                <a href="{{ url_for('discover') }}" class="nav-scroll {% if request.endpoint == 'discover' %}active{% endif %}">
+                    GET BOOKS
+                </a>
+                <a href="{{ url_for('reading_list') }}" class="nav-scroll {% if request.endpoint == 'reading_list' %}active{% endif %}">
+                    MY LIST
+                </a>
+                <a href="{{ url_for('api_docs') }}" class="nav-scroll {% if request.endpoint == 'api_docs' %}active{% endif %}">
+                    API
+                </a>
+            </nav>
+        </header>
+
+        <div class="temple-frame">
+            <div class="column left">
+                <div class="capital">|</div>
+                <div class="shaft">|<br>|<br>|<br>|<br>|<br>|<br>|</div>
+                <div class="base">|</div>
+            </div>
+            
+            <main class="papyrus-main">
+                {% if stats %}
+                <div class="status-bar">
+                    <span class="stat">{{ stats.total }} books</span>
+                    <span class="stat ready">{{ stats.ready }} available</span>
+                    <span class="stat searching">{{ stats.searching }} searching</span>
+                    <span class="stat downloading">{{ stats.downloading }} downloading</span>
+                </div>
+                {% endif %}
+                
+                {% block content %}{% endblock %}
+            </main>
+            
+            <div class="column right">
+                <div class="capital">|</div>
+                <div class="shaft">|<br>|<br>|<br>|<br>|<br>|<br>|</div>
+                <div class="base">|</div>
+            </div>
+        </div>
+
+        <footer class="temple-footer">
+            <div class="frieze">============================================</div>
+            <div class="motto">Download a book. Upload it back. The library grows forever.</div>
+        </footer>
+    </div>
+</body>
+</html>
