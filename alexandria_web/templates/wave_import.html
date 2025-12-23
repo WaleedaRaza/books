@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Wave Import - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">🌊</span>
+        <h2>WAVE IMPORT</h2>
+    </div>
+    
+    <p style="color: var(--gray); margin-bottom: 20px;">
+        Paste your ranked wave list. Select which waves and how many books from each wave to process.
+    </p>
+    
+    <form method="POST" action="{{ url_for('wave_import_parse') }}">
+        <textarea 
+            name="wave_list" 
+            class="inscription-area"
+            style="min-height: 300px;"
+            placeholder="0001. (W1) The 48 Laws of Power — Robert Greene
+0002. (W1) The Art of Seduction — Robert Greene
+0003. (W2) Some Book — Author Name
+
+Paste your Ranked_Library_Waves.md content here..."
+            required></textarea>
+        
+        <div style="margin-top: 15px;">
+            <button type="submit" class="btn-stone">PARSE WAVES</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+
+
+
+

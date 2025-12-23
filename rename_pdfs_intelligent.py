@@ -1,20 +1,14 @@
 """
 Intelligent PDF Renamer
 Uses knowledge + parsing to rename PDFs to consistent format: "Title - Author.pdf"
-Intelligence-first approach: tries knowledge base matching, falls back to parsing if needed.
 """
 
 import re
 from pathlib import Path
 from difflib import SequenceMatcher
 
-# Try to import comprehensive database, fall back to minimal if not available
-try:
-    from book_database_generated import BOOK_DATABASE
-    print("Loaded comprehensive book database")
-except ImportError:
-    print("Warning: Could not load comprehensive database, using minimal fallback")
-    # Minimal fallback database
+
+# Expanded knowledge base with common title variations
 BOOK_DATABASE = {
     # Robert Greene
     "48 laws": {"title": "The 48 Laws of Power", "author": "Robert Greene"},
@@ -165,66 +159,6 @@ BOOK_DATABASE = {
 }
 
 
-def parse_title_author_from_filename(filename):
-    """
-    Parse title and author from filename when intelligence fails.
-    Handles common patterns like:
-    - "Title - Author.pdf"
-    - "Title — Author.pdf" (em dash)
-    - "Title by Author.pdf"
-    - "Author - Title.pdf"
-    - "Title PDF.pdf" (try to extract from existing PDF names)
-    """
-    stem = Path(filename).stem
-    
-    # Pattern 1: "Title - Author" or "Title — Author"
-    match = re.match(r'^(.+?)\s+[-—–]\s+(.+)$', stem)
-    if match:
-        title = match.group(1).strip()
-        author = match.group(2).strip()
-        # Heuristic: if title is shorter than author, might be reversed
-        if len(title.split()) < len(author.split()) and len(author.split()) > 2:
-            # Likely reversed, swap them
-            title, author = author, title
-        return {"title": title, "author": author}
-    
-    # Pattern 2: "Title by Author"
-    match = re.match(r'^(.+?)\s+by\s+(.+)$', stem, re.IGNORECASE)
-    if match:
-        return {"title": match.group(1).strip(), "author": match.group(2).strip()}
-    
-    # Pattern 3: Remove common suffixes and try to split
-    cleaned = re.sub(r'\s*(PDF|pdf|ebook|e-book|edition|ed\.?|vol\.?|volume)\s*$', '', stem, flags=re.IGNORECASE)
-    
-    # Try splitting on common separators
-    for sep in [' - ', ' — ', ' – ', ' by ', ' BY ']:
-        if sep in cleaned:
-            parts = cleaned.split(sep, 1)
-            if len(parts) == 2:
-                title = parts[0].strip()
-                author = parts[1].strip()
-                # Heuristic: if title is shorter than author, might be reversed
-                if len(title.split()) < len(author.split()) and len(author.split()) > 2:
-                    title, author = author, title
-                return {"title": title, "author": author}
-    
-    # Pattern 4: If filename already looks like "Title Author", try to split intelligently
-    # Remove file extensions, numbers, etc.
-    cleaned = re.sub(r'[_\d\(\)\[\]]+', ' ', cleaned)
-    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
-    
-    # If it's a reasonable length and has multiple words, try last 2-3 words as author
-    words = cleaned.split()
-    if len(words) >= 4:
-        # Common pattern: last name might be author
-        # Try last 2 words as author
-        author = ' '.join(words[-2:])
-        title = ' '.join(words[:-2])
-        return {"title": title, "author": author}
-    
-    return None
-
-
 def normalize_for_search(text):
     """Normalize text for searching."""
     if not text:
@@ -236,30 +170,20 @@ def normalize_for_search(text):
 
 
 def find_book_match(pdf_filename):
-    """
-    Find matching book from database using intelligence.
-    Returns (match_dict, score) where match_dict has 'title' and 'author'.
-    Score >= 0.7 means good match, < 0.7 means fall back to parsing.
-    """
+    """Find matching book from database using intelligence."""
     pdf_norm = normalize_for_search(pdf_filename)
     
     best_match = None
     best_score = 0
     
-    # Strategy 1: Exact key match (highest confidence)
-    if pdf_norm in BOOK_DATABASE:
-        return BOOK_DATABASE[pdf_norm], 1.0
-    
-    # Strategy 2: Key substring match
     for key, book_info in BOOK_DATABASE.items():
         key_norm = normalize_for_search(key)
         title_norm = normalize_for_search(book_info['title'])
         author_norm = normalize_for_search(book_info['author'])
         
-        # Check if key is contained in filename
-        if key_norm in pdf_norm and len(key_norm) > 3:
+        # Check if key matches
+        if key_norm in pdf_norm:
             score = 0.9
-            # Boost if full title also matches
             if title_norm in pdf_norm:
                 score = 1.0
             if score > best_score:
@@ -267,47 +191,19 @@ def find_book_match(pdf_filename):
                 best_score = score
                 continue
         
-        # Strategy 3: Title word overlap (intelligent matching)
+        # Check if title matches
         title_words = set(title_norm.split())
         pdf_words = set(pdf_norm.split())
-        
-        # Remove very common words
-        common_words = {'the', 'a', 'an', 'of', 'in', 'on', 'at', 'to', 'for', 'and', 'or', 'pdf', 'book'}
-        title_words = title_words - common_words
-        pdf_words = pdf_words - common_words
-        
-        if len(title_words) == 0:
-            continue
-            
         title_match = len(title_words.intersection(pdf_words))
         
-        # Require at least 2 significant words to match (or 1 if title is short)
-        min_match = 2 if len(title_words) > 3 else 1
-        
-        if title_match >= min_match:
-            # Calculate score based on overlap ratio
-            overlap_ratio = title_match / len(title_words)
-            score = 0.6 + (overlap_ratio * 0.3)  # 0.6 to 0.9 range
+        if title_match >= 3:  # At least 3 words match
+            score = 0.7 + (title_match / len(title_words)) * 0.2
             
             # Boost if author matches
-            author_words = set(author_norm.split()) - common_words
-            if len(author_words) > 0:
+            author_words = set(author_norm.split())
             author_match = len(author_words.intersection(pdf_words))
             if author_match > 0:
                 score += 0.1
-                    # Extra boost if multiple author words match
-                    if author_match >= 2:
-                        score += 0.05
-            
-            # Boost if key words appear in order
-            title_list = [w for w in title_norm.split() if w not in common_words]
-            pdf_list = [w for w in pdf_norm.split() if w not in common_words]
-            if len(title_list) >= 2:
-                # Check if first 2-3 words of title appear consecutively in PDF
-                for i in range(len(pdf_list) - len(title_list) + 1):
-                    if pdf_list[i:i+min(3, len(title_list))] == title_list[:min(3, len(title_list))]:
-                        score += 0.05
-                        break
             
             if score > best_score:
                 best_match = book_info
@@ -316,50 +212,12 @@ def find_book_match(pdf_filename):
     return best_match, best_score
 
 
-def sanitize_filename(filename):
-    """Remove invalid characters for Windows filenames."""
-    # Windows invalid characters: < > : " / \ | ? *
-    invalid_chars = '<>:"/\\|?*'
-    for char in invalid_chars:
-        filename = filename.replace(char, '-')
-    # Remove leading/trailing spaces and dots (Windows doesn't allow these)
-    filename = filename.strip(' .')
-    # Replace multiple dashes with single dash
-    filename = re.sub(r'-+', '-', filename)
-    return filename
-
-
 def rename_pdf(pdf_file, dry_run=False):
-    """
-    Rename PDF to consistent format: "Title - Author.pdf"
-    Uses intelligence first, falls back to parsing if needed.
-    """
-    # Try intelligence-based matching first
+    """Rename PDF to consistent format."""
     match, score = find_book_match(pdf_file.stem)
     
-    # If intelligence match is good (score >= 0.7), use it
     if match and score >= 0.7:
-        title = match['title']
-        author = match['author']
-        source = "intelligence"
-    else:
-        # Fall back to parsing
-        parsed = parse_title_author_from_filename(pdf_file.name)
-        if parsed:
-            title = parsed['title']
-            author = parsed['author']
-            source = "parsing"
-            score = 0.5  # Lower confidence for parsed matches
-        else:
-            # Can't match or parse, skip this file
-            return False
-    
-    # Sanitize title and author for Windows filenames
-    title = sanitize_filename(title)
-    author = sanitize_filename(author)
-    
-    # Generate consistent filename: "Title - Author.pdf"
-    new_name = f"{title} - {author}.pdf"
+        new_name = f"{match['title']} - {match['author']}.pdf"
         new_path = pdf_file.parent / new_name
         
         # Handle duplicates
@@ -370,19 +228,17 @@ def rename_pdf(pdf_file, dry_run=False):
             new_path = pdf_file.parent / f"{stem} ({counter}).pdf"
             counter += 1
         
-    # Skip if already correctly named
-    if new_path == pdf_file:
-        return True
-    
         if dry_run:
             print(f"Would rename: {pdf_file.name}")
             print(f"           -> {new_path.name}")
-        print(f"           Method: {source}, Score: {score:.2f}\n")
+            print(f"           Score: {score:.2f}\n")
         else:
             pdf_file.rename(new_path)
-        print(f"Renamed: {pdf_file.name} -> {new_path.name} ({source})")
+            print(f"Renamed: {pdf_file.name} -> {new_path.name}")
         
         return True
+    
+    return False
 
 
 def main():
@@ -394,8 +250,7 @@ def main():
     print("Intelligent PDF Renamer")
     print("="*80)
     print("\nThis will rename PDFs to consistent format: 'Title - Author.pdf'")
-    print("Uses intelligence-first matching, falls back to parsing when needed.\n")
-    print(f"Loaded {len(BOOK_DATABASE)} search keys from database\n")
+    print("DRY RUN MODE - No files will be renamed\n")
     
     pdf_files = [f for f in pdf_dir.glob("*.pdf") if not f.name.endswith('.crdownload')]
     
@@ -403,13 +258,13 @@ def main():
     not_matched = []
     
     for pdf_file in pdf_files:
-        if rename_pdf(pdf_file, dry_run=False):  # ACTUALLY RENAME FILES
+        if rename_pdf(pdf_file, dry_run=False):
             renamed += 1
         else:
             not_matched.append(pdf_file.name)
     
     print("="*80)
-    print(f"Summary: {renamed}/{len(pdf_files)} PDFs renamed")
+    print(f"Would rename: {renamed}/{len(pdf_files)} PDFs")
     print(f"Not matched: {len(not_matched)} PDFs")
     
     if not_matched:
@@ -418,7 +273,7 @@ def main():
             print(f"  - {name}")
     
     print("\n" + "="*80)
-    print("DONE - Files have been renamed to consistent format: 'Title - Author.pdf'")
+    print("To actually rename files, change dry_run=False in the code")
     print("="*80)
 
 

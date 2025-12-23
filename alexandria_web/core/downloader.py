@@ -108,3 +108,6 @@ class DownloadManager:
             'failed': len(self.failed_downloads)
         }
 
+
+
+

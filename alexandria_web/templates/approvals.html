@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Pending Approvals - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">⚖️</span>
+        <h2>PENDING APPROVALS</h2>
+    </div>
+    
+    <p style="color: var(--gray); margin-bottom: 20px;">
+        Review and approve books uploaded by users. Only approve legitimate, fair-use PDFs.
+    </p>
+    
+    {% if pending_books %}
+    <div class="scroll-grid">
+        {% for book in pending_books %}
+        <div style="background: var(--black); border: 1px solid var(--gray-dark); padding: 15px;">
+            <div style="font-family: 'Press Start 2P'; font-size: 9px; color: var(--white); margin-bottom: 8px;">
+                {{ book.title[:40] }}{% if book.title|length > 40 %}...{% endif %}
+            </div>
+            <div style="color: var(--gray); font-size: 12px; margin-bottom: 15px;">
+                by {{ book.author }}
+            </div>
+            
+            {% if book.pdf_path %}
+            <div style="margin-bottom: 15px;">
+                <a href="{{ url_for('serve_pdf', filename=book.pdf_path) }}" target="_blank" class="btn-cyan" style="font-size: 9px; padding: 6px 10px;">
+                    PREVIEW PDF
+                </a>
+            </div>
+            {% endif %}
+            
+            <div style="display: flex; gap: 8px;">
+                <form method="POST" action="{{ url_for('approve_book', book_id=book.id) }}" style="display: inline;">
+                    <button type="submit" class="btn-green" style="font-size: 9px; padding: 6px 10px;">
+                        ✓ APPROVE
+                    </button>
+                </form>
+                <form method="POST" action="{{ url_for('reject_book', book_id=book.id) }}" style="display: inline;">
+                    <button type="submit" class="btn-red" style="font-size: 9px; padding: 6px 10px;">
+                        ✗ REJECT
+                    </button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <span class="icon">✅</span>
+        <h3>NO PENDING APPROVALS</h3>
+        <p>All books have been reviewed.</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+
+
+
+

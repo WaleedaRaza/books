@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+
+{% block title %}Download Orchestration - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-dark">
+    <div class="panel-header">
+        <span class="icon">⬇️</span>
+        <h2>DOWNLOAD ORCHESTRATION</h2>
+    </div>
+    
+    <div style="background: var(--black-panel); padding: 20px; margin-bottom: 20px; border: 1px solid var(--pyramid-dark);">
+        <h3 style="font-family: 'Press Start 2P'; font-size: 10px; color: var(--cyan); margin-bottom: 15px;">
+            FINAL STEPS
+        </h3>
+        <ol style="color: var(--white); font-size: 14px; line-height: 2; margin-left: 20px;">
+            <li>Move all PDF tabs to <strong style="color: var(--pyramid);">ONE browser window</strong></li>
+            <li>Be in that window and ready in <strong style="color: var(--pyramid);">5 seconds</strong></li>
+            <li>Specify your download directory below</li>
+            <li>Click "START DOWNLOAD" - the system will detect PDFs and download them</li>
+        </ol>
+    </div>
+    
+    <form id="download-form">
+        <div style="margin-bottom: 20px;">
+            <label style="display: block; color: var(--white); font-size: 14px; margin-bottom: 8px;">
+                Download Directory:
+            </label>
+            <input 
+                type="text" 
+                name="download_dir" 
+                id="download_dir"
+                class="inscription-area"
+                style="min-height: 40px;"
+                placeholder="C:\Users\YourName\Downloads\Alexandria"
+                required>
+            <p style="color: var(--gray); font-size: 12px; margin-top: 5px;">
+                Full path where PDFs should be saved
+            </p>
+        </div>
+        
+        <div style="text-align: center; padding: 20px; background: var(--black); border: 1px solid var(--green-dark);">
+            <div id="countdown" style="font-family: 'Press Start 2P'; font-size: 20px; color: var(--green); margin-bottom: 15px; display: none;">
+                5
+            </div>
+            <button type="button" id="start-btn" class="btn-stone" onclick="startDownload()">
+                START DOWNLOAD
+            </button>
+            <p style="color: var(--gray); font-size: 12px; margin-top: 10px;">
+                Make sure all PDF tabs are in one window before clicking!
+            </p>
+        </div>
+    </form>
+    
+    <div id="download-status" style="display: none; margin-top: 20px; padding: 20px; background: var(--black-panel);">
+        <h3 style="font-family: 'Press Start 2P'; font-size: 10px; color: var(--cyan); margin-bottom: 15px;">
+            DOWNLOAD STATUS
+        </h3>
+        <div id="status-content" style="color: var(--gray);">
+            Preparing download...
+        </div>
+    </div>
+</div>
+
+<script>
+let countdownInterval;
+let countdownValue = 5;
+
+function startDownload() {
+    const downloadDir = document.getElementById('download_dir').value;
+    if (!downloadDir) {
+        alert('Please specify a download directory');
+        return;
+    }
+    
+    document.getElementById('start-btn').style.display = 'none';
+    const countdownEl = document.getElementById('countdown');
+    countdownEl.style.display = 'block';
+    
+    countdownInterval = setInterval(() => {
+        countdownValue--;
+        countdownEl.textContent = countdownValue;
+        
+        if (countdownValue <= 0) {
+            clearInterval(countdownInterval);
+            countdownEl.textContent = 'STARTING...';
+            
+            fetch('/wave-download', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `download_dir=${encodeURIComponent(downloadDir)}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('download-status').style.display = 'block';
+                document.getElementById('status-content').innerHTML = 
+                    '<p style="color: var(--green);">Download started! Monitoring browser downloads...</p>' +
+                    '<p style="color: var(--gray); margin-top: 10px;">The system will detect PDFs as they download and rename them automatically.</p>' +
+                    '<p style="color: var(--cyan); margin-top: 15px;"><strong>Now:</strong> Manually download PDFs from your open tabs. The system will process them automatically.</p>';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Error starting download. Please try again.');
+            });
+        }
+    }, 1000);
+}
+</script>
+{% endblock %}
+
+
+
+
+

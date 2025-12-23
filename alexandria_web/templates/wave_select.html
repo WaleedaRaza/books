@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Select Waves - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">📊</span>
+        <h2>SELECT WAVES</h2>
+    </div>
+    
+    <p style="color: var(--gray); margin-bottom: 20px;">
+        Choose how many books from each wave to process. The system will open tabs for discovery.
+    </p>
+    
+    <form method="POST" action="{{ url_for('wave_import_start') }}">
+        {% for wave, books in waves.items() %}
+        <div style="background: var(--black); border: 1px solid var(--gray-dark); padding: 20px; margin-bottom: 15px;">
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px;">
+                <div>
+                    <h3 style="font-family: 'Press Start 2P'; font-size: 11px; color: var(--pyramid);">
+                        {{ wave }} - {{ books|length }} BOOKS
+                    </h3>
+                    <p style="color: var(--gray); font-size: 14px; margin-top: 5px;">
+                        {% if wave == 'W1' %}Escape velocity + worldview OS{% endif %}
+                        {% if wave == 'W2' %}Expansion{% endif %}
+                        {% if wave == 'W3' %}Deep/primary/reference{% endif %}
+                        {% if wave == 'W4' %}Long tail{% endif %}
+                    </p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input 
+                        type="number" 
+                        name="wave_{{ wave }}" 
+                        value="0" 
+                        min="0" 
+                        max="{{ books|length }}"
+                        style="width: 80px; padding: 8px; background: var(--black-panel); border: 1px solid var(--gray-dark); color: var(--white); font-size: 16px;"
+                        onchange="updateTotal()">
+                    <span style="color: var(--gray);">/ {{ books|length }}</span>
+                </div>
+            </div>
+            
+            {% if books|length <= 10 %}
+            <div style="font-size: 12px; color: var(--gray);">
+                {% for book in books[:5] %}
+                {{ book.number }}. {{ book.title[:40] }}{% if book.title|length > 40 %}...{% endif %}<br>
+                {% endfor %}
+                {% if books|length > 5 %}... and {{ books|length - 5 }} more{% endif %}
+            </div>
+            {% endif %}
+        </div>
+        {% endfor %}
+        
+        <div style="text-align: center; margin-top: 25px; padding: 20px; background: var(--black-panel); border: 1px solid var(--pyramid-dark);">
+            <div style="font-family: 'Press Start 2P'; font-size: 10px; color: var(--cyan); margin-bottom: 10px;">
+                TOTAL SELECTED: <span id="total-selected">0</span> BOOKS
+            </div>
+            <button type="submit" class="btn-stone" id="submit-btn" disabled>START DISCOVERY →</button>
+        </div>
+    </form>
+</div>
+
+<script>
+function updateTotal() {
+    let total = 0;
+    const inputs = document.querySelectorAll('input[type="number"][name^="wave_"]');
+    inputs.forEach(input => {
+        total += parseInt(input.value) || 0;
+    });
+    document.getElementById('total-selected').textContent = total;
+    document.getElementById('submit-btn').disabled = total === 0;
+}
+
+updateTotal();
+</script>
+{% endblock %}
+
+
+
+
+

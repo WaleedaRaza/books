@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block title %}{{ book.title }} - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">📖</span>
+        <h2>{{ book.title }}</h2>
+    </div>
+    
+    <div class="book-details-header">
+        <div class="book-main-info">
+            <div class="book-title-large">{{ book.title }}</div>
+            <div class="book-author-large">by {{ book.author }}</div>
+            {% if book.year %}
+            <div class="book-year-large">{{ book.year }}</div>
+            {% endif %}
+            {% if book.isbn %}
+            <div class="book-isbn">ISBN: {{ book.isbn }}</div>
+            {% endif %}
+        </div>
+        
+        <div class="book-status-badge status-{{ book.status|lower }}">
+            {{ book.status }}
+        </div>
+    </div>
+    
+    {% if book.pdf_path %}
+    <div class="book-actions-large">
+        <a href="{{ url_for('serve_pdf', filename=book.pdf_path) }}" target="_blank" class="btn-view-large">
+            📄 VIEW PDF
+        </a>
+        <a href="{{ url_for('download_pdf', book_id=book.id) }}" class="btn-download-large">
+            ⬇️ DOWNLOAD PDF
+        </a>
+    </div>
+    {% endif %}
+</div>
+
+{% if pdf_links %}
+<div class="scroll-panel scroll-panel-dark">
+    <div class="panel-header">
+        <span class="icon">🔗</span>
+        <h2>PDF SOURCES</h2>
+    </div>
+    
+    <div class="sources-list">
+        {% for link in pdf_links %}
+        <div class="source-item">
+            <div class="source-header">
+                <div class="source-name">{{ link.source|upper }}</div>
+                <div class="source-score">Score: {{ link.score|int }}</div>
+            </div>
+            <div class="source-url">
+                <a href="{{ link.url }}" target="_blank">{{ link.url[:80] }}{% if link.url|length > 80 %}...{% endif %}</a>
+            </div>
+            {% if link.confidence %}
+            <div class="source-confidence">Confidence: {{ "%.0f"|format(link.confidence * 100) }}%</div>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
+<div class="scroll-panel">
+    <div class="panel-header">
+        <span class="icon">📊</span>
+        <h2>METADATA</h2>
+    </div>
+    
+    <div class="metadata-grid">
+        <div class="metadata-item">
+            <div class="metadata-label">Status</div>
+            <div class="metadata-value">{{ book.status }}</div>
+        </div>
+        {% if book.created_at %}
+        <div class="metadata-item">
+            <div class="metadata-label">Added</div>
+            <div class="metadata-value">{{ book.created_at }}</div>
+        </div>
+        {% endif %}
+        {% if book.updated_at %}
+        <div class="metadata-item">
+            <div class="metadata-label">Updated</div>
+            <div class="metadata-value">{{ book.updated_at }}</div>
+        </div>
+        {% endif %}
+        {% if book.pdf_path %}
+        <div class="metadata-item">
+            <div class="metadata-label">PDF File</div>
+            <div class="metadata-value">{{ book.pdf_path }}</div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+
+<div class="scroll-panel">
+    <div class="panel-header">
+        <span class="icon">🔙</span>
+        <h2>NAVIGATION</h2>
+    </div>
+    
+    <div class="nav-actions">
+        <a href="{{ url_for('public_library') }}" class="btn-cyan">← BACK TO LIBRARY</a>
+        <a href="{{ url_for('index') }}" class="btn-stone">MY LIBRARY</a>
+    </div>
+</div>
+{% endblock %}
+
+
+
+
+

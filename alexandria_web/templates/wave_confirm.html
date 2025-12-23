@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Confirm Fair Use - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">⚖️</span>
+        <h2>FAIR USE CONFIRMATION</h2>
+    </div>
+    
+    <div style="background: var(--black-panel); padding: 25px; margin-bottom: 25px; border: 2px solid var(--pyramid-dark);">
+        <h3 style="font-family: 'Press Start 2P'; font-size: 11px; color: var(--pyramid); margin-bottom: 15px;">
+            LEGAL REQUIREMENT
+        </h3>
+        <p style="color: var(--white); font-size: 15px; line-height: 1.6; margin-bottom: 15px;">
+            By proceeding, you confirm that:
+        </p>
+        <ul style="color: var(--gray); font-size: 14px; line-height: 1.8; margin-left: 20px;">
+            <li>All open tabs contain only <strong style="color: var(--green);">fair-use downloadable PDFs</strong></li>
+            <li>You have closed all tabs that are NOT legitimate, free PDF sources</li>
+            <li>You understand that only legally available content should be downloaded</li>
+            <li>You will consolidate all PDF tabs into a single browser window</li>
+        </ul>
+    </div>
+    
+    <form method="POST" action="{{ url_for('wave_confirm') }}">
+        <div style="margin-bottom: 20px;">
+            <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 15px; background: var(--black-panel); border: 1px solid var(--gray-dark);">
+                <input type="checkbox" name="confirmed" required style="width: 20px; height: 20px;">
+                <span style="color: var(--white); font-size: 14px;">
+                    I confirm that only fair-use downloadable PDFs are open in my browser
+                </span>
+            </label>
+        </div>
+        
+        <div style="text-align: center;">
+            <button type="submit" class="btn-stone">CONFIRM & CONTINUE</button>
+            <a href="{{ url_for('wave_tab_orchestration') }}" class="btn-cyan" style="margin-left: 15px;">GO BACK</a>
+        </div>
+    </form>
+</div>
+{% endblock %}
+
+
+
+
+

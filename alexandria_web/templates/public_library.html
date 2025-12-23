@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}Public Library - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-gold">
+    <div class="panel-header">
+        <span class="icon">📚</span>
+        <h2>WALEED'S CURATED LIBRARY</h2>
+    </div>
+    
+    <div class="library-intro">
+        <div class="librarian-badge">
+            <div class="librarian-icon">👨‍💼</div>
+            <div>
+                <h3>Curated by Waleed</h3>
+                <p>Every book is hand-picked and approved. Quality sources only.</p>
+            </div>
+        </div>
+        
+        <div class="library-stats">
+            <div class="stat-item">
+                <div class="stat-big">{{ stats.total }}</div>
+                <div class="stat-label">Total Books</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-big">{{ stats.ready }}</div>
+                <div class="stat-label">Available Now</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-big">{{ stats.pending }}</div>
+                <div class="stat-label">Pending Review</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="scroll-panel">
+    <div class="panel-header">
+        <span class="icon">🔍</span>
+        <h2>BROWSE LIBRARY</h2>
+    </div>
+    
+    <div class="library-controls">
+        <form method="GET" action="{{ url_for('public_library') }}" class="search-form">
+            <input 
+                type="text" 
+                name="search" 
+                value="{{ search_query }}"
+                placeholder="Search books, authors, topics..."
+                class="search-input">
+            <select name="filter" class="filter-select">
+                <option value="">All Books</option>
+                <option value="READY" {% if filter_status == 'READY' %}selected{% endif %}>Available</option>
+                <option value="PENDING_APPROVAL" {% if filter_status == 'PENDING_APPROVAL' %}selected{% endif %}>Pending</option>
+            </select>
+            <select name="sort" class="sort-select">
+                <option value="title" {% if sort_by == 'title' %}selected{% endif %}>Title</option>
+                <option value="author" {% if sort_by == 'author' %}selected{% endif %}>Author</option>
+                <option value="created_at" {% if sort_by == 'created_at' %}selected{% endif %}>Newest</option>
+            </select>
+            <button type="submit" class="btn-cyan">SEARCH</button>
+        </form>
+    </div>
+    
+    {% if books %}
+    <div class="books-grid">
+        {% for book in books %}
+        <div class="book-card-enhanced" data-status="{{ book.status|lower }}">
+            <div class="book-header">
+                <div class="book-title">{{ book.title }}</div>
+                <div class="book-author">by {{ book.author }}</div>
+            </div>
+            
+            <div class="book-meta">
+                <div class="book-status status-{{ book.status|lower }}">
+                    {{ book.status }}
+                </div>
+                {% if book.year %}
+                <div class="book-year">{{ book.year }}</div>
+                {% endif %}
+            </div>
+            
+            {% if book.pdf_path %}
+            <div class="book-actions">
+                <a href="{{ url_for('serve_pdf', filename=book.pdf_path) }}" target="_blank" class="btn-view-pdf">
+                    📄 VIEW PDF
+                </a>
+                <a href="{{ url_for('download_pdf', book_id=book.id) }}" class="btn-download-pdf">
+                    ⬇️ DOWNLOAD
+                </a>
+            </div>
+            {% else %}
+            <div class="book-unavailable">
+                PDF not yet available
+            </div>
+            {% endif %}
+            
+            <div class="book-footer">
+                <a href="{{ url_for('book_details', book_id=book.id) }}" class="book-link">
+                    View Details →
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    
+    <div class="pagination">
+        <!-- Pagination will go here -->
+    </div>
+    {% else %}
+    <div class="empty-state">
+        <span class="icon">📚</span>
+        <h3>NO BOOKS FOUND</h3>
+        <p>Try different search criteria</p>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
+
+
+
+
+

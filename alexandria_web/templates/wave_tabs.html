@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+{% block title %}Tab Orchestration - Alexandria{% endblock %}
+
+{% block content %}
+<div class="scroll-panel scroll-panel-dark">
+    <div class="panel-header">
+        <span class="icon">🌐</span>
+        <h2>TAB ORCHESTRATION - LIVE STATUS</h2>
+    </div>
+    
+    <div id="live-status" style="background: var(--black-panel); padding: 20px; margin-bottom: 20px; border: 2px solid var(--cyan-dark);">
+        <div style="text-align: center; padding: 20px;">
+            <div style="font-size: 48px; margin-bottom: 15px;" class="loading">🔍</div>
+            <p style="color: var(--cyan); font-size: 16px;">
+                Discovering PDF links... <span id="progress-text">Loading...</span>
+            </p>
+            <p id="current-book" style="color: var(--gray); font-size: 14px; margin-top: 10px;"></p>
+        </div>
+    </div>
+    
+    <div id="debug-log" style="background: var(--black); padding: 15px; margin-bottom: 20px; border: 1px solid var(--gray-dark); max-height: 200px; overflow-y: auto; font-family: monospace; font-size: 11px; color: var(--gray);">
+        <div style="color: var(--cyan); margin-bottom: 10px;">DEBUG LOG:</div>
+        <div id="log-content">Initializing...</div>
+    </div>
+    
+    <div id="books-container" style="display: none;">
+        <div style="background: var(--black-panel); padding: 20px; margin-bottom: 20px; border: 2px solid var(--green-dark);">
+            <p style="color: var(--green); font-size: 16px; text-align: center;">
+                ✅ Discovery complete! Ready to open tabs.
+            </p>
+        </div>
+        
+        <p style="color: var(--gray); margin-bottom: 20px;">
+            <strong>Instructions:</strong> Click "OPEN TABS" for each book. Review each tab - close any that are NOT fair-use downloadable PDFs. 
+            Keep only legitimate, free PDF sources open.
+        </p>
+        
+        <div id="books-list" style="max-height: 600px; overflow-y: auto;">
+            <!-- Populated by JavaScript -->
+        </div>
+        
+        <div style="text-align: center; margin-top: 25px; padding: 20px; background: var(--black-panel); border: 1px solid var(--pyramid-dark);">
+            <p style="color: var(--white); margin-bottom: 15px;">
+                After reviewing all tabs and closing non-fair-use sources, click below:
+            </p>
+            <a href="{{ url_for('wave_confirm') }}" class="btn-stone" id="confirm-btn" style="display: none;">I HAVE ONLY FAIR-USE TABS OPEN</a>
+        </div>
+    </div>
+</div>
+
+<script>
+let statusInterval;
+
+function addLog(message) {
+    const logContent = document.getElementById('log-content');
+    const time = new Date().toLocaleTimeString();
+    logContent.innerHTML += `<div>[${time}] ${message}</div>`;
+    logContent.scrollTop = logContent.scrollHeight;
+}
+
+function updateStatus() {
+    fetch('/api/wave-status')
+        .then(response => response.json())
+        .then(data => {
+            const progress = data.progress;
+            const books = data.books;
+            
+            // Update progress
+            document.getElementById('progress-text').textContent = 
+                `${progress.completed}/${progress.total}`;
+            
+            if (progress.current) {
+                document.getElementById('current-book').textContent = 
+                    `Currently searching: ${progress.current}`;
+            }
+            
+            // Add to debug log
+            addLog(`Progress: ${progress.completed}/${progress.total} | Current: ${progress.current || 'N/A'}`);
+            
+            // If complete, show books
+            if (progress.complete) {
+                document.getElementById('live-status').style.display = 'none';
+                document.getElementById('books-container').style.display = 'block';
+                document.getElementById('confirm-btn').style.display = 'inline-block';
+                
+                // Render books
+                const booksList = document.getElementById('books-list');
+                booksList.innerHTML = '';
+                
+                books.forEach(book => {
+                    const bookDiv = document.createElement('div');
+                    bookDiv.style.cssText = 'background: var(--black); border: 1px solid var(--gray-dark); padding: 15px; margin-bottom: 15px;';
+                    
+                    bookDiv.innerHTML = `
+                        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
+                            <div>
+                                <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; color: var(--white);">
+                                    ${book.title.substring(0, 50)}${book.title.length > 50 ? '...' : ''}
+                                </div>
+                                <div style="color: var(--gray); font-size: 12px;">by ${book.author}</div>
+                                <div style="color: var(--cyan); font-size: 10px; margin-top: 5px;">
+                                    Status: ${book.status} | Links: ${book.links_found}
+                                </div>
+                            </div>
+                            ${book.links_found > 0 ? 
+                                `<button onclick="openTabsForBook('${book.id}')" class="btn-cyan" style="font-size: 9px; padding: 8px 12px;">OPEN TABS</button>` :
+                                `<span style="color: var(--red); font-size: 11px;">NO LINKS</span>`
+                            }
+                        </div>
+                    `;
+                    
+                    booksList.appendChild(bookDiv);
+                });
+                
+                clearInterval(statusInterval);
+                addLog('Discovery complete!');
+            }
+        })
+        .catch(error => {
+            addLog(`Error: ${error.message}`);
+        });
+}
+
+// Start polling
+addLog('Starting status polling...');
+statusInterval = setInterval(updateStatus, 2000);
+updateStatus(); // Immediate first update
+
+function openTabsForBook(bookId) {
+    addLog(`Opening tabs for book: ${bookId}`);
+    fetch(`/wave-tabs/open/${bookId}`)
+        .then(response => response.json())
+        .then(data => {
+            addLog(`Opening ${data.urls.length} tabs`);
+            data.urls.forEach(url => {
+                window.open(url, '_blank');
+            });
+        })
+        .catch(error => {
+            addLog(`Error opening tabs: ${error.message}`);
+            alert('Error opening tabs. Please try again.');
+        });
+}
+</script>
+{% endblock %}
+
+
+
+
+
