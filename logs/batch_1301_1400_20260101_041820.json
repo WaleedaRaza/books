@@ -1,0 +1,980 @@
+{
+  "batch": "1301-1400",
+  "started": "2026-01-01T04:02:43.918568",
+  "books": [
+    {
+      "number": 1301,
+      "title": "Built to Last",
+      "author": "Jim Collins & Jerry Porras",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/jim-built-to-last/Jim+Built+to+last.pdf",
+        "https://bluenews.bcbsla.com/HomePages/Resources/books/built_to_last.pdf",
+        "http://www.almohamady.com/main/upload/success_built_to_last.pdf"
+      ]
+    },
+    {
+      "number": 1302,
+      "title": "Good to Great",
+      "author": "Jim Collins",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/good-to-great-by-james-c-collins.pdf",
+        "https://www.jimcollins.com/tools/diagnostic-tool.pdf",
+        "https://theyoungtreps.com/wp-content/uploads/2021/02/Collins-2001-Good-to-Great-Why-Some-Companies-Make-the-Leap...and-Others-Dont_.pdf"
+      ]
+    },
+    {
+      "number": 1303,
+      "title": "Great by Choice",
+      "author": "Jim Collins",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/great-by-choice.pdf",
+        "https://www.scispace.com/pdf/great-by-choice-4cuohqlcr6.pdf",
+        "https://scispace.com/pdf/great-by-choice-4cuohqlcr6.pdf"
+      ]
+    },
+    {
+      "number": 1304,
+      "title": "How the Mighty Fall",
+      "author": "Jim Collins",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/how-the-mighty-fall-by-jim-collins.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/how-the-mighty-fall.pdf",
+        "https://scalingup.com/wp-content/uploads/2023/01/Resources-List-SU.pdf"
+      ]
+    },
+    {
+      "number": 1305,
+      "title": "The Innovator's Dilemma",
+      "author": "Clayton Christensen",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-innovator's-dilemma.pdf",
+        "https://scispace.com/pdf/the-innovator-s-dilemma-92w9gcl9q0.pdf",
+        "http://soloway.pbworks.com/w/file/fetch/46695705/The+Innovators+Dilemma.pdf"
+      ]
+    },
+    {
+      "number": 1306,
+      "title": "The Innovator's Solution",
+      "author": "Clayton Christensen",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-innovator's-solution.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-innovator's-solution-by-clayton-christiansen.pdf",
+        "https://www.businesstraining.com.mx/egaii/docs/The+Innovators+Solution.pdf"
+      ]
+    },
+    {
+      "number": 1307,
+      "title": "Competing Against Luck",
+      "author": "Clayton Christensen",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/competing-against-luck.pdf",
+        "https://ww2.jacksonms.gov/fulldisplay/kY4A66/271009/clayton_christensen.pdf",
+        "https://cdi.gatech.edu/TowardsDeliberateInnovation.pdf"
+      ]
+    },
+    {
+      "number": 1308,
+      "title": "The Four",
+      "author": "Scott Galloway",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/thefourbyscottgalloway/The+Four+by+Scott+Galloway.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-four.pdf",
+        "https://static.fnac-static.com/multimedia/PT/pdf/9780552178211.pdf"
+      ]
+    },
+    {
+      "number": 1309,
+      "title": "Post Corona",
+      "author": "Scott Galloway",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/post-corona.pdf",
+        "https://nonprofitrisk.org/wp-content/uploads/2022/09/PDF-of-Slides-How-to-Become-the-Resilient-Leader-Your-Mission-Requires.pdf",
+        "http://www.butte-housing.com/resources/news/articles/yahoofinance-12012020.pdf"
+      ]
+    },
+    {
+      "number": 1310,
+      "title": "Lean Startup",
+      "author": "Eric Ries",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-lean-startup.pdf",
+        "https://ia800509.us.archive.org/7/items/TheLeanStartupErickRies/The+Lean+Startup+-+Erick+Ries.pdf",
+        "https://ia800206.us.archive.org/12/items/121905201201120120052420/121905201201120120052420.pdf"
+      ]
+    },
+    {
+      "number": 1311,
+      "title": "Lean Analytics",
+      "author": "Alistair Croll & Benjamin Yoskovitz",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/lean-analytics.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/lean-analytics-by-lean-analytics.pdf",
+        "http://leananalyticsbook.com/wp-content/uploads/2013/01/Analytics-Lessons-Learned.pdf"
+      ]
+    },
+    {
+      "number": 1312,
+      "title": "Running Lean",
+      "author": "Ash Maurya",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/running-lean.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/running-lean-by-ash-maurya.pdf",
+        "https://danielpandza.files.wordpress.com/2013/01/running-lean.pdf"
+      ]
+    },
+    {
+      "number": 1313,
+      "title": "Zero to One",
+      "author": "Peter Thiel",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/WonderWomanTheTrueAmazon/Zero-to-One-Notes-on-.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/zero-to-one.pdf",
+        "https://cdn.bookey.app/pdf/book/en/zero-to-one.pdf"
+      ]
+    },
+    {
+      "number": 1314,
+      "title": "The Hard Thing About Hard Things",
+      "author": "Ben Horowitz",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-hard-thing-about-hard-things.pdf",
+        "https://aichat.physics.ucla.edu/download/libweb/FHNyOL/The-Hard-Thing-About-Hard-Things-Building-A.pdf",
+        "https://jahnaconcrete.com/download/virtual-library/pKZeOs/TheHardThingAboutHardThings.pdf"
+      ]
+    },
+    {
+      "number": 1315,
+      "title": "What You Do Is Who You Are",
+      "author": "Ben Horowitz",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://link.springer.com/content/pdf/10.1057/9781137475022.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/what-you-do-is-who-you-are.pdf",
+        "https://okhighered.org/wp-content/uploads/2023/10/ocald-minutes-6-23.pdf"
+      ]
+    },
+    {
+      "number": 1316,
+      "title": "Rework",
+      "author": "Jason Fried & David Heinemeier Hansson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/fried-jason-heinemeier-hansson-david-rework-v.-0.9/Fried,+Jason+&+Heinemeier+Hansson,+David+-+Rework+-+ctrl.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/rework.pdf",
+        "https://mcom320.net/pdf/fulltextbook.pdf"
+      ]
+    },
+    {
+      "number": 1317,
+      "title": "Remote",
+      "author": "Jason Fried & David Heinemeier Hansson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/remote.pdf",
+        "https://basecamp.com/shapeup/shape-up.pdf",
+        "https://anthology.aclweb.org/browse/55JeYJ/7GF240/JasonFriedBooks.pdf"
+      ]
+    },
+    {
+      "number": 1318,
+      "title": "It Doesn't Have to Be Crazy at Work",
+      "author": "Jason Fried & David Heinemeier Hansson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "http://onefile.cavc.ac.uk/book/Resources/Documents/it-doesn-t-have-to-be-crazy-at-work.pdf",
+        "https://aichat.physics.ucla.edu/HomePages/scholarship/VmdVRW/ItDoesntHaveToBeCrazyAtWork.pdf",
+        "http://www.mchip.net/browse/u5FC6C/246226/It+Doesn+T+Have+To+Be+Crazy+At+Work+English+Editi.pdf"
+      ]
+    },
+    {
+      "number": 1319,
+      "title": "The E-Myth Revisited",
+      "author": "Michael Gerber",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-e-myth-revisited.pdf",
+        "https://ia902800.us.archive.org/21/items/TheEMythRevisitedMichaelE.Gerber/The+E-Myth+Revisited+-+Michael+E.+Gerber.pdf",
+        "https://archive.org/download/TheEMythRevisitedMichaelE.Gerber/The+E-Myth+Revisited+-+Michael+E.+Gerber.pdf"
+      ]
+    },
+    {
+      "number": 1320,
+      "title": "The $100M Offers",
+      "author": "Alex Hormozi",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/100m-offers_202311/$100m+Offers_text.pdf",
+        "https://ww2.jacksonms.gov/browse/7XGhqG/271010/100__million__offers.pdf",
+        "https://dijital.link/uploads/files/c36afcf7ca0d81cf0e9a3e1be71f4213.pdf"
+      ]
+    },
+    {
+      "number": 1321,
+      "title": "$100M Leads",
+      "author": "Alex Hormozi",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://jra.jacksonms.gov/fulldisplay/YKH5Y3/270002/100m-leads_alex_hormozi.pdf",
+        "https://terryrice.co/wp-content/uploads/2024/04/GetUnstuckResource-1.pdf",
+        "https://files.addictbooks.com/wp-content/uploads/2024/08/100M-Leads.pdf"
+      ]
+    },
+    {
+      "number": 1322,
+      "title": "Traction: How Any Startup Can Achieve Explosive Customer Growth",
+      "author": "Gabriel Weinberg & Justin Mares",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/traction.pdf",
+        "https://growthorientedsustainableentrepreneurship.files.wordpress.com/2016/07/en-traction-channels.pdf",
+        "https://visme.co/blog/wp-content/uploads/Traction-How-Any-Startup-Can-Achieve-Explosive-Customer-Growth-Resume.pdf"
+      ]
+    },
+    {
+      "number": 1323,
+      "title": "The Lean Entrepreneur",
+      "author": "Brant Cooper & Patrick Vlaskovits",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-lean-startup.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-lean-entrepreneur.pdf",
+        "https://ia800509.us.archive.org/7/items/TheLeanStartupErickRies/The+Lean+Startup+-+Erick+Ries.pdf"
+      ]
+    },
+    {
+      "number": 1324,
+      "title": "Buy Then Build",
+      "author": "Walker Deibel",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.thefastlaneforum.com/community/great-little-known-books.pdf",
+        "https://olin.washu.edu/docs/magazine/olin-business-magazine-2020.pdf",
+        "http://petracoach.com/wp-content/uploads/dlm_uploads/2019/06/Summit-Notes.pdf"
+      ]
+    },
+    {
+      "number": 1325,
+      "title": "The Almanack of Naval Ravikant",
+      "author": "Eric Jorgenson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/books-collection-01/Books+Collection+01.rar/Books+Collection+01/The+Almanack+Of+Naval+Ravikant+-+A+Guide+to+Wealth+and+Happiness+-+by+Eric+Jorgenson+(Author)+-+2021.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-almanack-of-naval-ravikant.pdf",
+        "https://old.ccv.org/form-library/uploaded-files/download/The_Almanack_Of_Naval_Ravikant.pdf"
+      ]
+    },
+    {
+      "number": 1326,
+      "title": "The 4-Hour Workweek",
+      "author": "Tim Ferriss",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-4-hour-workweek.pdf",
+        "https://ia800603.us.archive.org/10/items/FERRISSTimothyThe4HourWorkweek/FERRISS_Timothy_-_The_4-Hour_Workweek.pdf",
+        "https://ia903406.us.archive.org/28/items/the-4-hour-work-week-by-timothy-ferriss/The+4-Hour+Work+Week+by+Timothy+Ferriss.pdf"
+      ]
+    },
+    {
+      "number": 1327,
+      "title": "Think and Grow Rich",
+      "author": "Napoleon Hill",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/think-and-grow-rich_202206/Think-And-Grow-Rich.pdf",
+        "https://ia600204.us.archive.org/15/items/think-and-grow-rich_202402/Think+and+Grow+Rich.pdf",
+        "https://archive.kdd.org/Resources/YKdgVJ/270001/ThinkAndGrowRich.pdf"
+      ]
+    },
+    {
+      "number": 1328,
+      "title": "The Richest Man in Babylon",
+      "author": "George S. Clason",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/isbn_9798395421142/isbn_9798395421142.pdf",
+        "https://archive.org/download/the-richest-man-in-babylon-100-george-s.-clason/The+Richest+Man+in+Babylon_+100+-+George+S.+Clason.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-richest-man-in-babylon.pdf"
+      ]
+    },
+    {
+      "number": 1329,
+      "title": "How to Get Rich",
+      "author": "Felix Dennis",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/how-to-get-rich.pdf",
+        "https://old.buddyprogram.org/libweb/MnOsgl/2GF071/HowToGetRichFelixDennis.pdf",
+        "https://guustaaf.com/naval/Naval-HowToGetRich.pdf"
+      ]
+    },
+    {
+      "number": 1330,
+      "title": "Venture Deals",
+      "author": "Brad Feld & Jason Mendelson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/venture-deals.pdf",
+        "https://agriculture.hunterirrigation.com/sites/senninger.hunterindustries.com/files/webform/invoices/pdf-venture-deals-be-smarter-than-your-lawyer-and-venture-capitalist-brad-feld-jason-mendelson-pdf-download-free-book-c9a6ce6.pdf",
+        "https://diyhpl.us/~bryan/venture-deals.pdf"
+      ]
+    },
+    {
+      "number": 1331,
+      "title": "High Growth Handbook",
+      "author": "Elad Gil",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/high-growth-handbook.pdf",
+        "https://cuttingedge.iit.ac.lk/n/pdf/go/AT/high_growth_handbook.pdf",
+        "https://pub-mediabox-storage.rxweb-prd.com/exhibitor/document/exh-78731c38-f954-443e-b9d5-71a17826f044/68413bef-f9bd-459e-bd93-f3fa7fc5e847.pdf"
+      ]
+    },
+    {
+      "number": 1332,
+      "title": "Blitzscaling",
+      "author": "Reid Hoffman & Chris Yeh",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/blitzscaling.pdf",
+        "https://www.impromptubook.com/wp-content/uploads/2023/03/impromptu-rh.pdf",
+        "https://ftp.nsjonline.com/virtual-library/pLibr0/9GF289/blitzscaling_the_lightning__fast_path_to_building.pdf"
+      ]
+    },
+    {
+      "number": 1333,
+      "title": "The Alliance",
+      "author": "Reid Hoffman, Ben Casnocha, Chris Yeh",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/alleanza.pdf",
+        "https://stat.somervillema.gov/download/publication/pdf/the_alliance_managing_talent_in_the_networked_age.pdf",
+        "https://staging.conocer.cide.edu/book/uploaded-files/Documents/leadership+de+transition.pdf"
+      ]
+    },
+    {
+      "number": 1334,
+      "title": "The Startup of You",
+      "author": "Reid Hoffman & Ben Casnocha",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-startup-of-you.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/start-up-of-you.pdf",
+        "https://aichat.physics.ucla.edu/download/primo-explore/KMyA4m/The_Startup_Of_You_Reid_Hoffman.pdf"
+      ]
+    },
+    {
+      "number": 1335,
+      "title": "Secrets of Sand Hill Road",
+      "author": "Scott Kupor",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/secrets-of-sand-hill-road.pdf",
+        "https://archive.org/download/john-martin-neuroanatomy-text-and-atlas-2020-mc-graw-hill/Secrets+of+Sand+Hill+Road+-+Venture+Capital+and+How+to+Get+It+(2019).pdf",
+        "https://files8.webydo.com/9583572/UploadedFiles/26B6DB5A-6527-2B95-49D4-C71E5398806B.pdf"
+      ]
+    },
+    {
+      "number": 1336,
+      "title": "Angel: How to Invest in Technology Startups",
+      "author": "Jason Calacanis",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/angel-by-jason-calacanis.pdf",
+        "https://dev.safeplumbing.org/wwu2/pdf?docid=OaB40-4243&title=angel-how-to-invest-in-technology-startups.pdf",
+        "https://vault.isoc.org/form-library/book-search/download/angel_how_to_invest_in_technology_startups_timeless_advice_from_an_angel_investor_who_turned_100000_into_100000000.pdf"
+      ]
+    },
+    {
+      "number": 1337,
+      "title": "The Power Law: Venture Capital and the Making of the New Future",
+      "author": "Sebastian Mallaby",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-power-law.pdf",
+        "https://thebloodybuddy.com/download/threads/btxUgA/VentureDealsBeSmarterThanYourLawyerAndVentureCapitalist.pdf",
+        "https://ajovista.com/wp-content/uploads/2022/09/Siegel_The-Power-Law_2022_06_23.pdf"
+      ]
+    },
+    {
+      "number": 1338,
+      "title": "Super Founders",
+      "author": "Ali Tamaseb",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/super-founders.pdf",
+        "https://cdn.bookey.app/files/pdf/book/de/super-founders.pdf",
+        "https://www.researchgate.net/profile/Sam-Johnston-3/publication/363495033_Sustainable_Venture_Capital_Presentation/data/631fe281873eca0c00829cac/sustainable-venture-capital-presentation.pdf"
+      ]
+    },
+    {
+      "number": 1339,
+      "title": "The Entrepreneurial Bible to Venture Capital",
+      "author": "Andrew Romans",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://wedareyou.tourismthailand.org/primo-explore/Resources/_pdfs/The_Entrepreneurial_Bible_To_Venture_Capital_Inside_Secrets_From_The_Leaders_In_The_Startup_Game_Pdf.pdf",
+        "https://traefik.gsat.service.sci.tu.ac.th/primo-explore/publication/index_htm_files/The_Entrepreneurial_Bible_To_Venture_Capital_Inside_Secrets_From_The_Leaders_In_The_Startup_Game.pdf",
+        "https://ns1.comportese.com/textbooks/virtual-library/download/The_Entrepreneurial_Bible_To_Venture_Capital_Inside_Secrets_From_The_Leaders_In_The_Startup_Game.pdf"
+      ]
+    },
+    {
+      "number": 1340,
+      "title": "The Intelligent Investor",
+      "author": "Benjamin Graham",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-intelligent-investor.pdf",
+        "https://explore.gcts.edu/gacor1-26/pdf?docid=Dck44-5970&title=the-intelligent-investor-benjamin-graham.pdf",
+        "https://waag.kcregap.org/fulldisplay/Gj1AGF/270005/TheIntelligentInvestor.pdf"
+      ]
+    },
+    {
+      "number": 1341,
+      "title": "Security Analysis",
+      "author": "Benjamin Graham & David Dodd",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/security-analysis.pdf",
+        "https://www.saint-gobain.co.in/sites/saint-gobain.co.in/files/webform/apply_for_indec/_sid_/pdf-security-analysis-principles-and-techniques-benjamin-graham-david-dodd-pdf-download-free-book-8d082a0.pdf",
+        "https://archive.kdd.org/libweb/qnpK5U/270001/SecurityAnalysisByBenjaminGraham.pdf"
+      ]
+    },
+    {
+      "number": 1342,
+      "title": "One Up on Wall Street",
+      "author": "Peter Lynch",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/one-up-on-wall-street.pdf",
+        "https://dn721901.ca.archive.org/0/items/peter-lynch-one-up-on-wall-street/Peter_Lynch_one-up-on-wall-street.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/one-up-on-wall-street-by-peter-lynch、john-rothchild.pdf"
+      ]
+    },
+    {
+      "number": 1343,
+      "title": "Beating the Street",
+      "author": "Peter Lynch",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/beating-the-street.pdf",
+        "https://cdn.bookey.app/pdf/book/en/beating-the-street.pdf",
+        "https://archive.kdd.org/virtual-library/k02JAf/276038/PeterLynchsBookBeatingTheStreet.pdf"
+      ]
+    },
+    {
+      "number": 1344,
+      "title": "Common Stocks and Uncommon Profits",
+      "author": "Philip Fisher",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ia803405.us.archive.org/14/items/common_stocks_and_uncommon_profits_and_other_writings/common_stocks_and_uncommon_profits_and_other_writings_text.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/common-stocks-and-uncommon-profits-and-other-writings.pdf",
+        "https://ideator.sasfin.com/data/Resources/Documents/Common_Stocks_And_Uncommon_Profits_By_Philip_Fisher.pdf"
+      ]
+    },
+    {
+      "number": 1345,
+      "title": "The Little Book of Common Sense Investing",
+      "author": "John Bogle",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-little-book-of-common-sense-investing.pdf",
+        "https://johncbogle.com/wordpress/wp-content/uploads/2007/03/Little+Book+Bibliography.pdf",
+        "https://l.roxley.com/book-search/1FfgfP/277045/TheLittleBookOfCommonSenseInvestingTheOnlyWayToGuaranteeYourFair.pdf"
+      ]
+    },
+    {
+      "number": 1346,
+      "title": "A Random Walk Down Wall Street",
+      "author": "Burton Malkiel",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/a-random-walk-down-wall-street.pdf",
+        "https://files.addictbooks.com/wp-content/uploads/2024/05/A-random-walk-down-wall-street.pdf",
+        "https://external.dandelon.com/download/attachments/dandelon/ids/DE00407523956215B383DC12578D90021DD7C.pdf"
+      ]
+    },
+    {
+      "number": 1347,
+      "title": "The Essays of Warren Buffett",
+      "author": "Warren Buffett & Lawrence Cunningham",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ia804505.us.archive.org/0/items/pdfy-Ey8vCqxHzf5bXMbi/The+Essays+Of+Warren+Buffett+-+Lessons+For+Corporate+America.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-essays-of-warren-buffett-by-lawrence-a-cunningham.pdf",
+        "https://cap-press.com/pdf/9781611637588.pdf"
+      ]
+    },
+    {
+      "number": 1348,
+      "title": "Poor Charlie's Almanack",
+      "author": "Charlie Munger",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/poor-charlie's-almanack.pdf",
+        "https://ia600702.us.archive.org/33/items/poor-charlies-almanack-the-wit-and-wisdom-of-charles-t.-munger-pdfdrive/Poor+Charlie’s+Almanack_+The+Wit+and+Wisdom+of+Charles+T.+Munger+(+PDFDrive+).pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/poor-charlie's-almanack-by-peter-kaufman.pdf"
+      ]
+    },
+    {
+      "number": 1349,
+      "title": "The Most Important Thing",
+      "author": "Howard Marks",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-most-important-thing.pdf",
+        "https://www.dirzon.com/Doc/Details/telegram:Howard_Marks_The_most_important.pdf",
+        "https://cupola.columbia.edu/3ca228.pdf"
+      ]
+    },
+    {
+      "number": 1350,
+      "title": "Margin of Safety",
+      "author": "Seth Klarman",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://investo.bg/wp-content/uploads/2023/06/Seth-A.-Klarman-Margin-of-Safety-_-Risk-Averse-Value-Investing-Strategies-for-the-Thoughtful-Investor-HarperCollins-1991.pdf",
+        "https://d1e00ek4ebabms.cloudfront.net/production/uploaded-files/seth_klarman-margin_of_safety-707bb845-d4e2-4396-9fc2-0a907e45585f.pdf",
+        "https://www.edelweissmf.com/Files/Insigths/vendor/BookSummaries/Margin+of+Safety.pdf"
+      ]
+    },
+    {
+      "number": 1351,
+      "title": "You Can Be a Stock Market Genius",
+      "author": "Joel Greenblatt",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/you-can-be-a-stock-market-genius.pdf",
+        "https://oldschoolvalue-files.s3.amazonaws.com/pdf/You_Can_Be_A_Stock_Market_Genius.pdf",
+        "https://archive.kdd.org/Resources/3xX39e/272016/JoelGreenblattYouCanBeAStockMarketGenius.pdf"
+      ]
+    },
+    {
+      "number": 1352,
+      "title": "The Little Book That Beats the Market",
+      "author": "Joel Greenblatt",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-little-book-that-beats-the-market.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-little-book-that-still-beats-the-market-by-wiley.pdf",
+        "https://archive.kdd.org/Resources/RXQ9fC/272018/JoelGreenblattTheLittleThatBeatsTheMarket.pdf"
+      ]
+    },
+    {
+      "number": 1353,
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://static.booktopia.com.au/pdf/9780857197689-1.pdf",
+        "https://www.researchgate.net/publication/387254771_Morgan_Housel_2020_The_Psychology_of_MoneyTimeless_lessons_on_wealth_greed_and_happiness_Harriman_House/fulltext/6765667e117f340ec3cf81b7/Morgan-Housel-2020-The-Psychology-of-MoneyTimeless-lessons-on-wealth-greed-and-happiness-Harriman-House.pdf",
+        "https://www.amity.edu/gurugram/amity_management_analyst/pdf/current-issues/the_psychology1.pdf"
+      ]
+    },
+    {
+      "number": 1354,
+      "title": "The Simple Path to Wealth",
+      "author": "JL Collins",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-simple-path-to-wealth.pdf",
+        "https://static.s123-cdn.com/uploads/4651637/normal_61acc4051fa0c.pdf",
+        "https://reclaim.cdh.ucla.edu/download/browse/Kr3B6Z/TheSimplePathToWealthByJlCollins5.pdf"
+      ]
+    },
+    {
+      "number": 1355,
+      "title": "I Will Teach You to Be Rich",
+      "author": "Ramit Sethi",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/i-will-teach-you-to-be-rich-second-edition-no-guilt.-no-excuses.-no-bs.-just-a-6/I+Will+Teach+You+to+Be+Rich,+Second+Edition+No+Guilt.+No+Excuses.+No+BS.+Just+a+6-Week+Program+That+Works.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/i-will-teach-you-to-be-rich.pdf",
+        "https://webmail.psych.purdue.edu/cdio6jlx1qt6/05-ms-agnes-jaskolski-4/i-9780761147480-i-will-teach-you-to-be-rich.pdf"
+      ]
+    },
+    {
+      "number": 1356,
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/rich-dad-poor-dad_202106/Rich+Dad+Poor+Dad.pdf",
+        "https://archive.org/download/scienceDEEPWEB/Rich+Dad+Classics+by+Robert+T.+Kiyosaki+-+Robert+T.+Kiyosaki.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/rich-dad--poor-dad.pdf"
+      ]
+    },
+    {
+      "number": 1357,
+      "title": "The Millionaire Next Door",
+      "author": "Thomas Stanley & William Danko",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/the-millionaire-next-door-thomas-j.-stanley-william-d.-danko/The+Millionaire+Next+Door+(Thomas+J.+Stanley,+William+D.+Danko).pdf",
+        "https://pdfcoffee.com/pub-the-millionaire-next-door-pdf-pdf-free.html",
+        "https://en.pdfdrive.to/dl/the-millionaire-next-door-3"
+      ]
+    },
+    {
+      "number": 1358,
+      "title": "The Bogleheads' Guide to Investing",
+      "author": "Taylor Larimore et al.",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-bogleheads'-guide-to-investing.pdf",
+        "https://books.kim/mpdf/book/www.books.kim_562_mpdf_The_Bogleheads__Guid.pdf",
+        "https://download.e-bookshelf.de/download/0000/5749/85/L-G-0000574985-0002382904.pdf"
+      ]
+    },
+    {
+      "number": 1359,
+      "title": "MONEY Master the Game",
+      "author": "Tony Robbins",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/money-master-the-game.pdf",
+        "https://ia601202.us.archive.org/18/items/calibre_library_76.105.31.130/MONEY+Master+the+Game+-+Tony+Robbins_406.pdf",
+        "https://ebookk.ir/wp-content/uploads/2024/01/MONEY-Master-the-Game-1-20.pdf"
+      ]
+    },
+    {
+      "number": 1360,
+      "title": "The Dhandho Investor",
+      "author": "Mohnish Pabrai",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/mohnish-pabrai-the-dhandho-investor-the-low-r-copy-6/[Mohnish_Pabrai]_The_Dhandho_Investor_The_Low_-_R+copy+6.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-dhandho-investor.pdf",
+        "https://pdfs.semanticscholar.org/ded8/7c8e0888881b8f92b95fa9929049e11da195.pdf"
+      ]
+    },
+    {
+      "number": 1361,
+      "title": "The Education of a Value Investor",
+      "author": "Guy Spier",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-education-of-a-value-investor.pdf",
+        "https://cdn.bookey.app/pdf/book/en/the-education-of-a-value-investor.pdf",
+        "http://risoxef.pbworks.com/f/81986520173.pdf"
+      ]
+    },
+    {
+      "number": 1362,
+      "title": "100 Baggers",
+      "author": "Christopher Mayer",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/100-baggers.pdf",
+        "https://pdf4pro.com/file/6416d/wp_content_uploads_2017_05_100Baggers.pdf.pdf",
+        "https://alphaideas.in/wp-content/uploads/2015/08/100-baggers.pdf"
+      ]
+    },
+    {
+      "number": 1363,
+      "title": "The Outsiders",
+      "author": "William Thorndike",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/pdf/book/en/the-outsiders.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-outsiders-by-william-n-thorndike-jr.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-outsiders-by-william-n.-thorndike-jr.pdf"
+      ]
+    },
+    {
+      "number": 1364,
+      "title": "Shark Tales",
+      "author": "Barbara Corcoran",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/shark-tales.pdf",
+        "https://pointofview.coalesse.com/pdf/Resources-C08P1/shark-tales-how-i-turned-0into-a-billion-dollar-business.pdf",
+        "https://10years.emba.ntnu.edu.tw/c/pdf/file?PUB=shark+tales+how+i+turned+1000+into+a+billion+dollar+business.pdf"
+      ]
+    },
+    {
+      "number": 1365,
+      "title": "If You Don't Have Big Breasts, Put Ribbons on Your Pigtails",
+      "author": "Barbara Corcoran",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/shark-tales.pdf",
+        "https://mscerdasenglish.weebly.com/uploads/8/3/7/2/83721436/stargirl_by_jerry_spinelli.pdf",
+        "https://www.englisch-hilfen.de/en/download/test_question_tags_en_answers.pdf"
+      ]
+    },
+    {
+      "number": 1366,
+      "title": "The Power of Broke",
+      "author": "Daymond John",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-power-of-broke.pdf",
+        "https://archive.kdd.org/Resources/DuQTPb/275032/PowerOfBroke.pdf",
+        "https://status.openlibhums.org/download/textbooks/LdYb3r/The-Power-Of-Broke-By-Daymond-John.pdf"
+      ]
+    },
+    {
+      "number": 1367,
+      "title": "Rise and Grind",
+      "author": "Daymond John",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/rise-and-grind.pdf",
+        "https://vault.isoc.org/primo-explore/virtual-library/_pdfs/Rise_And_Grind_Out_Perform_Out_Work_And_Out_Hustle_Your_Way_To_A_More_Successful_And_Rewarding_Life.pdf",
+        "https://gsat.service.sci.tu.ac.th/textbooks/Resources/download/Rise_And_Grind_Out_Perform_Out_Work_And_Out_Hustle_Your_Way_To_A_More_Successful_And_Rewarding_Life.pdf"
+      ]
+    },
+    {
+      "number": 1368,
+      "title": "Display of Power",
+      "author": "Daymond John",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ia600907.us.archive.org/31/items/DailyBooksarchive/Display+of+Power+-+Daymond+John.pdf",
+        "https://sihm.ac.in/pdf/Y75452W/$niche/Y4313232W1/the+brand+within+power+of+branding+from+birth+to+boardroom+display+daymond+john.pdf",
+        "https://pk.nimc.gov.ng/ebook/PDF/36N252O/45N343O472-/the-brand-within_power_of-branding_from_birth_to_boardroom_display-daymond-john.pdf"
+      ]
+    },
+    {
+      "number": 1369,
+      "title": "You Don't Have to Be a Shark",
+      "author": "Robert Herjavec",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://wwsg.com/wp-content/uploads/2022/05/Robert-Herjavec-WWSG-Full-Bio.pdf",
+        "https://www.meetingtreecomputer.com/files/2019/01/MT-Newsletter-201901-6.pdf",
+        "https://img1.liveinternet.ru/images/attach/d/3/13375/13375383_youdonthavetobeasharkcreatingyourownsuccess3639.pdf"
+      ]
+    },
+    {
+      "number": 1370,
+      "title": "Driven",
+      "author": "Robert Herjavec",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://conocer.cide.edu/index.jsp/Resources/4020103/BookPdfDrivenHowToSucceedInBusinessAndInLife.pdf",
+        "https://phpmyadmin.cloud1.glc.org/Download_PDFS/Resources/U020103/BookPdfDrivenHowToSucceedInBusinessAndInLife.pdf",
+        "https://gestao.formosa.go.gov.br/book_pdf1/uploaded-files/index.jsp/Driven+Robert+Herjavec.pdf"
+      ]
+    },
+    {
+      "number": 1371,
+      "title": "The Will to Win",
+      "author": "Robert Herjavec",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://beta.agiletortoise.com/public/virtual-library/index.jsp/The+Will+To+Win+Book.pdf",
+        "https://test.post-gazette.com/public/virtual-library/Documents/cold_hard_truth_on_men_women_and_money_50_common.pdf",
+        "https://www.bookonlife.com/wp-content/uploads/2016/10/The-Will-to-Win.pdf"
+      ]
+    },
+    {
+      "number": 1372,
+      "title": "How to Win at the Sport of Business",
+      "author": "Mark Cuban",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/how-to-win-at-the-sport-of-business.pdf",
+        "https://mbvuniversity.com/pdf/How-to-win-at-the-sport-of-business.pptx.pdf",
+        "https://nowfoundation.org/data/Resources/Download_PDFS/How_To_Win_At_The_Sport_Of_Busineb_Mark_Cuban.pdf"
+      ]
+    },
+    {
+      "number": 1373,
+      "title": "Let Me Tell You a Story",
+      "author": "Mark Cuban",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.staff.ces.funai.edu.ng/papersCollection/scholarship/download/books_written_by_mark_cuban.pdf",
+        "https://98462.fs1.hubspotusercontent-na2.net/hub/98462/file-467040981-pdf/docs/transcript_step_1-let_me_tell_you_a_story.pdf",
+        "https://jxnmsapps.jacksonms.gov/scholarship/g7Pf4N/277043/LetMeTellYouAStoryJorgeBucay.pdf"
+      ]
+    },
+    {
+      "number": 1374,
+      "title": "Do You!",
+      "author": "Russell Simmons",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://prod02.knowledgematters.com/index.jsp/uploaded-files/4020087/DoYouRussellSimmonsPdf.pdf",
+        "https://legacy.resolvetosavelives.org/download/libweb/ibr8Ov/DoYouRussellSimmonsPdf.pdf",
+        "https://bhtc.com.vn/index.jsp/fulldisplay/2020212/DoYouRussellSimmons.pdf"
+      ]
+    },
+    {
+      "number": 1375,
+      "title": "Super Rich",
+      "author": "Russell Simmons",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://exmon01.external.cshl.edu/c/pdf/goto/CM/super_rich_a_guide_to_having_it_all_russell_simmons.pdf",
+        "https://worker-east-3.clubzone.com/archive-ga-23-56/pdf?docid=hPm13-5824&title=super-rich-a-guide-to-having-it-all-by-russell-simmons.pdf",
+        "https://transcripts.hafedpoly.edu.ng/textbooks/uploaded-files/fetch.php/Super_Rich_A_Guide_To_Having_It_All_By_Russell_Simmons.pdf"
+      ]
+    },
+    {
+      "number": 1376,
+      "title": "Economy and Society",
+      "author": "Max Weber",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/economy-and-society.pdf",
+        "https://soc.up.edu.ph/19-theme/pdf?ID=gGs06-6074&title=economy-and-society-max-weber.pdf",
+        "https://lib.ysu.am/disciplines_bk/fddda445c083665720d9b183b6a735e9.pdf"
+      ]
+    },
+    {
+      "number": 1377,
+      "title": "Origin of the Family, Private Property and the State",
+      "author": "Friedrich Engels",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-origin-of-the-family--private-property-and-the-state.pdf",
+        "https://www.marxists.org/archive/marx/works/download/pdf/origin_family.pdf",
+        "https://ia801605.us.archive.org/view_archive.php?archive=/33/items/GutenbergENzip/27.zip&file=Origin+of+the+Family,+Private+Property+and+the+State,+The+-+Friedrich+Engels,+2010+(74p).pdf"
+      ]
+    },
+    {
+      "number": 1378,
+      "title": "Protestant Ethic and the Spirit of Capitalism",
+      "author": "Max Weber",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://dn790008.ca.archive.org/0/items/protestantethics00webe/protestantethics00webe.pdf",
+        "https://web.stanford.edu/class/sts175/NewFiles/Weber's+Protestant+Ethic.pdf",
+        "https://people.wku.edu/steve.groce/theprotestantethic-weber.pdf"
+      ]
+    },
+    {
+      "number": 1379,
+      "title": "Socialism: Utopian and Scientific",
+      "author": "Friedrich Engels",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/engels-friedrich-socialism-utopian-and-scientific/Engels,+Friedrich+-+Socialism,+Utopian+and+Scientific.pdf",
+        "https://archive.org/download/philosophy-and-psychology/Socialism_Utopian_and_Scientific_Frederick_Friedrich_Engels_Z_Library.pdf",
+        "https://archive.iww.org/PDF/history/library/misc/engels+socialism+utopian+and+scientific.pdf"
+      ]
+    },
+    {
+      "number": 1380,
+      "title": "Subjection of Women",
+      "author": "John Stuart Mill",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/subjectionofwom00mill/subjectionofwom00mill.pdf",
+        "https://archive.org/download/GutenbergENzip/37.zip/Subjection+of+Women,+The+-+John+Stuart+Mill,+2008+(43p).pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-subjection-of-women-by-john-stuart-mill.pdf"
+      ]
+    },
+    {
+      "number": 1381,
+      "title": "Theory of the Leisure Class",
+      "author": "Thorstein Veblen",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ia803108.us.archive.org/26/items/theoryofleisurec0000unse/theoryofleisurec0000unse.pdf",
+        "https://ia804501.us.archive.org/13/items/theoryofleisurec00vebliala/theoryofleisurec00vebliala_bw.pdf",
+        "https://files.libertyfund.org/files/1657/Veblen_1291_EBk_v6.0.pdf"
+      ]
+    }
+  ],
+  "finished": "2026-01-01T04:18:20.791966",
+  "total_opened": 243
+}

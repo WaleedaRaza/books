@@ -1,0 +1,1136 @@
+{
+  "batch": "1201-1300",
+  "started": "2026-01-01T13:47:13.033754",
+  "books": [
+    {
+      "number": 1201,
+      "title": "General System Theory",
+      "author": "Ludwig von Bertalanffy",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://web.mit.edu/esd.83/www/notebook/gst.pdf",
+        "https://www.eolss.net/Sample-Chapters/C02/E6-46-01-02.pdf",
+        "https://www.coexploration.org/systems/journals/General_Systems_Volume_I.pdf"
+      ]
+    },
+    {
+      "number": 1202,
+      "title": "Gödel, Escher, Bach: An Eternal Golden Braid",
+      "author": "Douglas Hofstadter",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/gödel--escher--bach.pdf",
+        "https://theswissbay.ch/pdf/Gentoomen+Library/Extra/Douglas_R._Hofstadter-Gödel,_Escher,_Bach__An_Eternal_Golden_Braid_(Twentieth-Anniversary_Edition)-Basic_Books(1999).pdf",
+        "https://www.physixfan.com/wp-content/files/GEBen.pdf"
+      ]
+    },
+    {
+      "number": 1203,
+      "title": "Heart of Enterprise",
+      "author": "Stafford Beer",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ia802300.us.archive.org/25/items/brain-of-the-firm-reclaimed-v-1/Brain+of+the+Firm+-+Stafford+Beer.pdf",
+        "https://www.scispace.com/pdf/the-heart-of-enterprise-35pxe3ubsy.pdf",
+        "https://uploads.strikinglycdn.com/files/36468d7d-62d6-472f-a355-3fe35306e740/the-heart-of-enterprise-821.pdf"
+      ]
+    },
+    {
+      "number": 1204,
+      "title": "Hidden Order: How Adaptation Builds Complexity",
+      "author": "John Holland",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://apps.dtic.mil/sti/pdfs/AD1150599.pdf",
+        "https://ese.rice.edu/files/Resources/Download_PDFS/algebra_1_unit_6_lesson_01_answers.pdf",
+        "https://ftp.barnabastoday.com/About/publication/default.aspx/Thinking+Mathematically+6th+Edition.pdf"
+      ]
+    },
+    {
+      "number": 1205,
+      "title": "Investigations",
+      "author": "Stuart Kauffman",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/at-home-in-the-universe.pdf",
+        "https://www.cravath.com/a/web/da2L2caaPkeAZ137HeUHnE/4PnRaQ/16-co-operating-with-authorities-us.pdf",
+        "https://bingweb.binghamton.edu/~cgershensong/unam/doc/Investigations.pdf"
+      ]
+    },
+    {
+      "number": 1206,
+      "title": "Leadership and the New Science",
+      "author": "Margaret Wheatley",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/leadership-and-the-new-science.pdf",
+        "https://upaya.org/uploads/pdfs/0206173145-MWheatleybio05v1.pdf",
+        "https://www.margaretwheatley.com/PDF/Bio-Formal-2011.pdf"
+      ]
+    },
+    {
+      "number": 1207,
+      "title": "Le Ton beau de Marot",
+      "author": "Douglas Hofstadter",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/hardy_annotated/hardy_annotated.pdf",
+        "https://link.springer.com/content/pdf/10.1007/978-1-4302-0845-7.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/le-ton-beau-de-marot-by-douglas-r-hofstadter.pdf"
+      ]
+    },
+    {
+      "number": 1208,
+      "title": "Limits to Growth",
+      "found": 0,
+      "opened": 0
+    },
+    {
+      "number": 1209,
+      "title": "Linked: The New Science of Networks",
+      "found": 0,
+      "opened": 0
+    },
+    {
+      "number": 1210,
+      "title": "Metamagical Themas",
+      "author": "Douglas Hofstadter",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/metamagical-themas.pdf",
+        "https://mindstalk.net/bkxyzzy/pdfs/metaThemas.pdf",
+        "https://reneberger.hommereseau.ch/pdf/hofstader.pdf"
+      ]
+    },
+    {
+      "number": 1211,
+      "title": "Mind and Nature",
+      "author": "Gregory Bateson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/mind-and-nature.pdf",
+        "https://school.zamzam.edu.af/download/scholarship/pdf/mind_and_nature_by_gregory_bateson.pdf",
+        "https://rsdsymposium.org/wp-content/uploads/2023/01/RSD11_paper_178.pdf"
+      ]
+    },
+    {
+      "number": 1212,
+      "title": "Out of Control: The New Biology of Machines, Social Systems, and the Economic World",
+      "author": "Kevin Kelly",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/out-of-control-by-kevin-kelly.pdf",
+        "https://archive.org/download/scienceDEEPWEB/Out+of+Control_+The+Rise+of+Neo-Biological+Civilization+-+Kevin+Kelly.pdf",
+        "https://cdn.bookey.app/pdf/book/en/out-of-control.pdf"
+      ]
+    },
+    {
+      "number": 1213,
+      "title": "Scale: The Universal Laws of Growth, Innovation, Sustainability, and the Pace of Life",
+      "author": "Geoffrey West",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/scale.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/scale-by-geoffrey-west.pdf",
+        "https://ushe.edu/wp-content/uploads/pdf/agendas/20210521/05-21-21_tab_l.pdf"
+      ]
+    },
+    {
+      "number": 1214,
+      "title": "Signs of Life: How Complexity Pervades Biology",
+      "author": "Ricard Solé & Brian Goodwin",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ia601004.us.archive.org/26/items/nextfiftyyears/[John_Brockman]_The_Next_Fifty_Years(z-lib.org).pdf",
+        "https://pdfs.semanticscholar.org/presentation/ff4c/ed349c3c0e62c4da81e2ee79e36cbe766f69.pdf",
+        "https://www.jstor.org/stable/pdf/3630680.pdf"
+      ]
+    },
+    {
+      "number": 1215,
+      "title": "Silent Spring",
+      "author": "Rachel Carson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/silent-spring-by-rachel-carson.pdf",
+        "https://www.fao.org/fileadmin/templates/library/pdf/Silent_spring.pdf",
+        "https://faculty.uml.edu/sgallagher/SilentSpring.pdf"
+      ]
+    },
+    {
+      "number": 1216,
+      "title": "Steps to an Ecology of Mind",
+      "author": "Gregory Bateson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/HigeKermoianJr.learningAboutHisWorld.pdf/(.pdf)/Pages+from+Gregory+Bateson+-+Ecology+of+Mind+1.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/steps-to-an-ecology-of-mind.pdf",
+        "https://jlombardi.net/pdf/Bateson_stepsecologyofmind.pdf"
+      ]
+    },
+    {
+      "number": 1217,
+      "title": "Sync: The Emerging Science of Spontaneous Order",
+      "author": "Steven Strogatz",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/sync.pdf",
+        "https://arxiv.org/pdf/1906.03262",
+        "https://aawe.org/wp-content/uploads/2016/05/Newsletter-AAWE-2010-01.pdf"
+      ]
+    },
+    {
+      "number": 1218,
+      "title": "Synergetics",
+      "author": "R. Buckminster Fuller",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://vixra.org/pdf/1012.0017v2.pdf",
+        "https://ese.rice.edu/About/browse/index.jsp/Buckminister_Fuller_On_Education.pdf",
+        "https://rwgrayprojects.com/synergetics/print/p200.pdf"
+      ]
+    },
+    {
+      "number": 1219,
+      "title": "Systems Thinking Made Simple",
+      "author": "Derek & Laura Cabrera",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://link.springer.com/content/pdf/10.1007/978-3-319-17461-7_100.pdf",
+        "https://pdfs.semanticscholar.org/618e/10fd075e7136773a764b71429449a8709cbc.pdf",
+        "https://www.researchgate.net/profile/Derek-Cabrera/publication/349869986_Systems_Thinking/links/604518d3299bf1e07862588a/Systems-Thinking.pdf"
+      ]
+    },
+    {
+      "number": 1220,
+      "title": "Tree of Knowledge",
+      "author": "Humberto Maturana & Francisco Varela",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-tree-of-knowledge.pdf",
+        "https://ia601604.us.archive.org/31/items/maturana-h-1987-tree-of-knowledge-bkmrk/maturana-h-1987-tree-of-knowledge-bkmrk_text.pdf",
+        "https://constructivist.info/18/1/005.capra.pdf"
+      ]
+    },
+    {
+      "number": 1221,
+      "title": "Turtles, Termites, and Traffic Jams: Explorations in Massively Parallel Microworlds",
+      "author": "Mitchel Resnick",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.jstor.org/stable/pdf/27857775.pdf",
+        "https://core.ac.uk/download/pdf/82525554.pdf",
+        "https://test.post-gazette.com/files/Resources/Download_PDFS/Turtles_Termites_And_Traffic_Jams_Complex_Adaptive.pdf"
+      ]
+    },
+    {
+      "number": 1222,
+      "title": "Web of Life: A New Scientific Understanding of Living Systems",
+      "author": "Fritjof Capra",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/fritjof-capra-web-of-life-new-scientific-understanding-of-living-systems-ocr/Fritjof+Capra+-+Web+of+Life+-+New+Scientific+Understanding+of+Living+Systems+[OCR].pdf",
+        "https://www.capracourse.net/wp-content/uploads/2015/12/Introduction.pdf",
+        "https://www.fritjofcapra.net/wp-content/uploads/2017/06/SciSpir.pdf"
+      ]
+    },
+    {
+      "number": 1223,
+      "title": "The Fifth Discipline",
+      "author": "Peter Senge",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://dn720005.ca.archive.org/0/items/the-fifth-discipline/The-Fifth-Discipline.pdf",
+        "https://www.siue.edu/~mthomec/LearnOrg-Senge.pdf",
+        "https://www.e-education.psu.edu/geog468/sites/www.e-education.psu.edu.geog468/files/TheFifthDiscipline.pdf"
+      ]
+    },
+    {
+      "number": 1224,
+      "title": "Moral Mazes",
+      "author": "Robert Jackall",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/moral-mazes.pdf",
+        "https://www.jstor.org/stable/pdf/20006876.pdf",
+        "https://www.bobm.net.au/teaching/BE/PDFs/Grace-Jackall-05.pdf"
+      ]
+    },
+    {
+      "number": 1225,
+      "title": "Spark: The Revolutionary New Science of Exercise and the Brain",
+      "author": "John J. Ratey",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/spark-by-john-j-ratey.pdf",
+        "https://archive.org/download/psicology/Spark_+The+Revolutionary+New+Science+of+Exercise+and+the+Brain+-+John+J.+Ratey+&+Eric+Hagerman.pdf",
+        "https://link.springer.com/content/pdf/10.1007/s10803-014-2044-7.pdf"
+      ]
+    },
+    {
+      "number": 1226,
+      "title": "Why We Sleep",
+      "author": "Matthew Walker",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/why-we-sleep.pdf",
+        "https://scispace.com/pdf/why-we-sleep-the-new-science-of-sleep-and-dreams-exl2cfk0b4.pdf",
+        "https://dn790004.ca.archive.org/0/items/a_20210818_202108/BOOKS.YOSSR.COM-Why-We-Sleep.pdf"
+      ]
+    },
+    {
+      "number": 1227,
+      "title": "Incerto (series)",
+      "author": "Nassim Nicholas Taleb",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/incerto.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-bed-of-procrustes.pdf",
+        "https://ia600709.us.archive.org/11/items/psicology/[Incerto+03]+_+The+Bed+of+Procrustes+-+Taleb,+Nassim+Nicholas.pdf"
+      ]
+    },
+    {
+      "number": 1228,
+      "title": "A Geometry of Music",
+      "author": "Dmitri Tymoczko",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/OxfordStudiesInMusicTheoryDmitriTymoczkoAGeometryOfMusicHarmonyAndCounterpointIn/(Oxford+Studies+in+Music+Theory)+Dmitri+Tymoczko+-+A+Geometry+of+Music_+Harmony+and+Counterpoint+in+the+Extended+Common+Practice+(Oxford+Studies+in+Music+Theory)++-Oxford+University+Press,+USA+(2011).pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/a-geometry-of-music.pdf",
+        "https://www.reasonpapers.com/pdf/342/rp_342_14.pdf"
+      ]
+    },
+    {
+      "number": 1229,
+      "title": "Audacious Euphony",
+      "author": "Richard Cohn",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.jstor.org/stable/pdf/41979584.pdf",
+        "https://wclc2016.iaslc.org/book/detail/Download_PDFS/Audacious-Euphony-Chromaticism-And-The-Triad-S-Se.pdf",
+        "https://mtosmt.org/issues/mto.16.22.2/mto.16.22.2.cohn.pdf"
+      ]
+    },
+    {
+      "number": 1230,
+      "title": "Baroque Counterpoint",
+      "author": "Peter Schubert & Christoph Neidhöfer",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.ajw.com/textbook-solutions/pdf?trackid=rDK:7989&Academia=Teaching_baroque_counterpoint_through_improvisation_an_introductory_curriculum_in_stylistic_fluency(2).pdf",
+        "https://ese.rice.edu/data/browse/HomePages/Baroque+Counterpoint.pdf",
+        "https://mtosmt.org/issues/mto.14.20.2/mto.14.20.2.guido_schubert.pdf"
+      ]
+    },
+    {
+      "number": 1231,
+      "title": "Contemplating Music",
+      "author": "Joseph Kerman",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.jstor.org/stable/pdfplus/843550.pdf",
+        "https://www.jstor.org/stable/pdf/3332949.pdf",
+        "https://external.dandelon.com/download/attachments/dandelon/ids/DE00696F41EAA8A007998C1257AA8006661C0.pdf"
+      ]
+    },
+    {
+      "number": 1232,
+      "title": "Counterpoint in Composition",
+      "author": "Felix Salzer & Carl Schachter",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "http://www.mchip.net/libweb/u281B8/243024/Counterpoint+Workbook.pdf",
+        "https://mtosmt.org/issues/mto.13.19.3/mto.13.19.3.dineen.pdf",
+        "https://www.depts.ttu.edu/library/docdel/MusicTheorySpectrumreduced.pdf"
+      ]
+    },
+    {
+      "number": 1233,
+      "title": "Course of Musical Composition",
+      "author": "Anton Reicha",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.midside.com/pdf/eastman/fall07/th523/form_handout.pdf",
+        "https://archive.org/download/treatise-on-melody-anton-reicha/Treatise+on+Melody+-+Anton+Reicha.pdf",
+        "https://utorpheus.com/file/catalog/pdf_musiche/qc005.pdf"
+      ]
+    },
+    {
+      "number": 1234,
+      "title": "Harmony and Voice Leading",
+      "author": "Edward Aldwell & Carl Schachter",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.jstor.org/stable/pdf/832887.pdf",
+        "https://www.robertkelleyphd.com/home/PartWritingByFunction.pdf",
+        "https://mtosmt.org/issues/mto.16.22.3/mto.16.22.3.arlin.pdf"
+      ]
+    },
+    {
+      "number": 1235,
+      "title": "How Equal Temperament Ruined Harmony",
+      "author": "Ross W. Duffin",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/how-equal-temperament-ruined-harmony.pdf",
+        "https://core.ac.uk/download/pdf/148358163.pdf",
+        "http://www-personal.umich.edu/~bpl/larips/BACH5302_02_Lehman.pdf"
+      ]
+    },
+    {
+      "number": 1236,
+      "title": "Modal Counterpoint, Renaissance Style",
+      "author": "Peter Schubert",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://scispace.com/pdf/rethinking-counterpoint-through-improvisation-a-1zda8o3ayo.pdf",
+        "https://www.jstor.org/stable/pdf/745966.pdf",
+        "https://www.jstor.org/stable/pdf/3128781.pdf"
+      ]
+    },
+    {
+      "number": 1237,
+      "title": "Music: A Very Short Introduction",
+      "author": "Nicholas Cook",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/Musical_DropBooks/Music.-.A.Very.Short.Introduction.-_Nicholas_Cook_Oxford_University_Press_2000_DropBooks_App.pdf",
+        "https://books.openbookpublishers.com/10.11647/obp.0374.00.pdf",
+        "https://ismir2011.ismir.net/tutorials/ISMIR2011-Tutorial-Musicology.pdf"
+      ]
+    },
+    {
+      "number": 1238,
+      "title": "Routledge Companion to Popular Music Analysis",
+      "author": "Ciro Scotto et al.",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://scispace.com/pdf/functions-of-expressive-timing-in-hip-hop-flow-lhp6epso.pdf",
+        "https://link.springer.com/content/pdf/10.1007/978-3-030-85543-7.pdf",
+        "https://www.researchgate.net/publication/342165904_Ciro_Scotto_Kenneth_Smith_John_Brackett_Hg_The_Routledge_Companion_to_Popular_Music_Analysis_Expanding_Approaches_New_York_Routledge_2019/fulltext/5f03621545851550508dd851/Ciro-Scotto-Kenneth-Smith-John-Brackett-Hg-The-Routledge-Companion-to-Popular-Music-Analysis-Expanding-Approaches-New-York-Routledge-2019.pdf"
+      ]
+    },
+    {
+      "number": 1239,
+      "title": "Study of Fugue",
+      "author": "Alfred Mann",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/pdfy-_OKTX_2lKsXA_zvN/Counterpoint,+Fux,+by+Alfred+Mann_text.pdf",
+        "https://rwu.pressbooks.pub/app/uploads/sites/31/2019/05/Fux_Gradus.pdf",
+        "https://mtosmt.org/issues/mto.20.26.4/mto.20.26.4.reef.pdf"
+      ]
+    },
+    {
+      "number": 1240,
+      "title": "Temperament",
+      "author": "Stuart Isacoff",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/temperament.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/temperamento.pdf",
+        "https://scispace.com/pdf/temperament-in-bach-s-well-tempered-clavier-a-historical-4g8zqt41oc.pdf"
+      ]
+    },
+    {
+      "number": 1241,
+      "title": "Tonal Harmony",
+      "author": "Stefan Kostka & Dorothy Payne",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/tonal-harmony.pdf",
+        "https://www.music.org/pdf/conf/reg/sc/SCMB_II_1.pdf",
+        "https://ese.rice.edu/data/publication/default.aspx/digital_electronics_projects.pdf"
+      ]
+    },
+    {
+      "number": 1242,
+      "title": "Musicophilia",
+      "author": "Oliver Sacks",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/psicology/Musicophilia+_+Tales+of+Music+and+the+Brain+-+Sacks,+Oliver.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/musicophilia.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/musicophilia--tales-of-music-and-the-brain.pdf"
+      ]
+    },
+    {
+      "number": 1243,
+      "title": "This Is Your Brain on Music",
+      "author": "Daniel J. Levitin",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/this-is-your-brain-on-music.pdf",
+        "https://archive.org/download/scienceDEEPWEB/This+Is+Your+Brain+on+Music_+The+Science+of+a+Human+Obsession+-+Daniel+J.+Levitin.pdf",
+        "https://ww2.jacksonms.gov/Resources/R6xeP5/274027/ThisIsYourBrainOnMusic.pdf"
+      ]
+    },
+    {
+      "number": 1244,
+      "title": "World in Six Songs",
+      "author": "Daniel J. Levitin",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-world-in-six-songs-by-levitin-daniel-j.pdf",
+        "https://static.fnac-static.com/multimedia/PT/pdf/9780241379400.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-world-in-six-songs.pdf"
+      ]
+    },
+    {
+      "number": 1246,
+      "title": "History of Jazz",
+      "author": "Ted Gioia",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-history-of-jazz.pdf",
+        "https://www.sandiego.gov/sites/default/files/legacy/public-library/pdf/jazzpathfinder.pdf",
+        "https://archive.org/download/the-history-of-jazz-ted-gioia-z-library/The+History+of+Jazz+(Ted+Gioia)+(Z-Library).pdf"
+      ]
+    },
+    {
+      "number": 1247,
+      "title": "Jazz Standards",
+      "author": "Ted Gioia",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ese.rice.edu/files/virtual-library/fetch.php/Choice_Jazz_Standards_Clarinet.pdf",
+        "https://ese.rice.edu/About/browse/index.jsp/broadway_jazz_standards_easy_piano.pdf",
+        "https://folkways-media.si.edu/docs/folkways/artwork/SFW40820.pdf"
+      ]
+    },
+    {
+      "number": 1248,
+      "title": "Rest Is Noise",
+      "author": "Alex Ross",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "http://data.instantencore.com/pdf/1004951/ACO-112Tour2_iPhone.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-rest-is-noise.pdf",
+        "https://jra.jacksonms.gov/scholarship/7oAbNE/0OK018/TheRestIsNoiseAlexRoss.pdf"
+      ]
+    },
+    {
+      "number": 1250,
+      "title": "First Lessons in Bach, Complete",
+      "author": "Johann Sebastian Bach",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://community.moldex3d.com/download/virtual-library/pdf/first_lessons_in_bach_pdf.pdf",
+        "https://ese.rice.edu/About/scholarship/Documents/bach_for_guitar.pdf",
+        "http://scrapbook.bham.ac.uk/book/virtual-library/Documents/first-lessons-in-bach-sheet-music-piano.pdf"
+      ]
+    },
+    {
+      "number": 1252,
+      "title": "It's Never Too Late to Play Piano",
+      "author": "Pam Wedgwood",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.rorydowse.com/pdfs/developing-musicality.pdf",
+        "https://aichat.physics.ucla.edu/index_htm_files/libweb/YybjD2/PianoTutorial.pdf",
+        "https://images.alfred.com/cms-assets/catalogs/faber-usa-education-catalog.pdf"
+      ]
+    },
+    {
+      "number": 1253,
+      "title": "Jazz, Rags & Blues (series)",
+      "author": "Martha Mier",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ese.rice.edu/data/publication/Download_PDFS/buena+vista.pdf",
+        "https://jazzednet.org/tradjazz/content/assets/resource-guide-brochure-2014.pdf",
+        "https://www.mtna.org/downloads/membersonly/07_22_RCM_Piano+Sampler+2022.pdf"
+      ]
+    },
+    {
+      "number": 1254,
+      "title": "Jazzin' Americana (series)",
+      "author": "Wynn-Anne Rossi",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://iamta.org/pdfs/2024/jan/IMTA+winter+2024.pdf",
+        "https://uploads.strikinglycdn.com/files/f5e65a8c-f2f9-40b2-8344-cbe6dba5755b/jazzin-americana-for-two-book-2-808.pdf",
+        "https://www.mtna.org/downloads/membersonly/07_22_RCM_Piano+Sampler+2022.pdf"
+      ]
+    },
+    {
+      "number": 1257,
+      "title": "Romantic Impressions (series)",
+      "author": "Martha Mier",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ese.rice.edu/public/scholarship/index.jsp/+minute+intermediate+pianof0691.pdf",
+        "http://pianoinspires.com/wp-content/uploads/2022/02/PPF-Vol.-3-1-3.pdf",
+        "https://muzicalessons.com/media/2jcpbboy/sand-castles.pdf"
+      ]
+    },
+    {
+      "number": 1258,
+      "title": "All You Need to Know About the Music Business",
+      "author": "Donald S. Passman",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/all-you-need-to-know-about-the-music-business.pdf",
+        "https://static.fnac-static.com/multimedia/PT/pdf/9780241302064.pdf",
+        "https://archive.org/download/all-you-need-to-know-about-the-music-business-eleventh-edition-donald-s.-passman-z-library/All+You+Need+to+Know+About+the+Music+Business+Eleventh+Edition+(Donald+S.+Passman)+(Z-Library).pdf"
+      ]
+    },
+    {
+      "number": 1259,
+      "title": "Music Money and Success",
+      "author": "Jeffrey Brabec & Todd Brabec",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.ascapfoundation.org/~/media/Files/Pdf/career-development/music_money.pdf",
+        "https://www.justice.gov/atr/public/ascapbmi2015/ascapbmi6.pdf",
+        "https://lommen.com/wp-content/uploads/2016/03/Music-Money-and-Success-7th-Edition-by-Jeffrey-Brabec-Todd-Brabec-LR.pdf"
+      ]
+    },
+    {
+      "number": 1260,
+      "title": "This Business of Music",
+      "author": "M. William Krasilovsky et al.",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "http://www.foreverliving.ae/sites/default/files/webform/applicationforms/pdf-this-business-of-music-fourth-edition-m-william-krasilovsky-sidney-shemel-paul-ackerman-pdf-download-free-book-6db9501.pdf",
+        "https://scispace.com/pdf/in-defense-of-copyright-record-labels-creativity-and-the-4vmvvwb61b.pdf",
+        "https://www.attorneyforveterans.com/static/2025/02/stop-the-music.pdf"
+      ]
+    },
+    {
+      "number": 1261,
+      "title": "Ackoff's Best: His Classic Writings on Management",
+      "author": "Russell Ackoff",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://link.springer.com/content/pdf/10.1007/978-1-4419-8911-6.pdf",
+        "https://thesystemsthinker.com/wp-content/uploads/pdfs/100501pk.pdf",
+        "https://link.springer.com/content/pdf/10.1007/978-1-4471-7475-2_14.pdf"
+      ]
+    },
+    {
+      "number": 1262,
+      "title": "Creating the Corporate Future",
+      "author": "Russell Ackoff",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://link.springer.com/content/pdf/10.1007/978-1-4419-8911-6.pdf",
+        "https://almanac.upenn.edu/archive/volumes/v56/n11/pdf_n11/111009.pdf",
+        "https://thesystemsthinker.com/wp-content/uploads/pdfs/100501pk.pdf"
+      ]
+    },
+    {
+      "number": 1263,
+      "title": "Engineering Management for the Rest of Us",
+      "author": "Sarah Drasner",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/engineering-management-for-the-rest-of-us.pdf",
+        "https://link.springer.com/content/pdf/10.1007/978-81-322-1901-9_8.pdf",
+        "https://ia600204.us.archive.org/2/items/proceedingso561172005cali/proceedingso561172005cali.pdf"
+      ]
+    },
+    {
+      "number": 1264,
+      "title": "Fifth Discipline",
+      "author": "Peter Senge",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://dn720005.ca.archive.org/0/items/the-fifth-discipline/The-Fifth-Discipline.pdf",
+        "https://www.nicolasgross.com/maop/docs/4/The+Fifth+Discipline.pdf",
+        "https://i.b5z.net/i/u/1011916/f/the-fifth-discipline-senge-en-1257.pdf"
+      ]
+    },
+    {
+      "number": 1265,
+      "title": "Only the Paranoid Survive",
+      "author": "Andy Grove",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/only-the-paranoid-survive.pdf",
+        "https://archive.kdd.org/Resources/hdqjtO/271009/OnlyTheParanoidSurvive.pdf",
+        "https://staff.ces.funai.edu.ng/papersCollection/publication/index_htm_files/Only_The_Paranoid_Survive_Pdf.pdf"
+      ]
+    },
+    {
+      "number": 1266,
+      "title": "Making Work Visible",
+      "author": "Dominica DeGrandis",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/making-work-visible.pdf",
+        "https://kanbanguides.org/open-guide-to-kanban/2025.7/pdf/open-guide-to-kanban.en.pdf",
+        "https://www.topperlearning.motion.ac.in/textbooks/virtual-library/download/making_work_visible_exposing_time_theft_to_optimize_workflow.pdf"
+      ]
+    },
+    {
+      "number": 1267,
+      "title": "New Economics",
+      "author": "W. Edwards Deming",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.kdd.org/Resources/fwc06H/277045/TheNewEconomicsDeming.pdf",
+        "https://archive.kdd.org/browse/fwc06H/277045/The+New+Economics+Deming.pdf",
+        "https://devbooks.in/wp-content/uploads/flier/9789387496156.pdf"
+      ]
+    },
+    {
+      "number": 1268,
+      "title": "Peopleware",
+      "author": "Tom DeMarco & Timothy Lister",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/peopleware.pdf",
+        "https://pdfs.semanticscholar.org/f17a/1f0589609b68c65c7a3f4956bce3953622c9.pdf",
+        "https://toc.library.ethz.ch/objects/pdf03/e01_978-0-321-93411-6_01.pdf"
+      ]
+    },
+    {
+      "number": 1269,
+      "title": "Psychology of Computer Programming",
+      "author": "Gerald M. Weinberg",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.dorsethouse.com/pdf/Dorset-House-psy.pdf",
+        "https://history.computer.org/pioneers/pdfs/W/Weinberg.pdf",
+        "https://173.255.246.104/publication-Documents-download/the-psychology-of-computer-programming.pdf"
+      ]
+    },
+    {
+      "number": 1270,
+      "title": "Radical Candor",
+      "author": "Kim Scott",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/radical-candor.pdf",
+        "https://ia804500.us.archive.org/2/items/ohsusannamarie-ebooks_202410/Radical+Candor+by+Kim+Scott.orig.pdf",
+        "https://archive.kdd.org/uploaded-files/QLDYbh/271011/KimScottRadicalCandor.pdf"
+      ]
+    },
+    {
+      "number": 1271,
+      "title": "Staff Engineer",
+      "author": "Will Larson",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/staff-engineer.pdf",
+        "https://link.springer.com/content/pdf/10.1007/978-1-4842-7217-6.pdf",
+        "https://waydev.co/wp-content/uploads/2022/05/Best-Books-for-Leaders-in-Tech_-the-Waydev-Selection_compressed.pdf"
+      ]
+    },
+    {
+      "number": 1272,
+      "title": "Staff Engineer's Path",
+      "author": "Tanya Reilly",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-staff-engineer's-path.pdf",
+        "https://download.bibis.ir/Books/Management-Leadership/Employee/2022/The-Staff-Engineers-Path-(Tanya-Reilly)_bibis.ir.pdf",
+        "https://download.bibis.ir/Books/Management-Leadership/Employee/2022/The+Staff+Engineers+Path+(Sixth+Early+Release)+(Tanya+Reilly)_bibis.ir.pdf"
+      ]
+    },
+    {
+      "number": 1273,
+      "title": "Team of Teams",
+      "author": "General Stanley McChrystal",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/team-of-teams.pdf",
+        "https://ia801203.us.archive.org/8/items/9780884271789/Book1-Team+of+Teams_TEXT.pdf",
+        "https://www.benning.army.mil/infantry/magazine/issues/2015/Jul-Sept/pdfs/Book2-OSS_LAYOUT.pdf"
+      ]
+    },
+    {
+      "number": 1274,
+      "title": "Team Topologies",
+      "author": "Skelton & Pais",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/team-topologies.pdf",
+        "https://archive.org/download/proyectos-ovnis-la-base-antartica/Team+Topologies+_+Organizing+Business+and+Technology+Teams+for+Fast+Flow+-+Skelton,+Matthew+&+Pais,+Manuel.pdf",
+        "https://conf42.github.io/static/slides/Anil+Kumar+Veldurthi+-+Conf42+Platform+Engineering+2025.pdf"
+      ]
+    },
+    {
+      "number": 1275,
+      "title": "Management: Tasks, Responsibilities, Practices",
+      "author": "Peter Drucker",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/management---tasks--responsibilities--practices.pdf",
+        "https://d1n7iqsz6ob2ad.cloudfront.net/document/pdf/533ab4969846a.pdf",
+        "https://ia601407.us.archive.org/1/items/in.ernet.dli.2015.137046/2015.137046.Management-Tasks-Responsibilities-Practices.pdf"
+      ]
+    },
+    {
+      "number": 1276,
+      "title": "The Essential Drucker",
+      "author": "Peter Drucker",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://d1n7iqsz6ob2ad.cloudfront.net/document/pdf/533ab4969846a.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/the-essential-drucker.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/essential-drucker--the.pdf"
+      ]
+    },
+    {
+      "number": 1277,
+      "title": "Measure What Matters",
+      "author": "John Doerr",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/measure-what-matters/Measure-what-matters.pdf",
+        "https://archive.org/download/barbarian-days-a-surfing-life-by-william-finnegan-b00g3l6jms/measure-what-matters-how-google-bono-and-the-gates-foundation-rock-the-world-with-okrs-john-e-doerr-b078fz9syb.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/measure-what-matters.pdf"
+      ]
+    },
+    {
+      "number": 1278,
+      "title": "Who: The A Method for Hiring",
+      "author": "Geoff Smart & Randy Street",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/who.pdf",
+        "https://ideator.sasfin.com/book/Resources/Documents/Who_The_A_Method_For_Hiring_Geoff_Smart.pdf",
+        "https://cie-advances.asme.org/files-library-Documents/geoff-smart-who-the-a-method-for-hiring.pdf"
+      ]
+    },
+    {
+      "number": 1279,
+      "title": "Turn the Ship Around!",
+      "author": "L. David Marquet",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/turn-the-ship-around!.pdf",
+        "https://archive.kdd.org/Resources/cuV9rV/277046/TurnTheShipAround.pdf",
+        "https://www.toppractices.com/library/170909.TopPractices.export.pdf"
+      ]
+    },
+    {
+      "number": 1280,
+      "title": "Leaders Eat Last",
+      "author": "Simon Sinek",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.org/download/calibre_library_98.219.176.33/Leaders+Eat+Last+-+Simon+Sinek_362.pdf",
+        "https://cdn.bookey.app/files/pdf/book/en/leaders-eat-last.pdf",
+        "https://crpf.gov.in/writereaddata/images/pdf/Leaders_Eat_Last.pdf"
+      ]
+    },
+    {
+      "number": 1281,
+      "title": "Start with Why",
+      "author": "Simon Sinek",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://ia800601.us.archive.org/25/items/simon-sinek-start-with-why_201709/simon-sinek-start-with-why.pdf",
+        "https://transheart.translifeline.org/public/Resources/HomePages/Start_With_Why_By_Simon_Sinek.pdf",
+        "https://www.leadingagemn.org/assets/docs/Start_with_Why_SimonSinek.pdf"
+      ]
+    },
+    {
+      "number": 1282,
+      "title": "The Infinite Game",
+      "author": "Simon Sinek",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-infinite-game.pdf",
+        "http://voicebucketvoitto.s3.amazonaws.com/pdf/ingles/The+Infinite+Game+-+Simon+Sinek.pdf",
+        "https://www.gbv.de/dms/zbw/1680561375.pdf"
+      ]
+    },
+    {
+      "number": 1283,
+      "title": "Continuous Discovery Habits",
+      "author": "Teresa Torres",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/continuous-discovery-habits.pdf",
+        "https://petfeature.ir/uploads/c66358604ae44a49983d8254278883b1.pdf",
+        "https://cdn.prod.website-files.com/646b4f31599a311972aa26dd/64bf7c57443faa46c89fca36_Checklist+-+Continuous+Discovery+Habits+-+Teresa+Torres.pdf"
+      ]
+    },
+    {
+      "number": 1284,
+      "title": "Empowered",
+      "author": "Marty Cagan",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/empowered.pdf",
+        "https://nashnw.myqnapcloud.com:8083/download/86/pdf/86.pdf",
+        "https://ns3.cctv.org/thesis/pdf?trackid=ntS41-1450&title=engineering-to-product-management.pdf"
+      ]
+    },
+    {
+      "number": 1285,
+      "title": "Escaping the Build Trap",
+      "author": "Melissa Perri",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/escaping-the-build-trap.pdf",
+        "https://asia2018.iaslc.org/files/uploaded-files/Documents/escaping_the_build_trap_how_effective_product_man.pdf",
+        "https://static.s123-cdn.com/uploads/4649734/normal_61aa69efe4952.pdf"
+      ]
+    },
+    {
+      "number": 1286,
+      "title": "Hooked",
+      "author": "Nir Eyal",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/what-i-know-for-sure.pdf",
+        "https://www.s3.amazonaws.com/ebsp/pdf/hookedp.pdf",
+        "https://www.nirandfar.com/wp-content/uploads/2025/02/Hooked_Model_Canvas_Nir_Eyal.pdf"
+      ]
+    },
+    {
+      "number": 1287,
+      "title": "Inspired",
+      "author": "Marty Cagan",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/inspired.pdf",
+        "https://nashnw.myqnapcloud.com:8083/download/86/pdf/86.pdf",
+        "https://cdn.bookey.app/pdf/book/en/inspired.pdf"
+      ]
+    },
+    {
+      "number": 1288,
+      "title": "Jobs to be Done",
+      "author": "Anthony W. Ulwick",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/jobs-to-be-done.pdf",
+        "https://www.topperlearning.motion.ac.in/textbooks/scholarship/download/jobs+to+be+done+theory+to+practice.pdf",
+        "https://buro-improof.nl/wp-content/uploads/2023/10/jobs-to-be-done-literatuur-3.pdf"
+      ]
+    },
+    {
+      "number": 1289,
+      "title": "Mom Test",
+      "author": "Rob Fitzpatrick",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-mom-test.pdf",
+        "https://autry.cs.grinnell.edu/$36291395/vembarkl/aresemblee/uuploadz/the+mom+test.pdf",
+        "https://www.manuelohan.com/wp-content/uploads/2017/05/The-Mom-Test-en.pdf"
+      ]
+    },
+    {
+      "number": 1290,
+      "title": "Outcomes Over Output",
+      "author": "Joshua Seiden",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/outcomes-over-output.pdf",
+        "https://assets-global.website-files.com/6281f24d7e9c381fbc56f5b5/63fdd82845dc3d07e24130ab_Outcomes+over+output+-+download-2.pdf",
+        "https://test.post-gazette.com/book/uploaded-files/Documents/Outcomes-Over-Output-Why-Customer-Behavior-Is-The.pdf"
+      ]
+    },
+    {
+      "number": 1291,
+      "title": "Product Roadmaps Relaunched",
+      "author": "C. Todd Lombardo et al.",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/product-roadmaps-relaunched.pdf",
+        "https://drsinaaria.com/file/2022/06/C_Todd_Lombardo_Bruce_McCarthy_Evan_Ryan_Michael_Connors_Product.pdf",
+        "https://el2.alaqeeq.edu.jo/textbooks/virtual-library/download/product_roadmaps_relaunched_how_to_set_direction_while_embracing_uncertainty.pdf"
+      ]
+    },
+    {
+      "number": 1292,
+      "title": "Sense and Respond",
+      "author": "Jeff Gothelf & Josh Seiden",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://wichelstowe.com/results/book-search/Download_PDFS/sense-respond-how-successful-organizations-listen.pdf",
+        "https://test.post-gazette.com/book/uploaded-files/Download_PDFS/Sense_And_Respond_How_Successful_Organizations_Li.pdf",
+        "https://staging.uncbluesky.kenan-flagler.unc.edu/files/uploaded-files/Documents/Sense_And_Respond_Book.pdf"
+      ]
+    },
+    {
+      "number": 1293,
+      "title": "Shape Up",
+      "author": "Ryan Singer",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/shape-up.pdf",
+        "https://basecamp.com/shapeup/shape-up.pdf",
+        "https://www.songsforteaching.com/jackhartmann/every1_s/16shapeup.pdf"
+      ]
+    },
+    {
+      "number": 1294,
+      "title": "API Economy",
+      "author": "(various)",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.redbooks.ibm.com/redpapers/pdfs/redp5164.pdf",
+        "https://nordicapis.com/wp-content/uploads/theapieconomy.pdf",
+        "https://unbc.arcabc.ca/_flysystem/repo-bin/2024-09/unbc_59545.pdf"
+      ]
+    },
+    {
+      "number": 1295,
+      "title": "Blue Ocean Strategy",
+      "author": "W. Chan Kim & Renée Mauborgne",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://www.stratml.firmcouncil.org/pdfs/BOS.pdf",
+        "https://irp-cdn.multiscreensite.com/cb9165b2/files/uploaded/Blue+Ocean+Strategy,+Expanded+Edition_+How+to+Create+Uncontested+Market+Space+and+Make+the+Competition+Irrelevant+(+PDFDrive.com+).pdf",
+        "https://lib.ysu.am/open_books/413244.pdf"
+      ]
+    },
+    {
+      "number": 1296,
+      "title": "Competitive Advantage",
+      "author": "Michael E. Porter",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/competitive-advantage.pdf",
+        "https://dn720006.ca.archive.org/0/items/michael-e.-porter-competitive-strategy/Michael+E.+Porter+-+Competitive+Strategy.pdf",
+        "https://file.pide.org.pk/pdfpdr/1998/90-94.pdf"
+      ]
+    },
+    {
+      "number": 1297,
+      "title": "Crossing the Chasm",
+      "author": "Geoffrey A. Moore",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/crossing-the-chasm.pdf",
+        "https://archive.org/download/christian-books-library-pdf_202403/CHRISTIAN+BOOKS+LIBRARY+PDF.zip/Crossing+the+Chasm+Publisher_+HarperBusine+-+Geoffrey+A.+Moore.pdf",
+        "https://files.addictbooks.com/wp-content/uploads/2024/09/crossing-the-chasm.pdf"
+      ]
+    },
+    {
+      "number": 1298,
+      "title": "Playing to Win",
+      "author": "A.G. Lafley & Roger L. Martin",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/playing-to-win.pdf",
+        "https://pdfs.semanticscholar.org/8e66/8cf39251d11b694011e58aa8ea6a002c0e6a.pdf",
+        "https://static.s123-cdn-static.com/uploads/4603734/normal_6000b03ad4fd3.pdf"
+      ]
+    },
+    {
+      "number": 1299,
+      "title": "Strategy Paradox",
+      "author": "Michael E. Raynor",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://cdn.bookey.app/files/pdf/book/en/the-strategy-paradox.pdf",
+        "http://www.ergen.gr/files/THE_STRATEGY_PARADOX_by_Michael_Raynor.pdf",
+        "https://gruppoquantum.eu/wp-content/uploads/2023/06/The-Strategy-Paradox-1.pdf"
+      ]
+    },
+    {
+      "number": 1300,
+      "title": "Strategy Pure and Simple",
+      "author": "Michel Robert",
+      "found": 5,
+      "opened": 3,
+      "urls": [
+        "https://archive.kdd.org/data/publication/Documents/strategy_pure_and_simple.pdf",
+        "https://archive.kdd.org/About/uploaded-files/Documents/strategy+pure+and+simple.pdf",
+        "https://archive.kdd.org/About/virtual-library/default.aspx/Strategy_Pure_And_Simple.pdf"
+      ]
+    }
+  ],
+  "finished": "2026-01-01T14:05:27.129143",
+  "total_opened": 279
+}
