@@ -1,4 +1,4 @@
 @echo off
-REM Master script to check status
-python batch_runner.py
+REM Check batch status
+python batch_runner.py list
 pause

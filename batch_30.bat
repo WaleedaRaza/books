@@ -1,8 +1,12 @@
 @echo off
-REM Batch 30: Books 726-750
+REM Batch 30 [EVEN]: Books 726-750
+REM Source: Newbooks.txt (line-based)
 echo ====================================================================
-echo BATCH 30: Books 726-750
+echo BATCH 30 [EVEN]: Books 726-750
 echo ====================================================================
+echo.
+echo Run ODD batches (1,3,5,7...) on one machine
+echo Run EVEN batches (2,4,6,8...) on another machine
 echo.
 
 REM Run search and open tabs for specific book range

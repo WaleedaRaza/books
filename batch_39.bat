@@ -1,12 +1,16 @@
 @echo off
-REM Batch 39: Books 951-975
+REM Batch 39 [ODD]: Books 951-958
+REM Source: Newbooks.txt (line-based)
 echo ====================================================================
-echo BATCH 39: Books 951-975
+echo BATCH 39 [ODD]: Books 951-958
 echo ====================================================================
+echo.
+echo Run ODD batches (1,3,5,7...) on one machine
+echo Run EVEN batches (2,4,6,8...) on another machine
 echo.
 
 REM Run search and open tabs for specific book range
-python batch_runner.py range 951 975
+python batch_runner.py range 951 958
 
 echo.
 echo ====================================================================

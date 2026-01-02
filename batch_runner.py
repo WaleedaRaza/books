@@ -1,11 +1,11 @@
 """
 Fast Batch PDF Aggregation
-Process books in small, manageable batches.
+Process books in small, manageable batches from Newbooks.txt.
 
 Usage:
-  python batch_runner.py              # Show next batch to run
+  python batch_runner.py              # Show status
   python batch_runner.py run          # Run next batch (25 books)
-  python batch_runner.py run 20       # Run next 20 books
+  python batch_runner.py range 1 25   # Run specific book range (line-based)
   python batch_runner.py verify       # Check what you've downloaded
   python batch_runner.py list         # List all batches
 """
@@ -21,19 +21,22 @@ from urllib.parse import quote_plus
 from ddgs import DDGS
 
 # Configuration
-RANKED_FILE = Path('Ranked_Library_Waves.md')
+BOOKS_FILE = Path('Newbooks.txt')
 BATCHES_DIR = Path('batches')
 PDF_DIR = Path('pdf')
+LOGS_DIR = Path('logs')
 
 BATCHES_DIR.mkdir(exist_ok=True)
 PDF_DIR.mkdir(exist_ok=True)
+LOGS_DIR.mkdir(exist_ok=True)
 
 # Search config
 DEFAULT_BATCH_SIZE = 25
 TABS_PER_BOOK = 5
 DELAY_BETWEEN_BOOKS = 3
+HEADER_LINES = 2  # First 2 lines are header text
 
-# Domain filtering (simple and effective)
+# Domain filtering
 BAD_DOMAINS = [
     'amazon', 'goodreads', 'wikipedia', 'reddit', 'quora',
     'youtube', 'facebook', 'twitter', 'linkedin', 'pinterest',
@@ -49,25 +52,47 @@ GOOD_DOMAINS = [
 
 
 def parse_all_books():
-    """Parse all books from Ranked_Library_Waves.md."""
+    """Parse all books from Newbooks.txt - simple line-based."""
     books = []
-    with open(RANKED_FILE, 'r', encoding='utf-8') as f:
+    with open(BOOKS_FILE, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
-    for line in lines[4:]:  # Skip header
-        line = line.strip()
-        if not line or not line[0].isdigit():
+    # Skip header lines, process rest
+    book_num = 0
+    for i, line in enumerate(lines):
+        if i < HEADER_LINES:
             continue
         
-        match = re.match(r'(\d+)\.\s*(✅)?\s*\(([^)]+)\)\s*(.+?)\s*—\s*(.+?)(?:\s*\[|$)', line)
-        if match:
-            books.append({
-                'number': int(match.group(1)),
-                'done': bool(match.group(2)),
-                'wave': match.group(3),
-                'title': match.group(4).strip(),
-                'author': match.group(5).strip()
-            })
+        line = line.strip()
+        if not line or not line.startswith('-'):
+            continue
+        
+        book_num += 1
+        
+        # Parse: - Title — Author
+        content = line[1:].strip()  # Remove leading dash
+        
+        # Split on em-dash or double hyphen
+        if ' — ' in content:
+            parts = content.split(' — ', 1)
+        elif ' -- ' in content:
+            parts = content.split(' -- ', 1)
+        else:
+            parts = [content, 'Unknown']
+        
+        title = parts[0].strip()
+        author = parts[1].strip() if len(parts) > 1 else 'Unknown'
+        
+        # Clean up common artifacts
+        title = re.sub(r'^Free PDF', '', title).strip()
+        author = re.sub(r'^Free PDF', '', author).strip()
+        
+        books.append({
+            'number': book_num,
+            'line': i + 1,  # 1-indexed line number
+            'title': title,
+            'author': author
+        })
     
     return books
 
@@ -75,7 +100,6 @@ def parse_all_books():
 def get_batch_info():
     """Get info about existing batches and what's left."""
     all_books = parse_all_books()
-    pending = [b for b in all_books if not b['done']]
     
     # Find existing batch folders
     existing_batches = []
@@ -93,10 +117,8 @@ def get_batch_info():
     
     return {
         'total': len(all_books),
-        'done': len(all_books) - len(pending),
-        'pending': len(pending),
-        'pending_books': pending,
-        'batches': existing_batches
+        'batches': existing_batches,
+        'all_books': all_books
     }
 
 
@@ -153,54 +175,60 @@ def search_book(title, author):
         return []
 
 
-def run_batch(size=DEFAULT_BATCH_SIZE, start_book=None, end_book=None):
-    """Run next batch of books or specific range."""
+def run_batch(start_book=None, end_book=None):
+    """Run batch for specific book range (1-indexed, based on line order)."""
     
     all_books = parse_all_books()
     
-    if start_book and end_book:
-        # Process specific range
-        books_to_process = [b for b in all_books if start_book <= b['number'] <= end_book]
-        actual_size = len(books_to_process)
-    else:
-        # Process next pending books
-        info = get_batch_info()
-        if info['pending'] == 0:
-            print("No pending books!")
-            return
-        books_to_process = info['pending_books'][:size]
-        actual_size = len(books_to_process)
+    if start_book is None or end_book is None:
+        print("Usage: python batch_runner.py range START END")
+        print("Example: python batch_runner.py range 1 25")
+        return
     
-    # Determine batch number
-    if start_book and end_book:
-        # Calculate batch number from start book
-        batch_num = ((books_to_process[0]['number'] - 1) // DEFAULT_BATCH_SIZE) + 1
-    else:
-        info = get_batch_info()
-        batch_num = len(info['batches']) + 1
+    # Filter to exact range (1-indexed book numbers)
+    books_to_process = [b for b in all_books if start_book <= b['number'] <= end_book]
     
+    if not books_to_process:
+        print(f"No books found in range {start_book}-{end_book}")
+        return
+    
+    actual_size = len(books_to_process)
+    
+    # Calculate batch number from start book
+    batch_num = ((start_book - 1) // DEFAULT_BATCH_SIZE) + 1
     batch_name = f"batch_{batch_num:02d}"
     
     print(f"\n{'='*70}")
-    print(f"BATCH {batch_num}: {actual_size} books")
-    print(f"Books {books_to_process[0]['number']}-{books_to_process[-1]['number']}")
+    print(f"BATCH {batch_num}: Books {start_book}-{end_book} ({actual_size} books)")
     print(f"{'='*70}")
+    print(f"Source: {BOOKS_FILE}")
     print(f"Folder: pdf/{batch_name}/")
     print(f"Opening {TABS_PER_BOOK} tabs per book")
     print()
     
+    # Show what we're about to process
+    print("Books in this batch:")
+    for book in books_to_process[:5]:
+        print(f"  #{book['number']:4d}. {book['title'][:50]}")
+    if len(books_to_process) > 5:
+        print(f"  ... and {len(books_to_process) - 5} more")
+    print()
+    
+    # Confirm
+    input("Press ENTER to start (Ctrl+C to cancel)...")
+    print()
+    
     # Save batch metadata
     batch_meta = {
-        'batch_num': batch_num,
+        'batch': f"{start_book}-{end_book}",
         'started': datetime.now().isoformat(),
-        'size': actual_size,
         'books': []
     }
     
     total_tabs = 0
     
     for i, book in enumerate(books_to_process, 1):
-        print(f"[{i}/{actual_size}] {book['number']:04d}. {book['title']} — {book['author']}")
+        print(f"[{i}/{actual_size}] #{book['number']:04d}. {book['title'][:45]} — {book['author'][:20]}")
         
         # Search
         urls = search_book(book['title'], book['author'])
@@ -211,6 +239,8 @@ def run_batch(size=DEFAULT_BATCH_SIZE, start_book=None, end_book=None):
                 'number': book['number'],
                 'title': book['title'],
                 'author': book['author'],
+                'found': 0,
+                'opened': 0,
                 'urls': []
             })
             continue
@@ -227,6 +257,8 @@ def run_batch(size=DEFAULT_BATCH_SIZE, start_book=None, end_book=None):
             'number': book['number'],
             'title': book['title'],
             'author': book['author'],
+            'found': len(urls),
+            'opened': len(urls),
             'urls': urls
         })
         
@@ -234,90 +266,56 @@ def run_batch(size=DEFAULT_BATCH_SIZE, start_book=None, end_book=None):
         if i < actual_size:
             time.sleep(DELAY_BETWEEN_BOOKS)
     
-    # Save metadata
+    # Save log
     batch_meta['finished'] = datetime.now().isoformat()
-    batch_meta['total_tabs'] = total_tabs
+    batch_meta['total_opened'] = total_tabs
     
-    meta_file = BATCHES_DIR / f'{batch_name}.json'
-    with open(meta_file, 'w', encoding='utf-8') as f:
+    log_file = LOGS_DIR / f'batch_{start_book}_{end_book}_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+    with open(log_file, 'w', encoding='utf-8') as f:
         json.dump(batch_meta, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*70}")
-    print(f"BATCH {batch_num} COMPLETE")
+    print(f"BATCH COMPLETE: Books {start_book}-{end_book}")
     print(f"{'='*70}")
     print(f"Opened {total_tabs} tabs for {actual_size} books")
+    print(f"Log saved: {log_file}")
     print(f"\nNext steps:")
     print(f"  1. Close junk tabs (keep good PDFs)")
     print(f"  2. Run: python download_batch.py {batch_name}")
-    print(f"  3. Run: python batch_runner.py verify")
 
 
 def list_batches():
-    """List all batches."""
+    """List all batches and current status."""
     info = get_batch_info()
     
+    total_batches = (info['total'] + DEFAULT_BATCH_SIZE - 1) // DEFAULT_BATCH_SIZE
+    
     print(f"\n{'='*70}")
-    print(f"BATCH STATUS")
+    print(f"BATCH STATUS - {info['total']} books in {BOOKS_FILE}")
     print(f"{'='*70}")
-    print(f"Progress: {info['done']}/{info['total']} books")
-    print(f"Pending: {info['pending']}")
+    print(f"Total batches needed: {total_batches} (at {DEFAULT_BATCH_SIZE} books each)")
     print()
     
     if info['batches']:
-        print("Completed batches:")
+        print("Downloaded batches:")
         for b in info['batches']:
             print(f"  {b['folder']:20s} - {b['pdf_count']} PDFs")
     else:
-        print("No batches yet")
+        print("No batches downloaded yet")
     
-    if info['pending'] > 0:
-        next_books = info['pending_books'][:5]
-        print(f"\nNext {len(next_books)} books:")
-        for book in next_books:
-            print(f"  {book['number']:04d}. {book['title']}")
-        
-        print(f"\nRun: python batch_runner.py run")
-
-
-def verify_batch(batch_num):
-    """Verify specific batch."""
-    meta_file = BATCHES_DIR / f'batch_{batch_num:02d}.json'
-    pdf_folder = PDF_DIR / f'batch_{batch_num:02d}'
+    print(f"\nBatch ranges:")
+    for i in range(1, min(total_batches + 1, 11)):  # Show first 10
+        start = (i - 1) * DEFAULT_BATCH_SIZE + 1
+        end = min(i * DEFAULT_BATCH_SIZE, info['total'])
+        odd_even = "ODD" if i % 2 == 1 else "EVEN"
+        print(f"  batch_{i:02d}.bat = Books {start:4d}-{end:4d}  [{odd_even}]")
     
-    if not meta_file.exists():
-        print(f"Batch {batch_num} not found")
-        return
+    if total_batches > 10:
+        print(f"  ... and {total_batches - 10} more batches")
     
-    with open(meta_file, 'r', encoding='utf-8') as f:
-        meta = json.load(f)
-    
-    # Get PDFs in folder
-    pdfs = []
-    if pdf_folder.exists():
-        pdfs = [f.name for f in pdf_folder.glob('*.pdf')]
-    
-    print(f"\n{'='*70}")
-    print(f"BATCH {batch_num} VERIFICATION")
-    print(f"{'='*70}")
-    print(f"Books in batch: {len(meta['books'])}")
-    print(f"PDFs downloaded: {len(pdfs)}")
-    print()
-    
-    # Check each book
-    missing = []
-    for book in meta['books']:
-        # Try to find matching PDF
-        title_lower = book['title'].lower()
-        found = any(title_lower[:20] in pdf.lower() for pdf in pdfs)
-        
-        status = "[OK]" if found else "[MISSING]"
-        print(f"{status} {book['number']:04d}. {book['title']}")
-        
-        if not found:
-            missing.append(book)
-    
-    if missing:
-        print(f"\nMissing {len(missing)} books - add to retry list")
+    print(f"\nUsage:")
+    print(f"  Run odds:  batch_01.bat, batch_03.bat, batch_05.bat...")
+    print(f"  Run evens: batch_02.bat, batch_04.bat, batch_06.bat...")
 
 
 def verify_all():
@@ -334,8 +332,7 @@ def verify_all():
         print(f"Batch {b['num']:2d}: {b['pdf_count']:3d} PDFs")
     
     print(f"\nTotal PDFs: {total_pdfs}")
-    print(f"Books done: {info['done']}")
-    print(f"Pending: {info['pending']}")
+    print(f"Total books: {info['total']}")
 
 
 def main():
@@ -346,12 +343,14 @@ def main():
     cmd = sys.argv[1]
     
     if cmd == 'run':
-        size = int(sys.argv[2]) if len(sys.argv) > 2 else DEFAULT_BATCH_SIZE
-        run_batch(size)
+        # Run next batch (not implemented - use range instead)
+        print("Use: python batch_runner.py range START END")
+        print("Or run the batch .bat files directly")
     
     elif cmd == 'range':
         if len(sys.argv) < 4:
             print("Usage: python batch_runner.py range START END")
+            print("Example: python batch_runner.py range 1 25")
             return
         start = int(sys.argv[2])
         end = int(sys.argv[3])
@@ -361,10 +360,7 @@ def main():
         list_batches()
     
     elif cmd == 'verify':
-        if len(sys.argv) > 2:
-            verify_batch(int(sys.argv[2]))
-        else:
-            verify_all()
+        verify_all()
     
     else:
         print(__doc__)
